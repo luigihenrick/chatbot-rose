@@ -1,0 +1,16 @@
+{
+  "name": "chatbot-rose",
+  "version": "1.0.0",
+  "description": "Projeto de chatbot que busca ajudar pessoas com depressão",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuigiHenrick",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "watson-developer-cloud": "^3.18.0"
+  }
+}
