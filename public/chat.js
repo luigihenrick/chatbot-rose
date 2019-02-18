@@ -71,7 +71,7 @@
             }
         });
         
-        sendMessageToAssistant('');
+        sendMessageToAssistant('oi');
 
         // sendMessage('Hello Philip! :)');
         // setTimeout(function () {

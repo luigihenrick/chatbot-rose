@@ -5,19 +5,17 @@ const AssistantV1 = require('watson-developer-cloud/assistant/v1');
 
 const assistant = new AssistantV1({
   iam_apikey: process.env.API_KEY,
-  url: 'https://gateway.watsonplatform.net/assistant/api',
+  url: process.env.URL,
   version: process.env.VERSION,
 });
 
 const port = process.env.PORT || 3000;
 const app = express();
 
-var context = {};
-
 var params = {
   input: {},
+  context: {},
   workspace_id: process.env.WORKSPACE_ID,
-  context,
 };
 
 app.use(bodyParser.json());
@@ -35,8 +33,13 @@ app.post('/conversation/', (req, res) => {
   
     assistant.message(params, (err, response) => {
       if (err) res.status(500).json(err);
-      context = response.context;
-      res.json(response.output.text[0]);
+      
+      if(response != null) {
+        params.context = response.context;
+        res.json(response.output.text[0]);
+      } else {
+        res.status(500).json('Falha ao enviar mensagem, tente novamente.');
+      }
     });
   });
 
