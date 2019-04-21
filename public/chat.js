@@ -1,5 +1,6 @@
 (function () {
     var Message;
+    var Entities;
     Message = function (arg) {
         this.text = arg.text, this.message_side = arg.message_side;
         this.draw = function (_this) {
@@ -48,9 +49,12 @@
 
                 success: function (data) {
                     var i = 0;
-                    data.forEach(e => setTimeout(() => {
+                    data.text.forEach(e => setTimeout(() => {
                         sendMessage(e, 'left');
                     }, 1500 * i++));
+                    if (!!data.entities) {
+                        window.localStorage.setItem('user_data', JSON.stringify(data.entities))
+                    }
                 }
             });
         };
@@ -74,11 +78,16 @@
             }
         });
 
-        var phonenumber = window.localStorage.getItem('user_phone_number')
-        if (!!phonenumber) {
-            sendMessageToAssistant(phonenumber);
+        var userdata = window.localStorage.getItem('user_data');
+        sendMessageToAssistant('Recomeçar');
+        if (!!userdata) {
+            Entities = JSON.parse(userdata);
+            sendMessageToAssistant('{{LOGGED_USER}}');
+            sendMessageToAssistant(Entities.name);
+            sendMessageToAssistant(Entities.phonenumber);
+            sendMessageToAssistant(Entities.routine);
         } else {
-            sendMessageToAssistant('Começar de novo');
+            sendMessageToAssistant('Sim');
         }
     });
 }.call(this));

@@ -18,6 +18,8 @@ var params = {
   workspace_id: process.env.WORKSPACE_ID,
 };
 
+var users = {};
+
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
@@ -28,15 +30,28 @@ app.get('/', (req, res) => {
 app.post('/conversation/', (req, res) => {
   //console.log(req.body);
   text = req.body.text;
-  
+
   params.input = { text };
 
   assistant.message(params, (err, response) => {
     if (err) res.status(500).json(err);
+
+    var result = {
+      text: response.output.text,
+      entities: {
+        name: response.context.nome,
+        phonenumber: response.context.telefone,
+        routine: response.context.rotina
+      }
+    }
     
-    if(response != null) {
+    if (!!result.entities.telefone) {
+      users[result.entities.telefone] = result.entities;
+    }
+    
+    if (response != null) {
       params.context = response.context;
-      res.json(response.output.text);
+      res.json(result);
     } else {
       res.status(500).json('Falha ao enviar mensagem, tente novamente.');
     }
