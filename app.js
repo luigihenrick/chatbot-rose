@@ -26,21 +26,21 @@ app.get('/', (req, res) => {
 });
 
 app.post('/conversation/', (req, res) => {
-    //console.log(req.body);
-    text = req.body.text;
-    
-    params.input = { text };
+  //console.log(req.body);
+  text = req.body.text;
   
-    assistant.message(params, (err, response) => {
-      if (err) res.status(500).json(err);
-      
-      if(response != null) {
-        params.context = response.context;
-        res.json(response.output.text[0]);
-      } else {
-        res.status(500).json('Falha ao enviar mensagem, tente novamente.');
-      }
-    });
+  params.input = { text };
+
+  assistant.message(params, (err, response) => {
+    if (err) res.status(500).json(err);
+    
+    if(response != null) {
+      params.context = response.context;
+      res.json(response.output.text);
+    } else {
+      res.status(500).json('Falha ao enviar mensagem, tente novamente.');
+    }
   });
+});
 
 app.listen(port, () => console.log(`Running on port ${port}`));

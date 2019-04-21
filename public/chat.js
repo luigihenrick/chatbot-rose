@@ -38,16 +38,19 @@
             message.draw();
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
-        
-        sendMessageToAssistant = function(text) {        
-            $.ajax({
-                url: '/conversation/', 
-                type: 'POST', 
-                contentType: 'application/json', 
-                data: JSON.stringify({text: text}),
 
-                success: function(data){
-                    sendMessage(data, 'left');
+        sendMessageToAssistant = function (text) {
+            $.ajax({
+                url: '/conversation/',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ text: text }),
+
+                success: function (data) {
+                    var i = 0;
+                    data.forEach(e => setTimeout(() => {
+                        sendMessage(e, 'left');
+                    }, 1500 * i++));
                 }
             });
         };
@@ -66,19 +69,16 @@
 
                 sendMessage(text, 'right');
                 sendMessageToAssistant(text);
-                
+
                 return;
             }
         });
-        
-        sendMessageToAssistant('oi');
 
-        // sendMessage('Hello Philip! :)');
-        // setTimeout(function () {
-        //     return sendMessage('Hi Sandy! How are you?');
-        // }, 1000);
-        // return setTimeout(function () {
-        //     return sendMessage('I\'m fine, thank you!');
-        // }, 2000);
+        var phonenumber = window.localStorage.getItem('user_phone_number')
+        if (!!phonenumber) {
+            sendMessageToAssistant(phonenumber);
+        } else {
+            sendMessageToAssistant('Começar de novo');
+        }
     });
 }.call(this));
