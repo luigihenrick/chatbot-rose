@@ -1,6 +1,9 @@
 (function () {
     var Message;
-    var Entities;
+    var chatbotData = {
+        text : '',
+        context: {}
+    };
     Message = function (arg) {
         this.text = arg.text, this.message_side = arg.message_side;
         this.draw = function (_this) {
@@ -40,54 +43,46 @@
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
 
-        sendMessageToAssistant = function (text) {
+        sendMessageToAssistant = function (chatbotData) {
             $.ajax({
                 url: '/conversation/',
                 type: 'POST',
                 contentType: 'application/json',
-                data: JSON.stringify({ text: text }),
-
+                data: JSON.stringify(chatbotData),
                 success: function (data) {
+                    window.localStorage.setItem('chatbot_context', JSON.stringify(data.context));
+                    chatbotData.context = data.context;
                     var i = 0;
-                    data.text.forEach(e => setTimeout(() => {
-                        sendMessage(e, 'left');
-                    }, 1500 * i++));
-                    if (!!data.entities) {
-                        window.localStorage.setItem('user_data', JSON.stringify(data.entities))
-                    }
+                    data.output.text.forEach(e => setTimeout(() => { sendMessage(e, 'left'); }, 1500 * i++));
                 }
             });
         };
 
         $('.send_message').click(function (e) {
-            var text = getMessageText();
-
-            sendMessage(text, 'right');
-            sendMessageToAssistant(text);
-
+            chatbotData.text = getMessageText();
+            sendMessage(chatbotData.text, 'right');
+            sendMessageToAssistant(chatbotData);
             return;
         });
+
         $('.message_input').keyup(function (e) {
             if (e.which === 13) {
-                var text = getMessageText();
-
-                sendMessage(text, 'right');
-                sendMessageToAssistant(text);
-
+                chatbotData.text = getMessageText();
+                sendMessage(chatbotData.text, 'right');
+                sendMessageToAssistant(chatbotData);
                 return;
             }
         });
 
-        var userdata = window.localStorage.getItem('user_data');
-        sendMessageToAssistant('Recomeçar');
-        if (!!userdata) {
-            Entities = JSON.parse(userdata);
-            sendMessageToAssistant('{{LOGGED_USER}}');
-            sendMessageToAssistant(Entities.name);
-            sendMessageToAssistant(Entities.phonenumber);
-            sendMessageToAssistant(Entities.routine);
+        var localData = window.localStorage.getItem('chatbot_context');
+        var botContext = !!localData ? JSON.parse(localData) : ''; 
+        if (!!botContext.rotina) {
+            chatbotData.context = botContext;
+            chatbotData.text = '{{LOGGED_USER}}';
+            sendMessageToAssistant(chatbotData);
         } else {
-            sendMessageToAssistant('Sim');
+            chatbotData.text = '{{NEW_TALK}}'
+            sendMessageToAssistant(chatbotData);
         }
     });
 }.call(this));

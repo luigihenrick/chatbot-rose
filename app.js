@@ -1,22 +1,10 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-const AssistantV1 = require('watson-developer-cloud/assistant/v1');
-
-const assistant = new AssistantV1({
-  iam_apikey: process.env.API_KEY,
-  url: process.env.URL,
-  version: process.env.VERSION,
-});
+const watson = require('./client-watson');
 
 const port = process.env.PORT || 3000;
 const app = express();
-
-var params = {
-  input: {},
-  context: {},
-  workspace_id: process.env.WORKSPACE_ID,
-};
 
 var users = {};
 
@@ -28,30 +16,19 @@ app.get('/', (req, res) => {
 });
 
 app.post('/conversation/', (req, res) => {
-  //console.log(req.body);
-  text = req.body.text;
+  const { text, context = {} } = req.body;
 
-  params.input = { text };
+  const params = {
+    input: { text },
+    workspace_id: process.env.WORKSPACE_ID,
+    context,
+  };
 
-  assistant.message(params, (err, response) => {
+  watson.sendMessage(params, (err, response) => {
     if (err) res.status(500).json(err);
 
-    var result = {
-      text: response.output.text,
-      entities: {
-        name: response.context.nome,
-        phonenumber: response.context.telefone,
-        routine: response.context.rotina
-      }
-    }
-    
-    if (!!result.entities.telefone) {
-      users[result.entities.telefone] = result.entities;
-    }
-    
     if (response != null) {
-      params.context = response.context;
-      res.json(result);
+      res.json(response);
     } else {
       res.status(500).json('Falha ao enviar mensagem, tente novamente.');
     }
