@@ -24,14 +24,16 @@ app.post('/conversation/', (req, res) => {
     context,
   };
 
-  watson.sendMessage(params, (err, response) => {
-    if (err) res.status(500).json(err);
-
+  watson.sendMessage(params)
+  .then((response) => {
     if (response != null) {
       res.json(response);
     } else {
       res.status(500).json('Falha ao enviar mensagem, tente novamente.');
     }
+  })
+  .catch((rej) => {
+    res.status(500).json(rej);
   });
 });
 

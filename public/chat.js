@@ -42,18 +42,26 @@
             message.draw();
             return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
         };
-
         sendMessageToAssistant = function (chatbotData) {
             $.ajax({
                 url: '/conversation/',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(chatbotData),
+                error: function(xhr, error){
+                    sendMessage('Ops, nem sempre as coisas funcionam como esperado, ocorreu algum erro ao enviar sua mensagem, por favor, tente novamente.', 'left');
+                    console.debug(xhr); console.debug(error);
+                },
                 success: function (data) {
-                    window.localStorage.setItem('chatbot_context', JSON.stringify(data.context));
-                    chatbotData.context = data.context;
-                    var i = 0;
-                    data.output.text.forEach(e => setTimeout(() => { sendMessage(e, 'left'); }, 1500 * i++));
+                    if (data.context !== null && data.context !== undefined){
+                        window.localStorage.setItem('chatbot_context', JSON.stringify(data.context));
+                        chatbotData.context = data.context;
+                    }
+                    var timeToNext = 0;
+                    data.output.text.forEach(t => {
+                        timeToNext += (1000 + t.length * 20);
+                        setTimeout(() => { sendMessage(t, 'left'); }, timeToNext)
+                    });
                 }
             });
         };

@@ -6,57 +6,63 @@ const watsonAssistant = new AssistantV1({
     version: process.env.VERSION,
 });
 
-watsonAssistant.sendMessage = (params, callback) => {
-    if (params.input.text === '{{LOGGED_USER}}') {
-        var context = params.context;
-
-        var firstCallback = function (err, response) {
-            if (err) return err;
-            params.input.text = '{{LOGGED_USER}}';
-            params.context = response.context;
-            watsonAssistant.message(params, secondCallback);
-        }
-
-        var secondCallback = function (err, response) {
-            if (err) return err;
-            params.input.text = context.nome;
-            params.context = response.context;
-            watsonAssistant.message(params, thirdCallback);
-        }
-
-        var thirdCallback = function (err, response) {
-            if (err) return err;
-            params.input.text = context.telefone;
-            params.context = response.context;
-            watsonAssistant.message(params, lastCallback);
-        }
-
-        var lastCallback = function (err, response) {
-            if (err) return err;
-            params.input.text = context.rotina;
-            params.context = response.context;
-            watsonAssistant.message(params, callback);
-        }
-
-        params.input = {};
-        params.context = {};
-        return watsonAssistant.message(params, firstCallback);
+watsonAssistant.sendMessage = async (params) => {
+    if (params.input.text === '{{LOGGED_USER}}') { 
+        return mapUserEntities(params);
+    } else if (params.input.text === '{{NEW_TALK}}') {
+        return startNewTalk(params);
+    } else {
+        return sendMessagePromisse(params);
     }
-
-    if (params.input.text === '{{NEW_TALK}}') {
-        var firstCallback = function (err, response) {
-            if (err) return err;
-            params.input.text = '{{NEW_TALK}}';
-            params.context = response.context;
-            watsonAssistant.message(params, callback);
-        }
-
-        params.input = {};
-        params.context = {};
-        return watsonAssistant.message(params, firstCallback);
-    }
-
-    return watsonAssistant.message(params, callback);
 };
+
+function startNewTalk(params){
+    params.input = {};
+    params.context = {};
+
+    return sendMessagePromisse(params)
+    .then((response) => {
+        params.input.text = '{{NEW_TALK}}';
+        params.context = response.context;
+        return sendMessagePromisse(params);
+    })
+}
+
+function mapUserEntities(params){
+    var context = params.context;
+    params.input = {};
+    params.context = {};
+
+    return sendMessagePromisse(params)
+    .then((response) => {
+        params.input.text = '{{LOGGED_USER}}';
+        params.context = response.context;
+        return sendMessagePromisse(params);
+    })
+    .then((response) => {
+        params.input.text = context.nome;
+        params.context = response.context;
+        return sendMessagePromisse(params)
+    })
+    .then((response) => {
+        params.input.text = context.telefone;
+        params.context = response.context;
+        return sendMessagePromisse(params)
+    })
+    .then((response) => {
+        params.input.text = context.rotina;
+        params.context = response.context;
+        return sendMessagePromisse(params)
+    })
+}
+
+function sendMessagePromisse(params){
+    return new Promise((resolve, reject) => {
+        watsonAssistant.message(params, (err, response) => {
+            if(err) reject(err);
+            resolve(response);
+        })
+    })
+}
 
 module.exports = watsonAssistant;
