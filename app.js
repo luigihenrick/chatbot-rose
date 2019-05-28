@@ -1,40 +1,27 @@
 require('dotenv').config();
 const express = require('express');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const watson = require('./client-watson');
 
 const port = process.env.PORT || 3000;
 const app = express();
 
-var users = {};
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.connect(process.env.MONGO_URL);
+
+// Carrega os Models
+const User = require('./src/models/user');
+const Conversation = require('./src/models/conversation');
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.sendFile('public/index.html', { root: __dirname });
-});
+// Carrega as Rotas
+const indexRoute = require('./src/routes/index');
+const conversationRoute = require('./src/routes/conversation');
 
-app.post('/conversation/', (req, res) => {
-  const { text, context = {} } = req.body;
-
-  const params = {
-    input: { text },
-    workspace_id: process.env.WORKSPACE_ID,
-    context,
-  };
-
-  watson.sendMessage(params)
-  .then((response) => {
-    if (response != null) {
-      res.json(response);
-    } else {
-      res.status(500).json('Falha ao enviar mensagem, tente novamente.');
-    }
-  })
-  .catch((rej) => {
-    res.status(500).json(rej);
-  });
-});
-
+app.use('/', indexRoute);
+app.use('/conversation', conversationRoute);
 app.listen(port, () => console.log(`Running on port ${port}`));

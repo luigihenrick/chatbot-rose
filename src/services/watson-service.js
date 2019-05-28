@@ -1,4 +1,6 @@
 const AssistantV1 = require('watson-developer-cloud/assistant/v1');
+const userService = require('./user-service');
+const conversationService = require('./conversation-service');
 
 const watsonAssistant = new AssistantV1({
     iam_apikey: process.env.API_KEY,
@@ -6,7 +8,7 @@ const watsonAssistant = new AssistantV1({
     version: process.env.VERSION,
 });
 
-watsonAssistant.sendMessage = async (params) => {
+async function sendMessage(params) {
     if (params.input.text === '{{LOGGED_USER}}') { 
         return mapUserEntities(params);
     } else if (params.input.text === '{{NEW_TALK}}') {
@@ -29,6 +31,7 @@ function startNewTalk(params){
 }
 
 function mapUserEntities(params){
+    userService.addUser(params);
     var context = params.context;
     params.input = {};
     params.context = {};
@@ -57,6 +60,7 @@ function mapUserEntities(params){
 }
 
 function sendMessagePromisse(params){
+    conversationService.saveConversation(params);
     return new Promise((resolve, reject) => {
         watsonAssistant.message(params, (err, response) => {
             if(err) reject(err);
@@ -65,4 +69,4 @@ function sendMessagePromisse(params){
     })
 }
 
-module.exports = watsonAssistant;
+module.exports = { sendMessage };
