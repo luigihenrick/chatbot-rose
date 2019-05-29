@@ -1,8 +1,8 @@
-const AssistantV1 = require('watson-developer-cloud/assistant/v1');
+const assistantV1 = require('watson-developer-cloud/assistant/v1');
 const userService = require('./user-service');
 const conversationService = require('./conversation-service');
 
-const watsonAssistant = new AssistantV1({
+const watsonAssistant = new assistantV1({
     iam_apikey: process.env.API_KEY,
     url: process.env.URL,
     version: process.env.VERSION,

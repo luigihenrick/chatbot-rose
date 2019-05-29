@@ -13,11 +13,15 @@ const schema = new Schema({
         unique: true,
         trim: true,
     },
-    routine: {
+    password: {
+        type: String,
+        trim: true,
+    },
+    routine: [{
         type: String,
         required: true,
         trim: true,
-    },
+    }],
     active: {
         type: Boolean,
         required: true,

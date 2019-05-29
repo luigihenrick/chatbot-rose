@@ -19,9 +19,9 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // Carrega as Rotas
-const indexRoute = require('./src/routes/index');
-const conversationRoute = require('./src/routes/conversation');
+const indexController = require('./src/controllers/index');
+const conversationController = require('./src/controllers/conversation');
 
-app.use('/', indexRoute);
-app.use('/conversation', conversationRoute);
+app.use('/', indexController);
+app.use('/conversation', conversationController);
 app.listen(port, () => console.log(`Running on port ${port}`));
