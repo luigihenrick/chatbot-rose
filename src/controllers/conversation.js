@@ -3,12 +3,13 @@ const watsonService = require('../services/watson-service');
 const app = express();
 
 app.post('/', (req, res) => {
-    const { text, context = {} } = req.body;
+    const { text, context = {}, conversation = {} } = req.body;
   
     const params = {
       input: { text },
       workspace_id: process.env.WORKSPACE_ID,
       context,
+      conversation
     };
   
     watsonService.sendMessage(params)

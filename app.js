@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 const app = express();
 
+global.phoneReplaceRegex = '\\s|\\-';
+
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);

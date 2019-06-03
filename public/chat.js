@@ -2,7 +2,8 @@
     var Message;
     var chatbotData = {
         text : '',
-        context: {}
+        context: {},
+        conversation: {}
     };
     Message = function (arg) {
         this.text = arg.text, this.message_side = arg.message_side;
@@ -42,7 +43,9 @@
             if (text.trim() === '') {
                 return;
             }
-            $('.message_input').val('');
+            if (message_side === 'right') {
+                $('.message_input').val('');  
+            }
             $messages = $('.messages');
             // message_side = message_side === 'left' ? 'right' : 'left';
             message = new Message({
@@ -63,12 +66,15 @@
                     console.debug(xhr); console.debug(error);
                 },
                 success: function (data) {
+                    if (data.conversation !== null && data.conversation !== undefined){
+                        window.localStorage.setItem('chatbot_conversation', JSON.stringify(data.conversation));
+                        chatbotData.conversation = data.conversation;
+                    }
                     if (data.context !== null && data.context !== undefined){
-                        window.localStorage.setItem('chatbot_context', JSON.stringify(data.context));
                         chatbotData.context = data.context;
                     }
                     var timeToNext = 0;
-                    data.output.text.forEach(t => {
+                    data.text.forEach(t => {
                         timeToNext += (1000 + t.length * 20);
                         setTimeout(() => { sendMessage(t, 'left'); }, timeToNext)
                     });
@@ -96,11 +102,11 @@
             }
         });
 
-        var localData = window.localStorage.getItem('chatbot_context');
-        var botContext = !!localData ? JSON.parse(localData) : ''; 
-        if (!!botContext.rotina) {
-            chatbotData.context = botContext;
+        var localData = window.localStorage.getItem('chatbot_conversation');
+        var lastConversation = !!localData ? JSON.parse(localData) : ''; 
+        if (!!lastConversation.user_id) {
             chatbotData.text = '{{LOGGED_USER}}';
+            chatbotData.conversation = lastConversation;
             sendMessageToAssistant(chatbotData);
         } else {
             chatbotData.text = '{{NEW_TALK}}'

@@ -17,11 +17,11 @@ const schema = new Schema({
         type: String,
         trim: true,
     },
-    routine: [{
+    routine: {
         type: String,
         required: true,
         trim: true,
-    }],
+    },
     active: {
         type: Boolean,
         required: true,
