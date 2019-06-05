@@ -62,7 +62,11 @@
                 contentType: 'application/json',
                 data: JSON.stringify(chatbotData),
                 error: function(xhr, error){
-                    sendMessage('Ops, nem sempre as coisas funcionam como esperado, ocorreu algum erro ao enviar sua mensagem, por favor, tente novamente.', 'left');
+                    if (xhr.status === 401) {
+                        sendMessage('Falha ao validar sua senha, tente novamente mais tarde.', 'left');
+                    } else {
+                        sendMessage('Ops, nem sempre as coisas funcionam como esperado, ocorreu algum erro ao enviar sua mensagem, por favor, tente novamente.', 'left');
+                    }
                     console.debug(xhr); console.debug(error);
                 },
                 success: function (data) {
