@@ -5,39 +5,6 @@
       "intent": "usuario_responde_que_nao_esta_bem",
       "examples": [
         {
-          "text": "Não está indo bem"
-        },
-        {
-          "text": "Não tá indo bem"
-        },
-        {
-          "text": "Não tô bem"
-        },
-        {
-          "text": "N to bem"
-        },
-        {
-          "text": "N vai bem"
-        },
-        {
-          "text": "Péssimo"
-        },
-        {
-          "text": "Horrível"
-        },
-        {
-          "text": "Terrível"
-        },
-        {
-          "text": "Uma bosta"
-        },
-        {
-          "text": "Estão indo mal"
-        },
-        {
-          "text": "Nada bem"
-        },
-        {
           "text": "to na bad"
         },
         {
@@ -68,16 +35,49 @@
           "text": "Não estou bem"
         },
         {
-          "text": "Não to bem"
+          "text": "Muito ruim"
         },
         {
           "text": "Vai mal"
         },
         {
-          "text": "Muito ruim"
+          "text": "Não to bem"
+        },
+        {
+          "text": "Não está indo bem"
+        },
+        {
+          "text": "Não tá indo bem"
+        },
+        {
+          "text": "Não tô bem"
+        },
+        {
+          "text": "N to bem"
+        },
+        {
+          "text": "N vai bem"
         },
         {
           "text": "Muito mal"
+        },
+        {
+          "text": "Péssimo"
+        },
+        {
+          "text": "Horrível"
+        },
+        {
+          "text": "Terrível"
+        },
+        {
+          "text": "Uma bosta"
+        },
+        {
+          "text": "Estão indo mal"
+        },
+        {
+          "text": "Nada bem"
         }
       ],
       "description": ""
@@ -86,40 +86,40 @@
       "intent": "Usario_nao_se_sente_motivado_atividade",
       "examples": [
         {
-          "text": "Não to com vontade"
-        },
-        {
-          "text": "Não quero"
-        },
-        {
-          "text": "Não to a fim"
-        },
-        {
-          "text": "Não estou a fim"
+          "text": "n me sinto bem"
         },
         {
           "text": "Não estou motivad"
         },
         {
-          "text": "Não me sinto motivad"
+          "text": "Não estou a fim"
         },
         {
-          "text": "n me sinto bem"
+          "text": "Não to a fim"
         },
         {
-          "text": "Não me sinto bem"
+          "text": "Não quero"
         },
         {
-          "text": "Não tenho vontade"
+          "text": "Não quero fazer"
         },
         {
-          "text": "Não estou com vontade"
+          "text": "Não to com vontade"
         },
         {
           "text": "N to com vontade"
         },
         {
-          "text": "Não quero fazer"
+          "text": "Não estou com vontade"
+        },
+        {
+          "text": "Não tenho vontade"
+        },
+        {
+          "text": "Não me sinto motivad"
+        },
+        {
+          "text": "Não me sinto bem"
         }
       ],
       "description": "O usuário não se sente motivado a fazer a atividade"
@@ -131,29 +131,62 @@
           "text": "Muita"
         },
         {
-          "text": "não tenho dúvida"
-        },
-        {
-          "text": "Tenho"
+          "text": "Absoluta"
         },
         {
           "text": "Tenho certeza"
         },
         {
-          "text": "Absoluta"
-        },
-        {
-          "text": "Claro"
+          "text": "Tenho"
         },
         {
           "text": "Definitivamente"
+        },
+        {
+          "text": "não tenho dúvida"
+        },
+        {
+          "text": "Claro"
         }
       ],
       "description": "O usuário tem certeza de sua resposta"
     },
     {
+      "intent": "gerarRelatorio",
+      "examples": [
+        {
+          "text": "Quero gerar um relatorio"
+        },
+        {
+          "text": "Gerar Relatorio"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "General_Security_Assurance",
       "examples": [
+        {
+          "text": "Vocês contratam alguma empresa para auxiliar na proteção de dados?"
+        },
+        {
+          "text": "Você me ajudaria a manter minhas informações seguras?"
+        },
+        {
+          "text": "Existe um documento de perguntas frequentes para este chat-bot?"
+        },
+        {
+          "text": "Gostaríamos de apresentar uma solicitação de seguro para o aquecedor de fumaça"
+        },
+        {
+          "text": "Como eu posso saber que essa conversa não é um golpe?"
+        },
+        {
+          "text": "Como impedir o acesso não autorizado à minha conta?"
+        },
+        {
+          "text": "Esse chat é oficial?"
+        },
         {
           "text": "Este é um site de bate-papo confiável?"
         },
@@ -174,27 +207,6 @@
         },
         {
           "text": "Onde posso encontrar seu certificado de segurança?"
-        },
-        {
-          "text": "As informações do cartão de crédito são criptografadas e mantidas seguras?"
-        },
-        {
-          "text": "Você me ajudaria a manter minhas informações seguras?"
-        },
-        {
-          "text": "Existe um documento de perguntas frequentes para este chat-bot?"
-        },
-        {
-          "text": "Gostaríamos de apresentar uma solicitação de seguro para o aquecedor de fumaça"
-        },
-        {
-          "text": "Como eu posso saber que essa conversa não é um golpe?"
-        },
-        {
-          "text": "Como impedir o acesso não autorizado à minha conta?"
-        },
-        {
-          "text": "Esse chat é oficial?"
         },
         {
           "text": "O que você faz pela segurança de seus clientes?"
@@ -218,29 +230,32 @@
           "text": "Você pode garantir a privacidade desta conversa?"
         },
         {
-          "text": "Vocês contratam alguma empresa para auxiliar na proteção de dados?"
+          "text": "Como posso obter informações de perda?"
         },
         {
-          "text": "Como posso obter informações de perda?"
+          "text": "As informações do cartão de crédito são criptografadas e mantidas seguras?"
         }
       ],
       "description": "Exprima preocupações sobre a segurança do robô."
     },
     {
-      "intent": "Bot_Control_Standby",
+      "intent": "visualizarAtividades",
       "examples": [
         {
-          "text": "Já volto."
+          "text": "poderia me mostrar todas as atividades"
         },
         {
-          "text": "Eu voltarei logo."
+          "text": "visualizar atividades"
         },
         {
-          "text": "Pode me esperar, por favor?"
-        },
-        {
-          "text": "Me dê um segundo."
-        },
+          "text": "quero ver todas as minhas atividades cadastradas"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Bot_Control_Standby",
+      "examples": [
         {
           "text": "Me dê um minuto, por favor."
         },
@@ -260,10 +275,25 @@
           "text": "Por favor espere um minuto"
         },
         {
+          "text": "Já volto."
+        },
+        {
+          "text": "Eu voltarei logo."
+        },
+        {
           "text": "Eu preciso de um minuto."
         },
         {
           "text": "Vou dar uma saída rápida."
+        },
+        {
+          "text": "Por favor, aguarde."
+        },
+        {
+          "text": "Pode me esperar, por favor?"
+        },
+        {
+          "text": "Me dê um segundo."
         },
         {
           "text": "Estamos quase lá."
@@ -278,16 +308,13 @@
           "text": "Saí para uma pausa."
         },
         {
-          "text": "Por favor aguarde minha volta."
+          "text": "Preciso de uma pausa, espere por favor."
         },
         {
           "text": "Preciso de uma pausa."
         },
         {
-          "text": "Preciso de uma pausa, espere por favor."
-        },
-        {
-          "text": "Por favor, aguarde."
+          "text": "Por favor aguarde minha volta."
         }
       ],
       "description": "Indique um atraso no fornecimento de dados para o robô."
@@ -296,7 +323,7 @@
       "intent": "usuario_nao_tem_certeza",
       "examples": [
         {
-          "text": "estou em dúvida"
+          "text": "pensando"
         },
         {
           "text": "Não tenho certeza"
@@ -308,7 +335,7 @@
           "text": "não sei dizer"
         },
         {
-          "text": "pensando"
+          "text": "estou em dúvida"
         },
         {
           "text": "Estou pensando"
@@ -335,6 +362,9 @@
           "text": "me conte sobre a terapia"
         },
         {
+          "text": "O que é a terapia cognitiva ?"
+        },
+        {
           "text": "O que seria a terapia"
         },
         {
@@ -342,9 +372,6 @@
         },
         {
           "text": "Me fale sobre a terapia"
-        },
-        {
-          "text": "O que é a terapia cognitiva ?"
         }
       ],
       "description": ""
@@ -353,13 +380,40 @@
       "intent": "usuario_responde_que_esta_bem",
       "examples": [
         {
+          "text": "Está indo bem"
+        },
+        {
+          "text": "De boas"
+        },
+        {
+          "text": "Estou ótimo"
+        },
+        {
+          "text": "Vou bem"
+        },
+        {
+          "text": "Suave"
+        },
+        {
+          "text": "Indo ótimo"
+        },
+        {
           "text": "Estou bem"
+        },
+        {
+          "text": "Indo bem"
         },
         {
           "text": "Muito bem"
         },
         {
-          "text": "Indo bem"
+          "text": "Top"
+        },
+        {
+          "text": "ótimo"
+        },
+        {
+          "text": "Perfeito"
         },
         {
           "text": "Estou ótima"
@@ -384,33 +438,6 @@
         },
         {
           "text": "Uma maravilha"
-        },
-        {
-          "text": "Perfeito"
-        },
-        {
-          "text": "ótimo"
-        },
-        {
-          "text": "Top"
-        },
-        {
-          "text": "Está indo bem"
-        },
-        {
-          "text": "De boas"
-        },
-        {
-          "text": "Estou ótimo"
-        },
-        {
-          "text": "Vou bem"
-        },
-        {
-          "text": "Suave"
-        },
-        {
-          "text": "Indo ótimo"
         }
       ],
       "description": ""
@@ -418,6 +445,9 @@
     {
       "intent": "Bot_Control_Ignore_Undo",
       "examples": [
+        {
+          "text": "Vamos fazê-lo novamente!"
+        },
         {
           "text": "Podemos fazê-lo novamente?"
         },
@@ -429,9 +459,6 @@
         },
         {
           "text": "Vamos para o próximo passo."
-        },
-        {
-          "text": "Vamos fazê-lo novamente!"
         },
         {
           "text": "Vamos voltar para o que eu disse originalmente."
@@ -470,28 +497,10 @@
       "intent": "saudacao_usuario",
       "examples": [
         {
-          "text": "Oi, tudo bem?"
-        },
-        {
-          "text": "Oi, td bem?"
-        },
-        {
-          "text": "Oi"
-        },
-        {
-          "text": "Olá"
-        },
-        {
-          "text": "Oi, Rose"
-        },
-        {
-          "text": "Oi Rose"
+          "text": "Oi td bem"
         },
         {
           "text": "Oi Rose td bem"
-        },
-        {
-          "text": "Oi td bem"
         },
         {
           "text": "Oi Rose td bem?"
@@ -503,10 +512,28 @@
           "text": "Olá Rose"
         },
         {
-          "text": "Oi Rose, tudo bem?"
+          "text": "Oi, Rose"
+        },
+        {
+          "text": "Oi, tudo bem?"
         },
         {
           "text": "Olá, Rose"
+        },
+        {
+          "text": "Oi Rose, tudo bem?"
+        },
+        {
+          "text": "Oi, td bem?"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Oi Rose"
         }
       ],
       "description": ""
@@ -516,12 +543,6 @@
       "examples": [
         {
           "text": "Ultimamente venho estando"
-        },
-        {
-          "text": "Estou"
-        },
-        {
-          "text": "Hoje Estou"
         },
         {
           "text": "eu to"
@@ -540,6 +561,12 @@
         },
         {
           "text": "Ultimamente venho"
+        },
+        {
+          "text": "Hoje Estou"
+        },
+        {
+          "text": "Estou"
         }
       ],
       "description": ""
@@ -548,49 +575,19 @@
       "intent": "Bot_Control_Clarification",
       "examples": [
         {
-          "text": "Desculpe! Poderia repetir mais uma vez?"
-        },
-        {
-          "text": "Como é?"
-        },
-        {
-          "text": "A sua informação não está clara."
+          "text": "O que você me deu não é exatamente o que estou procurando."
         },
         {
           "text": "Acho que eu não fui claro."
         },
         {
-          "text": "Você não entendeu o que eu perguntei."
+          "text": "A sua informação não está clara."
         },
         {
-          "text": "Você não foi claro."
+          "text": "Como é?"
         },
         {
-          "text": "Você pode repetir, por favor?"
-        },
-        {
-          "text": "Sobre o que você está falando?"
-        },
-        {
-          "text": "Suas informações estão confusas."
-        },
-        {
-          "text": "Eu não entendi bem o que você me disse."
-        },
-        {
-          "text": "Você não entendeu o que eu disse."
-        },
-        {
-          "text": "Preciso que você repita a informação."
-        },
-        {
-          "text": "O que você me deu não é exatamente o que estou procurando."
-        },
-        {
-          "text": "O que você quer dizer com isso?"
-        },
-        {
-          "text": "Pode tentar dizê-lo com mais clareza, por favor?"
+          "text": "Desculpe! Poderia repetir mais uma vez?"
         },
         {
           "text": "Diga isso novamente, por favor. Eu não ouvi."
@@ -606,6 +603,36 @@
         },
         {
           "text": "Me desculpe, uma vez mais."
+        },
+        {
+          "text": "Você não entendeu o que eu perguntei."
+        },
+        {
+          "text": "O que você quer dizer com isso?"
+        },
+        {
+          "text": "Pode tentar dizê-lo com mais clareza, por favor?"
+        },
+        {
+          "text": "Preciso que você repita a informação."
+        },
+        {
+          "text": "Você não entendeu o que eu disse."
+        },
+        {
+          "text": "Eu não entendi bem o que você me disse."
+        },
+        {
+          "text": "Suas informações estão confusas."
+        },
+        {
+          "text": "Sobre o que você está falando?"
+        },
+        {
+          "text": "Você pode repetir, por favor?"
+        },
+        {
+          "text": "Você não foi claro."
         }
       ],
       "description": "Repita ou esclareça a última declaração."
@@ -617,13 +644,13 @@
           "text": "Quero cadastrar Atividade"
         },
         {
+          "text": "posso cadastrar uma atividade ?"
+        },
+        {
           "text": "cadastrar Atividade"
         },
         {
           "text": "Quero cadastrar uma ativade"
-        },
-        {
-          "text": "posso cadastrar uma atividade ?"
         }
       ],
       "description": ""
@@ -633,6 +660,15 @@
       "examples": [
         {
           "text": "Eu preciso de ajuda, alguém pode me ajudar?"
+        },
+        {
+          "text": "Oi Tom, quais tipos de coisas você pode me ajudar com o telefone?"
+        },
+        {
+          "text": "Oi Tom. Que tipo de coisas você pode fazer por mim?"
+        },
+        {
+          "text": "O que você pode fazer para me ajudar"
         },
         {
           "text": "Posso verificar quais opções estão disponíveis com o agente?"
@@ -650,25 +686,25 @@
           "text": "Quero saber com que você pode me ajudar./Quero saber com que coisas você pode me ajudar."
         },
         {
-          "text": "Tom pode listar quais áreas você pode fornecer ajuda?"
-        },
-        {
-          "text": "Você pode resolver um caso jurídico se eu lhe der os fatos?"
-        },
-        {
-          "text": "Você pode responder uma pergunta frequente sobre o agente?"
+          "text": "Quem pode me ajudar a realizar meu pedido."
         },
         {
           "text": "Continue esperando por favor"
         },
         {
-          "text": "Quem pode me ajudar a realizar meu pedido."
+          "text": "Você pode responder uma pergunta frequente sobre o agente?"
         },
         {
-          "text": "Ajude-me a ler o medidor e registrar o uso"
+          "text": "Você pode resolver um caso jurídico se eu lhe der os fatos?"
+        },
+        {
+          "text": "Tom pode listar quais áreas você pode fornecer ajuda?"
         },
         {
           "text": "O que você mais gosta de fazer?"
+        },
+        {
+          "text": "Ajude-me a ler o medidor e registrar o uso"
         },
         {
           "text": "Eu gostaria de saber como você pode me ajudar"
@@ -678,15 +714,6 @@
         },
         {
           "text": "Eu estou tendo alguns problemas e gostaria de alguma informação sobre como obter alguma ajuda"
-        },
-        {
-          "text": "Oi Tom, quais tipos de coisas você pode me ajudar com o telefone?"
-        },
-        {
-          "text": "Oi Tom. Que tipo de coisas você pode fazer por mim?"
-        },
-        {
-          "text": "O que você pode fazer para me ajudar"
         }
       ],
       "description": "Solicite recursos de robô."
@@ -695,16 +722,16 @@
       "intent": "usuario_responde_que_nao_sabe_como_esta",
       "examples": [
         {
-          "text": "N sei"
-        },
-        {
-          "text": "Mais ou menos"
+          "text": "Não sei dizer"
         },
         {
           "text": "Não sei muito bem"
         },
         {
           "text": "Não sei"
+        },
+        {
+          "text": "+ ou -"
         },
         {
           "text": "Nao sei"
@@ -716,10 +743,10 @@
           "text": "Estou em dúvida"
         },
         {
-          "text": "Não sei dizer"
+          "text": "N sei"
         },
         {
-          "text": "+ ou -"
+          "text": "Mais ou menos"
         }
       ],
       "description": ""
@@ -728,13 +755,13 @@
       "intent": "demonstrarMenu",
       "examples": [
         {
-          "text": "Me demonstre o menu"
+          "text": "Quero ver tudo o que eu posso fazer"
         },
         {
           "text": "Me mostre o menu"
         },
         {
-          "text": "Quero ver tudo o que eu posso fazer"
+          "text": "Me demonstre o menu"
         }
       ],
       "description": ""
@@ -743,19 +770,16 @@
       "intent": "Bot_Control_Confirm_Presence",
       "examples": [
         {
-          "text": "Você está aí?"
+          "text": "Eu não estou ouvindo, pode falar mais alto?"
         },
         {
-          "text": "Fale algo se você estiver aí."
-        },
-        {
-          "text": "Você precisa de mais tempo?"
+          "text": "Eu estou de volta."
         },
         {
           "text": "Você foi a algum lugar?"
         },
         {
-          "text": "Tem alguém na linha?"
+          "text": "Você ouviu o que perguntei?"
         },
         {
           "text": "O que está acontecendo?"
@@ -764,10 +788,7 @@
           "text": "Tem alguém aí?"
         },
         {
-          "text": "Eu estou de volta."
-        },
-        {
-          "text": "Você ouviu o que perguntei?"
+          "text": "Tem alguém na linha?"
         },
         {
           "text": "Você ouviu o que eu disse?"
@@ -779,16 +800,22 @@
           "text": "Onde você está localizada? Não consigo ouvir nada."
         },
         {
+          "text": "Vamos quebrar o silêncio?"
+        },
+        {
+          "text": "Você está aí?"
+        },
+        {
           "text": "Você caiu?"
+        },
+        {
+          "text": "Você precisa de mais tempo?"
         },
         {
           "text": "Você ainda está aqui comigo?"
         },
         {
-          "text": "Vamos quebrar o silêncio?"
-        },
-        {
-          "text": "Eu não estou ouvindo, pode falar mais alto?"
+          "text": "Fale algo se você estiver aí."
         }
       ],
       "description": "Peça ao robô para indicar que está disponível."
@@ -797,19 +824,19 @@
       "intent": "usuario_vai_tentar_fazer_atividade",
       "examples": [
         {
-          "text": "Vou tentar"
-        },
-        {
-          "text": "Vou fazer"
-        },
-        {
-          "text": "Posso tentar"
+          "text": "Vou lá"
         },
         {
           "text": "Mudei de ideia"
         },
         {
-          "text": "Vou lá"
+          "text": "Posso tentar"
+        },
+        {
+          "text": "Vou tentar"
+        },
+        {
+          "text": "Vou fazer"
         }
       ],
       "description": "O usuário mudou de ideia e vai tentar fazer a atividade"
@@ -818,22 +845,7 @@
       "intent": "General_Human_or_Bot",
       "examples": [
         {
-          "text": "Estou conversando com uma pessoa ou com uma IA?"
-        },
-        {
-          "text": "Estou conversando com um humano?"
-        },
-        {
-          "text": "Estou conversando com um robô?"
-        },
-        {
-          "text": "Voce é um robo ?"
-        },
-        {
-          "text": "Você é uma pessoa real ou um robô?"
-        },
-        {
-          "text": "Eu estou conversando com o Watson?"
+          "text": "Com quem estou falando?"
         },
         {
           "text": "Isso é um computador?"
@@ -869,10 +881,25 @@
           "text": "Como você pode provar que é humano?"
         },
         {
-          "text": "Com quem estou falando?"
+          "text": "Diga-me, você é humano ou não?"
         },
         {
-          "text": "Diga-me, você é humano ou não?"
+          "text": "Estou conversando com uma pessoa ou com uma IA?"
+        },
+        {
+          "text": "Estou conversando com um humano?"
+        },
+        {
+          "text": "Estou conversando com um robô?"
+        },
+        {
+          "text": "Voce é um robo ?"
+        },
+        {
+          "text": "Você é uma pessoa real ou um robô?"
+        },
+        {
+          "text": "Eu estou conversando com o Watson?"
         }
       ],
       "description": "Pergunte se está falando com um humano ou um robô."
@@ -881,22 +908,7 @@
       "intent": "Bot_Control_Start_Over",
       "examples": [
         {
-          "text": "Posso, favor, começar do início?"
-        },
-        {
-          "text": "Pode repetir a partir do começo?"
-        },
-        {
-          "text": "Inicie novamente a partir do início"
-        },
-        {
-          "text": "Eu quero voltar ao topo"
-        },
-        {
-          "text": "Faça o pedido novamente"
-        },
-        {
-          "text": "Vá ao início."
+          "text": "Na verdade, vamos começar novamente."
         },
         {
           "text": "De volta ao topo."
@@ -905,19 +917,19 @@
           "text": "Eu preciso entender desde o começo."
         },
         {
-          "text": "Na verdade, vamos começar novamente."
+          "text": "Eu preciso reiniciar."
         },
         {
           "text": "Eu quero ver desde o início."
         },
         {
-          "text": "Eu preciso reiniciar."
-        },
-        {
           "text": "Nós precisamos voltar ao início e começar novamente."
         },
         {
-          "text": "Reinicie novamente desde o começo."
+          "text": "Por favor não faça nada, vamos voltar."
+        },
+        {
+          "text": "Vamos tentar isto de novo desde o começo."
         },
         {
           "text": "Tente uma vez mais."
@@ -930,18 +942,6 @@
         },
         {
           "text": "Por favor inicie do começo."
-        },
-        {
-          "text": "Tente novamente."
-        },
-        {
-          "text": "Vamos começar novamente."
-        },
-        {
-          "text": "Por favor não faça nada, vamos voltar."
-        },
-        {
-          "text": "Vamos tentar isto de novo desde o começo."
         },
         {
           "text": "Vamos desistir disso e voltar ao começo."
@@ -957,6 +957,33 @@
         },
         {
           "text": "De volta ao começo."
+        },
+        {
+          "text": "Posso, favor, começar do início?"
+        },
+        {
+          "text": "Pode repetir a partir do começo?"
+        },
+        {
+          "text": "Inicie novamente a partir do início"
+        },
+        {
+          "text": "Eu quero voltar ao topo"
+        },
+        {
+          "text": "Reinicie novamente desde o começo."
+        },
+        {
+          "text": "Tente novamente."
+        },
+        {
+          "text": "Faça o pedido novamente"
+        },
+        {
+          "text": "Vá ao início."
+        },
+        {
+          "text": "Vamos começar novamente."
         }
       ],
       "description": "Reinicie o robô ou fluxo corrente."
@@ -965,7 +992,7 @@
       "intent": "General_Jokes",
       "examples": [
         {
-          "text": "Estou entediado. Entretenha-me!"
+          "text": "Estou entediado."
         },
         {
           "text": "Está se divertindo?"
@@ -974,7 +1001,7 @@
           "text": "Conte outra!"
         },
         {
-          "text": "Estou entediado."
+          "text": "Estou entediado. Entretenha-me!"
         },
         {
           "text": "Eu não sou tedioso, você é."
@@ -1073,64 +1100,64 @@
       "intent": "General_Connect_to_Agent",
       "examples": [
         {
-          "text": "Posso falar com um agente sobre minha conta"
-        },
-        {
-          "text": "Ok deixe-me tentar outra vez. Eu estou tentando falar com um ser humano para resolver diversos problemas faz tempão e dado que o meu telefone bloqueado eu preciso falar diretamente com alguém que entende a conta e pode consertar isso"
-        },
-        {
           "text": "Eu vou falar com um agente/ Eu vou falar com um agente de suporte."
         },
         {
-          "text": "Existe alguém com quem eu posso realmente falar de verdade?"
-        },
-        {
-          "text": "Por favor, você pode entrar em contato comigo com um agente humano?"
-        },
-        {
-          "text": "Por favor pode me conectar com a Vaishali K? Minha conversação foi desconectada"
-        },
-        {
-          "text": "Pode me provar que é um representante?"
-        },
-        {
-          "text": "Bem agora eu gostaria de falar com um agente sobre algumas cobranças"
-        },
-        {
-          "text": "Eu preciso falar com um representante. Como posso fazer isso?"
-        },
-        {
-          "text": "Eu quero contatar um agente/Eu quero entrar em contato com um agente"
-        },
-        {
-          "text": "Por favor me conectar a um agente humano que é fluente em inglês."
-        },
-        {
-          "text": "Oi Tom. Eu queria saber se você poderia me direconionar/conectar para um agente humano para que eu possa completar meu pedido?"
-        },
-        {
-          "text": "Isso é muito frustrante, eu quero falar com uma pessoa de verdade real."
-        },
-        {
-          "text": "Posso ter informações de contato para falar com um agente ao vivo."
-        },
-        {
-          "text": "Preciso contatar a um atendente"
-        },
-        {
-          "text": "Você pode me enviar um número de telefone para falar com um representante de vendas?"
-        },
-        {
-          "text": "Você pode por favor me transferir para alguém que possa me ajudar, eu mandei um e-mail para você e você não leu direito e simplesmente saiu."
-        },
-        {
-          "text": "Eu quero tentar o seu agente virtual."
+          "text": "Você pode me conectar com uma pessoa real?"
         },
         {
           "text": "Quero falar com alguém de outra área."
         },
         {
-          "text": "Você pode me conectar com uma pessoa real?"
+          "text": "Eu quero tentar o seu agente virtual."
+        },
+        {
+          "text": "Você pode por favor me transferir para alguém que possa me ajudar, eu mandei um e-mail para você e você não leu direito e simplesmente saiu."
+        },
+        {
+          "text": "Você pode me enviar um número de telefone para falar com um representante de vendas?"
+        },
+        {
+          "text": "Preciso contatar a um atendente"
+        },
+        {
+          "text": "Posso ter informações de contato para falar com um agente ao vivo."
+        },
+        {
+          "text": "Isso é muito frustrante, eu quero falar com uma pessoa de verdade real."
+        },
+        {
+          "text": "Oi Tom. Eu queria saber se você poderia me direconionar/conectar para um agente humano para que eu possa completar meu pedido?"
+        },
+        {
+          "text": "Por favor me conectar a um agente humano que é fluente em inglês."
+        },
+        {
+          "text": "Eu quero contatar um agente/Eu quero entrar em contato com um agente"
+        },
+        {
+          "text": "Eu preciso falar com um representante. Como posso fazer isso?"
+        },
+        {
+          "text": "Bem agora eu gostaria de falar com um agente sobre algumas cobranças"
+        },
+        {
+          "text": "Pode me provar que é um representante?"
+        },
+        {
+          "text": "Por favor pode me conectar com a Vaishali K? Minha conversação foi desconectada"
+        },
+        {
+          "text": "Por favor, você pode entrar em contato comigo com um agente humano?"
+        },
+        {
+          "text": "Posso falar com um agente sobre minha conta"
+        },
+        {
+          "text": "Existe alguém com quem eu posso realmente falar de verdade?"
+        },
+        {
+          "text": "Ok deixe-me tentar outra vez. Eu estou tentando falar com um ser humano para resolver diversos problemas faz tempão e dado que o meu telefone bloqueado eu preciso falar diretamente com alguém que entende a conta e pode consertar isso"
         }
       ],
       "description": "Solicite um agente humano."
@@ -1138,6 +1165,39 @@
     {
       "intent": "General_Negative_Feedback",
       "examples": [
+        {
+          "text": "Porra, como posso falar com uma pessoa real?"
+        },
+        {
+          "text": "Você não vale nada."
+        },
+        {
+          "text": "Você é ruim mesmo?"
+        },
+        {
+          "text": "Vá para a puta que pariu!"
+        },
+        {
+          "text": "Vá para o inferno!"
+        },
+        {
+          "text": "Vá se foder!"
+        },
+        {
+          "text": "Você é chato?"
+        },
+        {
+          "text": "Você está me entediando."
+        },
+        {
+          "text": "Seja bom uma vez na vida."
+        },
+        {
+          "text": "Sua mãe."
+        },
+        {
+          "text": "Tchau, vagabunda."
+        },
         {
           "text": "Todo mundo te odeia."
         },
@@ -1158,39 +1218,6 @@
         },
         {
           "text": "Por que você é retardado?"
-        },
-        {
-          "text": "Porra, como posso falar com uma pessoa real?"
-        },
-        {
-          "text": "Você não vale nada."
-        },
-        {
-          "text": "Você é ruim mesmo?"
-        },
-        {
-          "text": "Vá para a puta que pariu!"
-        },
-        {
-          "text": "Vá para o inferno!"
-        },
-        {
-          "text": "Sua mãe."
-        },
-        {
-          "text": "Você é chato?"
-        },
-        {
-          "text": "Vá se foder!"
-        },
-        {
-          "text": "Você está me entediando."
-        },
-        {
-          "text": "Seja bom uma vez na vida."
-        },
-        {
-          "text": "Tchau, vagabunda."
         }
       ],
       "description": "Expresse feedback desfavorável."
@@ -1199,40 +1226,34 @@
       "intent": "Bot_Control_Approve_Response",
       "examples": [
         {
-          "text": "É disso que preciso."
+          "text": "Você me entende."
         },
         {
           "text": "Genial!"
         },
         {
-          "text": "Com certeza. Estou empolgado com isso."
-        },
-        {
           "text": "Ignore o que eu falei."
-        },
-        {
-          "text": "Você me entende."
-        },
-        {
-          "text": "Afirmativo! É por isso que eu estava procurando."
-        },
-        {
-          "text": "Bom trabalho."
-        },
-        {
-          "text": "Com certeza!"
-        },
-        {
-          "text": "Eu gostei disso."
-        },
-        {
-          "text": "Isso está certo."
         },
         {
           "text": "Muito bem. Vamos fazê-lo."
         },
         {
           "text": "Nós precisamos exatamente disso."
+        },
+        {
+          "text": "Sim, é isso!"
+        },
+        {
+          "text": "Ótimo."
+        },
+        {
+          "text": "Você leu minha mente."
+        },
+        {
+          "text": "Isso está certo."
+        },
+        {
+          "text": "Eu gostei disso."
         },
         {
           "text": "Está muito bom."
@@ -1247,16 +1268,22 @@
           "text": "Essa é a resposta apropriada."
         },
         {
-          "text": "Você leu minha mente."
+          "text": "É disso que preciso."
         },
         {
-          "text": "Ótimo."
+          "text": "Com certeza. Estou empolgado com isso."
         },
         {
-          "text": "Sim, é isso!"
+          "text": "Com certeza!"
         },
         {
           "text": "É exatamente disso que preciso."
+        },
+        {
+          "text": "Bom trabalho."
+        },
+        {
+          "text": "Afirmativo! É por isso que eu estava procurando."
         }
       ],
       "description": "Confirme que a resposta satisfaz uma pergunta."
@@ -1265,25 +1292,7 @@
       "intent": "Usuario_tem_evento_impossibilita_atividade",
       "examples": [
         {
-          "text": "preciso ir"
-        },
-        {
-          "text": "Problema"
-        },
-        {
-          "text": "preciso fazer"
-        },
-        {
-          "text": "Acidente"
-        },
-        {
-          "text": "Aconteceu"
-        },
-        {
           "text": "vou precisar"
-        },
-        {
-          "text": "tenho que"
         },
         {
           "text": "Resolver"
@@ -1293,6 +1302,24 @@
         },
         {
           "text": "Pendência"
+        },
+        {
+          "text": "preciso ir"
+        },
+        {
+          "text": "Problema"
+        },
+        {
+          "text": "Acidente"
+        },
+        {
+          "text": "Aconteceu"
+        },
+        {
+          "text": "preciso fazer"
+        },
+        {
+          "text": "tenho que"
         }
       ],
       "description": "O usuário tem um compromisso (ou evento) que impossibilita fazer a atividade"
@@ -1301,55 +1328,31 @@
       "intent": "Bot_Control_Reject_Response",
       "examples": [
         {
-          "text": "Eu não falei sobre isso."
-        },
-        {
-          "text": "O que você me deu não foi exatamente o que pedi."
-        },
-        {
-          "text": "Não estou entendendo."
-        },
-        {
           "text": "Isso não é o que quero dizer."
-        },
-        {
-          "text": "Essa parece ser a resposta errada."
-        },
-        {
-          "text": "Isso estava errado, tente novamente."
-        },
-        {
-          "text": "Você não compreendeu o que perguntei."
-        },
-        {
-          "text": "Você não entendeu o que eu pedi."
-        },
-        {
-          "text": "Você não faz idéia."
-        },
-        {
-          "text": "Isso não estava correto. Esqueçamos."
-        },
-        {
-          "text": "Você está me entendendo mal."
-        },
-        {
-          "text": "O que você me deu não é o que eu estava procurando."
-        },
-        {
-          "text": "A resposta está incorreta."
-        },
-        {
-          "text": "Essa não foi a minha intenção."
-        },
-        {
-          "text": "Eu não acho que essa seja a resposta."
         },
         {
           "text": "Eu não disse isso."
         },
         {
           "text": "Não é isso."
+        },
+        {
+          "text": "Isso não estava correto. Esqueçamos."
+        },
+        {
+          "text": "Você não faz idéia."
+        },
+        {
+          "text": "Você não entendeu o que eu pedi."
+        },
+        {
+          "text": "Você não compreendeu o que perguntei."
+        },
+        {
+          "text": "Isso estava errado, tente novamente."
+        },
+        {
+          "text": "Você está me entendendo mal."
         },
         {
           "text": "Eu não quero isso."
@@ -1361,7 +1364,31 @@
           "text": "Eu não preciso disso."
         },
         {
+          "text": "Eu não falei sobre isso."
+        },
+        {
           "text": "Eu não entendo o que você está dizendo."
+        },
+        {
+          "text": "O que você me deu não foi exatamente o que pedi."
+        },
+        {
+          "text": "Não estou entendendo."
+        },
+        {
+          "text": "O que você me deu não é o que eu estava procurando."
+        },
+        {
+          "text": "A resposta está incorreta."
+        },
+        {
+          "text": "Essa não foi a minha intenção."
+        },
+        {
+          "text": "Essa parece ser a resposta errada."
+        },
+        {
+          "text": "Eu não acho que essa seja a resposta."
         }
       ],
       "description": "Indique que a resposta do robô não aborda uma questão."
@@ -1369,18 +1396,6 @@
     {
       "intent": "resposta_negativa",
       "examples": [
-        {
-          "text": "Não quero"
-        },
-        {
-          "text": "Não pretendo"
-        },
-        {
-          "text": "n"
-        },
-        {
-          "text": "nop"
-        },
         {
           "text": "nem ferrando"
         },
@@ -1392,6 +1407,18 @@
         },
         {
           "text": "Não vou"
+        },
+        {
+          "text": "Não quero"
+        },
+        {
+          "text": "Não pretendo"
+        },
+        {
+          "text": "n"
+        },
+        {
+          "text": "nop"
         }
       ],
       "description": ""
@@ -1400,43 +1427,13 @@
       "intent": "Bot_Control_Change_Subject",
       "examples": [
         {
-          "text": "Quero falar de outra coisa."
-        },
-        {
-          "text": "Esse assunto não tem nada a ver com o que preciso."
-        },
-        {
-          "text": "Esse assunto é irrelevante."
-        },
-        {
           "text": "Quero ajuda sobre outra coisa."
-        },
-        {
-          "text": "Vamos mudar de assunto?"
         },
         {
           "text": "Vamos falar sobre outra coisa."
         },
         {
           "text": "Vamos falar de outro assunto?"
-        },
-        {
-          "text": "Sobre o que mais podemos falar?"
-        },
-        {
-          "text": "Quero lidar com outro problema."
-        },
-        {
-          "text": "Vamos mudar de assunto."
-        },
-        {
-          "text": "Preciso de outra coisa."
-        },
-        {
-          "text": "Preciso de algo totalmente diferente."
-        },
-        {
-          "text": "Podemos falar sobre outra coisa?"
         },
         {
           "text": "Não tenho mais o que falar sobre isso."
@@ -1455,6 +1452,36 @@
         },
         {
           "text": "Esse assunto não tem nada a ver."
+        },
+        {
+          "text": "Sobre o que mais podemos falar?"
+        },
+        {
+          "text": "Quero lidar com outro problema."
+        },
+        {
+          "text": "Quero falar de outra coisa."
+        },
+        {
+          "text": "Vamos mudar de assunto."
+        },
+        {
+          "text": "Preciso de outra coisa."
+        },
+        {
+          "text": "Preciso de algo totalmente diferente."
+        },
+        {
+          "text": "Podemos falar sobre outra coisa?"
+        },
+        {
+          "text": "Esse assunto não tem nada a ver com o que preciso."
+        },
+        {
+          "text": "Esse assunto é irrelevante."
+        },
+        {
+          "text": "Vamos mudar de assunto?"
         }
       ],
       "description": "Mude para um tópico diferente."
@@ -1463,13 +1490,10 @@
       "intent": "General_Greetings",
       "examples": [
         {
-          "text": "Como estão as coisas aí?"
+          "text": "Bom dia, como você está?"
         },
         {
-          "text": "Obrigado só pensei de dar um oi como seu nome apareceu"
-        },
-        {
-          "text": "Meu querido amigo que prazer é falar com você se você pudesse imaginar"
+          "text": "Eu gostaria de conversar com o Watson."
         },
         {
           "text": "Eu tenho algumas perguntas, por favor, deixe-me falar primeiro"
@@ -1478,19 +1502,22 @@
           "text": "Eu não pedi para falar com um agente. Eu estava falando olá/oi para você"
         },
         {
-          "text": "Eu gostaria de conversar com o Watson."
+          "text": "Obrigado só pensei de dar um oi como seu nome apareceu"
         },
         {
-          "text": "Bom dia, como você está?"
+          "text": "Meu querido amigo que prazer é falar com você se você pudesse imaginar"
         },
         {
-          "text": "Boa tarde , você está ai?"
+          "text": "Como estão as coisas aí?"
+        },
+        {
+          "text": "Olá, pode me ajudar?"
         },
         {
           "text": "Ei, você está aí?"
         },
         {
-          "text": "Olá, pode me ajudar?"
+          "text": "Boa tarde , você está ai?"
         }
       ],
       "description": "Cumprimente o robô."
@@ -1499,28 +1526,22 @@
       "intent": "General_Ending",
       "examples": [
         {
-          "text": "Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!"
+          "text": "Falo contigo depois. Tchau"
         },
         {
-          "text": "Obrigada, tchau!"
+          "text": "Você foi de pouca ajuda, por isso não quero falar com você mais, tchau"
         },
         {
-          "text": "Obrigado pela sua ajuda, mas ainda estou confuso…tchau"
+          "text": "Volto mais tarde."
         },
         {
-          "text": "pare esta sessão agora..Tchau"
+          "text": "Tudo bem, eu tenho tudo o que eu precisava"
         },
         {
-          "text": "Ok, isso é tudo que eu preciso para agora."
+          "text": "Com licença, tenho que ir agora"
         },
         {
-          "text": "Obrigado por responder todas as minhas perguntas. Tchau"
-        },
-        {
-          "text": "Vou sair agora. Tchau"
-        },
-        {
-          "text": "Vamos dar uma pausa e tentar novamente mais tarde..Tchau"
+          "text": "Vejo você mais tarde."
         },
         {
           "text": "Quero encerrar a conversa, obrigado."
@@ -1544,28 +1565,34 @@
           "text": "Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso"
         },
         {
-          "text": "Falo contigo depois. Tchau"
-        },
-        {
           "text": "Me tire daqui."
         },
         {
           "text": "Te desejo o melhor de sorte..Tchau"
         },
         {
-          "text": "Com licença, tenho que ir agora"
+          "text": "Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!"
         },
         {
-          "text": "Tudo bem, eu tenho tudo o que eu precisava"
+          "text": "Obrigada, tchau!"
         },
         {
-          "text": "Volto mais tarde."
+          "text": "Obrigado pela sua ajuda, mas ainda estou confuso…tchau"
         },
         {
-          "text": "Você foi de pouca ajuda, por isso não quero falar com você mais, tchau"
+          "text": "pare esta sessão agora..Tchau"
         },
         {
-          "text": "Vejo você mais tarde."
+          "text": "Ok, isso é tudo que eu preciso para agora."
+        },
+        {
+          "text": "Obrigado por responder todas as minhas perguntas. Tchau"
+        },
+        {
+          "text": "Vou sair agora. Tchau"
+        },
+        {
+          "text": "Vamos dar uma pausa e tentar novamente mais tarde..Tchau"
         }
       ],
       "description": "Termine a conversa."
@@ -1574,13 +1601,22 @@
       "intent": "resposta_positiva",
       "examples": [
         {
-          "text": "claro"
+          "text": "otimo"
+        },
+        {
+          "text": "com certeza"
         },
         {
           "text": "s"
         },
         {
-          "text": "com certeza"
+          "text": "claro"
+        },
+        {
+          "text": "perfeito"
+        },
+        {
+          "text": "sim"
         },
         {
           "text": "positivo"
@@ -1589,16 +1625,7 @@
           "text": "pode"
         },
         {
-          "text": "otimo"
-        },
-        {
           "text": "yes"
-        },
-        {
-          "text": "sim"
-        },
-        {
-          "text": "perfeito"
         }
       ],
       "description": ""
@@ -1606,15 +1633,6 @@
     {
       "intent": "General_Positive_Feedback",
       "examples": [
-        {
-          "text": "Você detonou."
-        },
-        {
-          "text": "Ótimo!"
-        },
-        {
-          "text": "Muito obrigado."
-        },
         {
           "text": "É muito louco o que um robô pode fazer."
         },
@@ -1625,22 +1643,10 @@
           "text": "Isso é muito legal."
         },
         {
-          "text": "Você é adorável."
-        },
-        {
-          "text": "Incrível como você é bom!"
-        },
-        {
-          "text": "Você é o cara."
-        },
-        {
-          "text": "Muito bom, obrigado."
-        },
-        {
-          "text": "Espero trabalhar com você novamente."
-        },
-        {
           "text": "Genial! Isso é exatamente o que eu pensei."
+        },
+        {
+          "text": "Você é adorável."
         },
         {
           "text": "Estou impressionado com você."
@@ -1655,19 +1661,40 @@
           "text": "Gostei muito do seu trabalho."
         },
         {
-          "text": "Você me deu exatamente o que eu precisava."
+          "text": "Incrível como você é bom!"
         },
         {
-          "text": "Você é legal."
-        },
-        {
-          "text": "Você é inteligente."
+          "text": "Você detonou."
         },
         {
           "text": "Isso é divertido."
         },
         {
           "text": "Você é demais."
+        },
+        {
+          "text": "Você é inteligente."
+        },
+        {
+          "text": "Você é legal."
+        },
+        {
+          "text": "Você me deu exatamente o que eu precisava."
+        },
+        {
+          "text": "Você é o cara."
+        },
+        {
+          "text": "Muito bom, obrigado."
+        },
+        {
+          "text": "Espero trabalhar com você novamente."
+        },
+        {
+          "text": "Ótimo!"
+        },
+        {
+          "text": "Muito obrigado."
         }
       ],
       "description": "Exprima sentimento positivo ou gratidão."
@@ -1676,67 +1703,67 @@
       "intent": "Bot_Control_Unsure",
       "examples": [
         {
-          "text": "Não tenho certeza se entendo o que você está dizendo."
-        },
-        {
-          "text": "Não tenho idéia."
-        },
-        {
-          "text": "Não tenho uma solução para isso."
-        },
-        {
-          "text": "Para se honesto, eu não tenho certeza."
-        },
-        {
-          "text": "Você me pegou."
-        },
-        {
-          "text": "O que você não me contaria?"
-        },
-        {
-          "text": "Desculpe não poder te ajudar com isso."
+          "text": "Eu não tenho idéia, na verdade."
         },
         {
           "text": "Desculpe por não conseguir te ajudar."
         },
         {
-          "text": "Eu não sei o que te deixará feliz."
+          "text": "Eu ainda não estou convencido."
         },
         {
           "text": "Eu não sei do que você precisa."
         },
         {
-          "text": "Eu ainda não estou convencido."
+          "text": "Eu não sei o que te deixará feliz."
         },
         {
           "text": "Eu não sei o que você deseja."
         },
         {
-          "text": "Eu não tenho idéia do que você está procurando."
-        },
-        {
-          "text": "Eu não tenho idéia, na verdade."
-        },
-        {
           "text": "Me desculpe, mas não tenho uma resposta para sua pergunta."
         },
         {
-          "text": "Me perdoe, mas não tenho uma resposta."
+          "text": "Desculpe não poder te ajudar com isso."
         },
         {
-          "text": "Não faço idéia."
+          "text": "O que você não me contaria?"
         },
         {
-          "text": "Não posso te ajudar, desculpe."
+          "text": "Você me pegou."
         },
         {
-          "text": "Não sei a resposta para isso, me perdoe."
+          "text": "Para se honesto, eu não tenho certeza."
+        },
+        {
+          "text": "Não tenho uma solução para isso."
+        },
+        {
+          "text": "Não tenho idéia."
+        },
+        {
+          "text": "Não tenho certeza se entendo o que você está dizendo."
+        },
+        {
+          "text": "Não tenho a menor idéia."
         },
         {
           "text": "Não sei se entendi o que você deseja."
         },
         {
-          "text": "Não tenho a menor idéia."
+          "text": "Não sei a resposta para isso, me perdoe."
+        },
+        {
+          "text": "Não posso te ajudar, desculpe."
+        },
+        {
+          "text": "Não faço idéia."
+        },
+        {
+          "text": "Me perdoe, mas não tenho uma resposta."
+        },
+        {
+          "text": "Eu não tenho idéia do que você está procurando."
         }
       ],
       "description": "Indique não haver uma resposta definitiva a uma pergunta."
@@ -1748,9 +1775,9 @@
       "values": [
         {
           "type": "patterns",
-          "value": "error",
+          "value": "success",
           "patterns": [
-            "^\\{\\{AUTH_ERROR\\}\\}$"
+            "^\\{\\{AUTH_SUCCESS\\}\\}$"
           ]
         },
         {
@@ -1783,9 +1810,9 @@
         },
         {
           "type": "patterns",
-          "value": "success",
+          "value": "error",
           "patterns": [
-            "^\\{\\{AUTH_SUCCESS\\}\\}$"
+            "^\\{\\{AUTH_ERROR\\}\\}$"
           ]
         }
       ],
@@ -1809,20 +1836,6 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "Diariamente",
-          "synonyms": [
-            "Diariamente"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Pontual",
-          "synonyms": [
-            "Apenas uma vez"
-          ]
-        },
-        {
-          "type": "synonyms",
           "value": "Mensalmente",
           "synonyms": [
             "Mensalmente"
@@ -1833,6 +1846,20 @@
           "value": "Semanalmente",
           "synonyms": [
             "Semanalmente"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Diariamente",
+          "synonyms": [
+            "Diariamente"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pontual",
+          "synonyms": [
+            "Apenas uma vez"
           ]
         }
       ],
@@ -1919,31 +1946,13 @@
       "fuzzy_match": true
     },
     {
-      "entity": "dias-semana",
+      "entity": "reportStatistics",
       "values": [
         {
           "type": "synonyms",
-          "value": "terca-feira",
+          "value": "reportStatistics_pattern",
           "synonyms": [
-            "terca",
-            "ter",
-            "tuesday",
-            "tue",
-            "terça",
-            "terca-feira",
-            "terça-feira"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "segunda-feira",
-          "synonyms": [
-            "segunda",
-            "monday",
-            "segundafeira",
-            "seg",
-            "segun",
-            "segundaa"
+            "\\{\\{REPORT_INIT\\}\\}(.*)\\{\\{REPORT_END\\}\\}"
           ]
         }
       ],
@@ -1976,6 +1985,72 @@
       "fuzzy_match": true
     },
     {
+      "entity": "dias-semana",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "terca-feria",
+          "synonyms": [
+            "terca",
+            "terca-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "domingo",
+          "synonyms": [
+            "domingo",
+            "sunday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "segunda-feira",
+          "synonyms": [
+            "segunda",
+            "segunda-feira",
+            "seg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sexta-feira",
+          "synonyms": [
+            "sexta",
+            "sexta-feira",
+            "friday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quarta-feira",
+          "synonyms": [
+            "quarta",
+            "quarta-feira",
+            "wednesday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quinta-feira",
+          "synonyms": [
+            "quinta",
+            "quinta-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sabado",
+          "synonyms": [
+            "sabado",
+            "sábado",
+            "saturday"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
       "entity": "nome",
       "values": [
         {
@@ -2002,12 +2077,17 @@
         },
         {
           "type": "synonyms",
-          "value": "e vc",
+          "value": "suave",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "suave",
+          "value": "beleza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "e vc",
           "synonyms": []
         },
         {
@@ -2019,13 +2099,21 @@
           "type": "synonyms",
           "value": "e tu",
           "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "beleza",
-          "synonyms": []
         }
       ]
+    },
+    {
+      "entity": "todasAtividadesCadastradas",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "allActivities_pattern",
+          "patterns": [
+            "\\{\\{ALL_ACTIVITIES_INIT\\}\\}(.*)\\{\\{ALL_ACTIVITIES_END\\}\\}"
+          ]
+        }
+      ],
+      "fuzzy_match": true
     },
     {
       "entity": "usuario_logado",
@@ -2071,7 +2159,48 @@
       "type": "slot",
       "parent": "node_23_1559014929772",
       "variable": "$frequenciaRotina",
-      "dialog_node": "slot_24_1559015258100"
+      "dialog_node": "slot_24_1559015258100",
+      "previous_sibling": "node_27_1559015358490"
+    },
+    {
+      "type": "frame",
+      "title": "Mapeando data e hora da atividade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Então sua atividade é \"$novaRotina\", sua frequencia é \"$frequenciaRotina\" e será realizada no dia \"$dataNovaRotina\" às \"$horaNovaRotina\" ?"
+              },
+              {
+                "text": "Confirma ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_23_1559014929772",
+      "context": {
+        "dataNovaRotina": "@sys-date",
+        "horaNovaRotina": "@sys-time"
+      },
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1559012504857"
+      },
+      "conditions": "true",
+      "dialog_node": "node_27_1559015358490",
+      "digress_out": "allow_all",
+      "digress_out_slots": "allow_returning"
     },
     {
       "type": "frame",
@@ -2090,6 +2219,9 @@
         ]
       },
       "parent": "node_16_1559013487553",
+      "context": {
+        "frequenciaRotina": "@frequenciaRotina.literal"
+      },
       "metadata": {
         "fallback": "leave"
       },
@@ -2104,40 +2236,44 @@
     },
     {
       "type": "frame",
-      "title": "Mapeando data e hora da atividade",
+      "title": "Semanalmente",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Ok! Então sua atividade é \"$novaRotina\", sua frequencia é \"$frequenciaRotina\" e será realizada no dia \"$dataNovaRotina\" às \"$horaNovaRotina\""
-              },
-              {
-                "text": "Confirma ?"
+                "text": "Entendido! Poderia me confirmar primeiro o horario dessa atividade ?"
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
       "parent": "node_16_1559013487553",
+      "context": {
+        "frequenciaRotina": "@frequenciaRotina.literal"
+      },
       "metadata": {
-        "fallback": "leave",
-        "_customization": {
-          "mcr": false
-        }
+        "fallback": "leave"
       },
       "next_step": {
         "behavior": "jump_to",
         "selector": "user_input",
-        "dialog_node": "node_4_1559012504857"
+        "dialog_node": "node_5_1559512321677"
       },
-      "conditions": "true",
-      "dialog_node": "node_27_1559015358490",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_34_1559015698964",
-      "digress_out_slots": "allow_returning"
+      "conditions": "@frequenciaRotina:Semanalmente",
+      "dialog_node": "node_15_1559512328281",
+      "previous_sibling": "node_34_1559015698964"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_16_1559013487553",
+      "metadata": {},
+      "variable": "$novaRotina",
+      "dialog_node": "slot_17_1559013565143",
+      "previous_sibling": "node_4_1559012504857"
     },
     {
       "type": "standard",
@@ -2155,16 +2291,72 @@
       "conditions": "#resposta_negativa || #resposta_positiva",
       "dialog_node": "node_4_1559012504857",
       "digress_out": "allow_all",
-      "previous_sibling": "node_35_1559015698982"
+      "previous_sibling": "node_15_1559512328281"
+    },
+    {
+      "type": "frame",
+      "title": "Pontual",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendido! Poderia me confirmar a data e hora que realizará a atividade ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_16_1559013487553",
+      "context": {
+        "frequenciaRotina": "@frequenciaRotina"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_27_1559015358490"
+      },
+      "conditions": "@frequenciaRotina:Pontual",
+      "dialog_node": "node_23_1559014929772",
+      "digress_out": "allow_all",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "{{ENTITY_NOT_VALID}}"
+      },
+      "parent": "slot_2_1559505948560",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_4_1559505948560",
+      "previous_sibling": "handler_3_1559505948560"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1559505948560",
+      "context": {
+        "todasAtividadesCadastradas": "@todasAtividadesCadastradas"
+      },
+      "metadata": {},
+      "conditions": "@todasAtividadesCadastradas",
+      "event_name": "input",
+      "dialog_node": "handler_3_1559505948560"
     },
     {
       "type": "slot",
       "output": {},
-      "parent": "node_16_1559013487553",
+      "parent": "node_34_1559015698964",
       "metadata": {},
-      "variable": "$novaRotina",
-      "dialog_node": "slot_17_1559013565143",
-      "previous_sibling": "node_4_1559012504857"
+      "variable": "$frequenciaRotina",
+      "dialog_node": "slot_42_1559015698982",
+      "previous_sibling": "node_35_1559015698982"
     },
     {
       "type": "frame",
@@ -2185,7 +2377,10 @@
           }
         ]
       },
-      "parent": "node_16_1559013487553",
+      "parent": "node_34_1559015698964",
+      "context": {
+        "horaNovaRotina": "@sys-time.literal"
+      },
       "metadata": {
         "fallback": "leave"
       },
@@ -2197,46 +2392,7 @@
       "conditions": "true",
       "dialog_node": "node_35_1559015698982",
       "digress_out": "allow_all",
-      "previous_sibling": "node_27_1559015358490",
       "digress_out_slots": "allow_returning"
-    },
-    {
-      "type": "frame",
-      "title": "Pontual",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Entendido! Poderia me confirmar a data e hora que realizará a atividade ?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_16_1559013487553",
-      "metadata": {
-        "fallback": "leave"
-      },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "user_input",
-        "dialog_node": "node_27_1559015358490"
-      },
-      "conditions": "@frequenciaRotina:Pontual",
-      "dialog_node": "node_23_1559014929772",
-      "digress_out": "allow_all",
-      "digress_out_slots": "allow_returning"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_34_1559015698964",
-      "metadata": {},
-      "variable": "$frequenciaRotina",
-      "dialog_node": "slot_42_1559015698982"
     },
     {
       "type": "slot",
@@ -2394,6 +2550,14 @@
       "metadata": {},
       "conditions": "#resposta_positiva",
       "dialog_node": "node_5_1555822465291"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1559512321677",
+      "metadata": {},
+      "variable": "$horaNovaRotina",
+      "dialog_node": "slot_9_1559512321702"
     },
     {
       "type": "frame",
@@ -2838,6 +3002,35 @@
       "dialog_node": "node_2_1555893485486"
     },
     {
+      "type": "event_handler",
+      "output": {
+        "text": "Poderia me confirmar a hora dessa atividade ?"
+      },
+      "parent": "slot_9_1559512321702",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_11_1559512321702",
+      "previous_sibling": "handler_10_1559512321702"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1559512321702",
+      "context": {
+        "horaNovaRotina": "@sys-time"
+      },
+      "metadata": {},
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1559512321702"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1559506064390",
+      "variable": "$reportStatistics",
+      "dialog_node": "slot_1_1559506864374"
+    },
+    {
       "type": "standard",
       "title": "Nova conversa (perguntando como o usuário está)",
       "output": {
@@ -2983,6 +3176,37 @@
       "dialog_node": "node_60_1559017510522"
     },
     {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1559505948558",
+      "metadata": {},
+      "variable": "$todasAtividadesCadastradas",
+      "dialog_node": "slot_2_1559505948560"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Poderia me informa pelo menos um dia da semana que executará essa atividade ?"
+      },
+      "parent": "slot_27_1559513798426",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_29_1559513798426",
+      "previous_sibling": "handler_28_1559513798426"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_27_1559513798426",
+      "context": {
+        "diasSemanaNovaRotina": "@dias-semana"
+      },
+      "metadata": {},
+      "conditions": "@dias-semana",
+      "event_name": "input",
+      "dialog_node": "handler_28_1559513798426"
+    },
+    {
       "type": "event_handler",
       "output": {
         "text": "Não compreendi, poderia reformular ?"
@@ -3077,6 +3301,14 @@
       "parent": "node_6_1555793850419",
       "metadata": {},
       "dialog_node": "node_2_1557791125712"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_23_1559513798422",
+      "metadata": {},
+      "variable": "$diasSemanaNovaRotina",
+      "dialog_node": "slot_27_1559513798426"
     },
     {
       "type": "standard",
@@ -3362,24 +3594,6 @@
     {
       "type": "event_handler",
       "output": {},
-      "parent": "slot_1_1559091416803",
-      "event_name": "focus",
-      "dialog_node": "handler_3_1559091416803",
-      "previous_sibling": "handler_2_1559091416803"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_1_1559091416803",
-      "context": {
-        "diasSemana": "@dias-semana"
-      },
-      "conditions": "@dias-semana",
-      "event_name": "input",
-      "dialog_node": "handler_2_1559091416803"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
       "parent": "slot_32_1555807063721",
       "event_name": "focus",
       "dialog_node": "handler_34_1555807063721",
@@ -3553,7 +3767,7 @@
       },
       "next_step": {
         "behavior": "jump_to",
-        "selector": "condition",
+        "selector": "body",
         "dialog_node": "node_4_1555808897360"
       },
       "conditions": "@atividade",
@@ -3603,6 +3817,60 @@
       "conditions": "@sys-number",
       "event_name": "input",
       "dialog_node": "handler_12_1557794970404"
+    },
+    {
+      "type": "standard",
+      "title": "Monstrar Relatório",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Segue abaixo o relatório requisitado:"
+              },
+              {
+                "text": "$reportStatistics"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1559506026492",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_4_1559506916128",
+      "previous_sibling": "node_6_1559506064390"
+    },
+    {
+      "type": "frame",
+      "title": "Mapear Relatório",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1559506026492",
+      "context": {
+        "reportStatistics": "@reportStatistics.literal"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1559506916128"
+      },
+      "conditions": "@reportStatistics",
+      "dialog_node": "node_6_1559506064390",
+      "digress_out": "allow_all",
+      "digress_out_slots": "not_allowed"
     },
     {
       "type": "frame",
@@ -3872,6 +4140,7 @@
         "text": "Poderia me confirmar a hora dessa atividade ?"
       },
       "parent": "slot_31_1559015448587",
+      "metadata": {},
       "event_name": "focus",
       "dialog_node": "handler_33_1559015448587",
       "previous_sibling": "handler_32_1559015448587"
@@ -3885,6 +4154,27 @@
       "conditions": "@sys-time",
       "event_name": "input",
       "dialog_node": "handler_32_1559015448587"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_20_1559512328283",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_22_1559512328283",
+      "previous_sibling": "handler_21_1559512328283"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_20_1559512328283",
+      "context": {
+        "frequenciaRotina": "@frequenciaRotina"
+      },
+      "metadata": {},
+      "conditions": "@frequenciaRotina",
+      "event_name": "input",
+      "dialog_node": "handler_21_1559512328283"
     },
     {
       "type": "event_handler",
@@ -4171,15 +4461,6 @@
       "output": {},
       "parent": "node_27_1559015358490",
       "metadata": {},
-      "variable": "$diasSemana",
-      "dialog_node": "slot_1_1559091416803",
-      "previous_sibling": "slot_31_1559015448587"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_27_1559015358490",
-      "metadata": {},
       "variable": "$horaNovaRotina",
       "dialog_node": "slot_31_1559015448587",
       "previous_sibling": "slot_28_1559015414984"
@@ -4191,6 +4472,26 @@
       "metadata": {},
       "variable": "$dataNovaRotina",
       "dialog_node": "slot_28_1559015414984"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "{{ENTITY_NOT_VALID}}"
+      },
+      "parent": "slot_1_1559506864374",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1559506864374",
+      "previous_sibling": "handler_2_1559506864374"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1559506864374",
+      "context": {
+        "reportStatistics": "@reportStatistics"
+      },
+      "conditions": "@reportStatistics",
+      "event_name": "input",
+      "dialog_node": "handler_2_1559506864374"
     },
     {
       "type": "event_handler",
@@ -4214,6 +4515,23 @@
       "conditions": "@telefone",
       "event_name": "input",
       "dialog_node": "handler_23_1555800601118"
+    },
+    {
+      "type": "frame",
+      "title": "Mapear todas as Atividades",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1559011613276",
+      "context": {
+        "todasAtividadesCadastradas": "@todasAtividadesCadastradas.literal"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "@todasAtividadesCadastradas",
+      "dialog_node": "node_1_1559505948558",
+      "previous_sibling": "node_16_1559013487553"
     },
     {
       "type": "frame",
@@ -4258,14 +4576,6 @@
                     "text": "Semanalmente"
                   }
                 }
-              },
-              {
-                "label": "Mensalmente",
-                "value": {
-                  "input": {
-                    "text": "Mensalmente"
-                  }
-                }
               }
             ],
             "response_type": "option"
@@ -4273,6 +4583,9 @@
         ]
       },
       "parent": "node_1_1559011613276",
+      "context": {
+        "novaRotina": "@atividade.literal"
+      },
       "metadata": {
         "fallback": "leave"
       },
@@ -4344,6 +4657,87 @@
       "context": {},
       "event_name": "input",
       "dialog_node": "handler_36_1555807065710"
+    },
+    {
+      "type": "frame",
+      "title": "Mapeando dias da semana",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Então sua atividade é \"$novaRotina\", sua frequencia é \"$frequenciaRotina\" e será realizada no horario \"$horaNovaRotina\" nos seguintes dias: \"<? entities['dias-semana'] ?>\""
+              },
+              {
+                "text": "Confirma ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_15_1559512328281",
+      "context": {
+        "diasSemanaNovaRotina": "<? entities['dias-semana'] ?>"
+      },
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1559012504857"
+      },
+      "conditions": "true",
+      "dialog_node": "node_23_1559513798422",
+      "previous_sibling": "node_5_1559512321677"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_15_1559512328281",
+      "metadata": {},
+      "variable": "$frequenciaRotina",
+      "dialog_node": "slot_20_1559512328283",
+      "previous_sibling": "node_23_1559513798422"
+    },
+    {
+      "type": "frame",
+      "title": "Perguntando horário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, poderia me confirar agora o(s) dia(s) da semana que realizará essa atividade ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_15_1559512328281",
+      "context": {
+        "horaNovaRotina": "@sys-time"
+      },
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_23_1559513798422"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1559512321677"
     },
     {
       "type": "event_handler",
@@ -4997,6 +5391,32 @@
     },
     {
       "type": "standard",
+      "title": "(Funcionalidade) Baixar relatório",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendido, estou preparando seu relaório, só um segundo..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1559506064390"
+      },
+      "conditions": "#gerarRelatorio",
+      "dialog_node": "node_5_1559506026492",
+      "previous_sibling": "node_1_1559505059319"
+    },
+    {
+      "type": "standard",
       "title": "(Outros Assuntos) Robo ou Humano",
       "output": {
         "generic": [
@@ -5061,6 +5481,39 @@
     },
     {
       "type": "standard",
+      "title": "A Rose não conseguiu entender",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ops, não reconheci sua resposta."
+              },
+              {
+                "text": "Não entendi sua resposta, poderia reformular ?"
+              },
+              {
+                "text": "Desculpa, não compreendi."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "anything_else",
+      "digress_in": "returns",
+      "dialog_node": "Em outros casos",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_5_1559506026492"
+    },
+    {
+      "type": "standard",
       "title": "(Outros Assuntos) O que é a terapia",
       "output": {
         "generic": [
@@ -5111,35 +5564,26 @@
     },
     {
       "type": "standard",
-      "title": "A Rose não conseguiu entender",
+      "title": "(Funcionalidade) Visualizar Atividades Cadastradas",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Ops, não reconheci sua resposta."
+                "text": "Ok, segue abaixo todas as atividades Cadastradas:"
               },
               {
-                "text": "Não entendi sua resposta, poderia reformular ?"
-              },
-              {
-                "text": "Desculpa, não compreendi."
+                "text": "$todasAtividadesCadastradas"
               }
             ],
             "response_type": "text",
-            "selection_policy": "random"
+            "selection_policy": "multiline"
           }
         ]
       },
-      "metadata": {
-        "_customization": {
-          "mcr": false
-        }
-      },
-      "conditions": "anything_else",
-      "digress_in": "returns",
-      "dialog_node": "Em outros casos",
-      "digress_out": "allow_all",
+      "metadata": {},
+      "conditions": "#visualizarAtividades",
+      "dialog_node": "node_1_1559505059319",
       "previous_sibling": "node_1_1559011613276"
     },
     {
