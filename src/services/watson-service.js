@@ -10,7 +10,7 @@ const watsonAssistant = new assistantV1({
 });
 
 async function sendMessage(params) {
-    if (params.input.text === '{{LOGGED_USER}}') { 
+    if (params.input.text === '{{LOGGED_USER}}') {
         return await mapUserEntities(params);
     } else if (params.input.text === '{{NEW_TALK}}') {
         return startNewTalk(params);
@@ -19,71 +19,75 @@ async function sendMessage(params) {
     }
 };
 
-function startNewTalk(params){
+function startNewTalk(params) {
     params.input = {};
     params.context = {};
 
     return sendMessagePromisse(params)
-    .then((response) => {
-        params.input.text = '{{NEW_TALK}}';
-        params.context = response.context;
-        return sendMessagePromisse(params);
-    })
+        .then((response) => {
+            params.input.text = '{{NEW_TALK}}';
+            params.context = response.context;
+            return sendMessagePromisse(params);
+        })
 }
 
-async function mapUserEntities(params){
+async function mapUserEntities(params) {
     var user = await userService.getUser(params.conversation.user_id);
     params.input = {};
     params.context = {};
 
     return sendMessagePromisse(params)
-    .then((response) => {
-        params.input.text = '{{LOGGED_USER}}';
-        params.context = response.context;
-        return sendMessagePromisse(params);
-    })
-    .then((response) => {
-        params.input.text = user.name;
-        params.context = response.context;
-        return sendMessagePromisse(params)
-    })
-    .then((response) => {
-        params.input.text = user.phonenumber;
-        params.context = response.context;
-        return sendMessagePromisse(params)
-    })
-    .then((response) => {
-        params.input.text = user.routine;
-        params.context = response.context;
-        return sendMessagePromisse(params)
-    })
+        .then((response) => {
+            params.input.text = '{{LOGGED_USER}}';
+            params.context = response.context;
+            return sendMessagePromisse(params);
+        })
+        .then((response) => {
+            params.input.text = user.name;
+            params.context = response.context;
+            return sendMessagePromisse(params)
+        })
+        .then((response) => {
+            params.input.text = user.phonenumber;
+            params.context = response.context;
+            return sendMessagePromisse(params)
+        })
+        .then((response) => {
+            params.input.text = user.routine;
+            params.context = response.context;
+            return sendMessagePromisse(params)
+        })
 }
 
-function sendMessagePromisse(params) {
-    return new Promise((resolve, reject) => {
+async function sendMessagePromisse(params) {
+    const watsonMessage = new Promise((resolve, reject) => {
         watsonAssistant.message(params, (err, response) => {
-            if(err) reject(err);
-            
-            if (response.output.nodes_visited[response.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
-                userService.addUser(params);
-            }
-
-            if (response.context.telefone) {
-                conversationService.saveConversation(response).then((conv) => {
-                    resolve({
-                        text: response.output.text,
-                        conversation: conv,
-                        context: response.context
-                    });
-                })
-            } else {
-                resolve({
-                    text: response.output.text,
-                    context: response.context
-                });
-            }
+            if (err) reject(err);
+            resolve(response);
         })
     })
+
+    let watsonAnswer = await watsonMessage;
+
+    if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
+        userService.addUser(params);
+    }
+
+    let result = {
+        text: watsonAnswer.output.text,
+        context: watsonAnswer.context
+    };
+
+    if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.PASSWORD_NODE) {
+        result.isPassword = true;
+    }
+
+    if (watsonAnswer.context.telefone) {
+        let conv = await conversationService.saveConversation(watsonAnswer);
+        result.conversation = conv;
+    }
+
+    return result;
 }
 
 module.exports = { sendMessage };

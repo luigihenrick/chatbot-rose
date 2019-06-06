@@ -22,4 +22,9 @@ async function getUser(userId){
     return user;
 }
 
-module.exports = { addUser, getUser }
+async function authenticateUser(userId, password){
+    const user = await UserModel.findOne({ _id: userId });
+    return user.password === password;
+}
+
+module.exports = { addUser, getUser, authenticateUser }
