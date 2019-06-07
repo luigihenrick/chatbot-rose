@@ -65,8 +65,10 @@
                 contentType: 'application/json',
                 data: JSON.stringify(chatbotData),
                 error: function (xhr, error) {
-                    if (xhr.status === 401) {
+                    if (xhr.status === 403) {
                         sendMessage('Falha ao validar sua senha, tente novamente mais tarde.', 'left');
+                    } else if (xhr.status === 401) {
+                        sendMessage('Não foi possível localizar este telefone, verifique se digitou corretamente.', 'left');
                     } else {
                         sendMessage('Ops, nem sempre as coisas funcionam como esperado, ocorreu algum erro ao enviar sua mensagem, por favor, tente novamente.', 'left');
                     }
