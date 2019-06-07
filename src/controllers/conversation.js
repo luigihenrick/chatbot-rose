@@ -17,6 +17,7 @@ app.post('/', async (req, res) => {
         let authenticated = await userService.authenticateUser(conversation.user_id, text);
         if (authenticated === false) {
             res.status(403).send({error: 'Falha ao autenticar senha.'});
+            return;
         } else {
             params.input = { text: '{{AUTH_SUCCESS}}' };
         }
@@ -29,6 +30,7 @@ app.post('/', async (req, res) => {
             params.input = { text: '{{LOGGED_USER}}' };
         } else {
             res.status(401).send({error: 'Não foi possível localizar seu usuário.'});
+            return;
         }
     }
 
@@ -41,7 +43,7 @@ app.post('/', async (req, res) => {
             }
         })
         .catch((rej) => {
-            res.status(500).send(rej);
+            res.status(500).send({error: rej});
         });
 });
 
