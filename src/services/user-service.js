@@ -17,8 +17,13 @@ async function addUser(params){
     }
 }
 
-async function getUser(userId){
+async function getUserById(userId){
     const user = await UserModel.findOne({ _id: userId });
+    return user;
+}
+
+async function getUserByPhone(phonenumber){
+    const user = await UserModel.findOne({ phonenumber: phonenumber.replace(new RegExp(phoneReplaceRegex, 'g'), '') });
     return user;
 }
 
@@ -27,4 +32,4 @@ async function authenticateUser(userId, password){
     return user.password === password;
 }
 
-module.exports = { addUser, getUser, authenticateUser }
+module.exports = { addUser, getUserById, getUserByPhone, authenticateUser }

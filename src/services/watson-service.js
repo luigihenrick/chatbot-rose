@@ -32,7 +32,7 @@ function startNewTalk(params) {
 }
 
 async function mapUserEntities(params) {
-    var user = await userService.getUser(params.conversation.user_id);
+    var user = await userService.getUserById(params.conversation.user_id);
     params.input = {};
     params.context = {};
 
@@ -85,6 +85,8 @@ async function sendMessagePromisse(params) {
     if (watsonAnswer.context.telefone) {
         let conv = await conversationService.saveConversation(watsonAnswer);
         result.conversation = conv;
+    } else {
+        result.conversation = conversationService.getConversationModel(watsonAnswer);
     }
 
     return result;

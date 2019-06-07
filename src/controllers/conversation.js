@@ -6,7 +6,7 @@ const app = express();
 app.post('/', async (req, res) => {
     const { text, context = {}, conversation = {} } = req.body;
 
-    const params = {
+    let params = {
         input: { text },
         workspace_id: process.env.WORKSPACE_ID,
         context,
@@ -14,21 +14,34 @@ app.post('/', async (req, res) => {
     };
 
     if (conversation.last_node_visited === process.env.PASSWORD_NODE && text !== '{{LOGGED_USER}}' && text !== '{{NEW_TALK}}') {
-        var authenticated = await userService.authenticateUser(conversation.user_id, text);
+        let authenticated = await userService.authenticateUser(conversation.user_id, text);
         if (authenticated === false) {
-            res.status(401).json('Falha ao autenticar senha.');
+            res.status(403).send({error: 'Falha ao autenticar senha.'});
+        } else {
+            params.input = { text: '{{AUTH_SUCCESS}}' };
         }
     }
+
+    if (conversation.last_node_visited === process.env.LOCATE_USER_NODE && text !== '{{LOGGED_USER}}' && text !== '{{NEW_TALK}}') {
+        let user = await userService.getUserByPhone(text);
+        if (user) {
+            params.conversation.user_id = user._id;
+            params.input = { text: '{{LOGGED_USER}}' };
+        } else {
+            res.status(401).send({error: 'Não foi possível localizar seu usuário.'});
+        }
+    }
+
     watsonService.sendMessage(params)
         .then((response) => {
             if (response != null) {
-                res.json(response);
+                res.send(response);
             } else {
-                res.status(500).json('Falha ao enviar mensagem, tente novamente.');
+                res.status(500).send({error: 'Falha ao enviar mensagem, tente novamente.'});
             }
         })
         .catch((rej) => {
-            res.status(500).json(rej);
+            res.status(500).send(rej);
         });
 });
 
