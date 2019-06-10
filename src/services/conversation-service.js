@@ -24,6 +24,11 @@ async function saveConversation(params) {
     return model;
 }
 
+async function getConversationData(phonenumber) {
+    const user = await UserModel.findOne({ phonenumber: phonenumber.replace(new RegExp(phoneReplaceRegex, 'g'), '') });
+    return await ConversationModel.find({ user_id: user._id });
+}
+
 function getConversationModel(params) {
     let model = new ConversationModel();
 
@@ -39,4 +44,4 @@ function getConversationModel(params) {
     return model;
 }
 
-module.exports = { saveConversation, getConversationModel }
+module.exports = { saveConversation, getConversationModel, getConversationData }

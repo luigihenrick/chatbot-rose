@@ -5,6 +5,7 @@
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         
         <link href="./chat.css" rel="stylesheet" id="bootstrap-css">
     </head>
@@ -23,7 +24,12 @@
                 <div class="message_input_wrapper">
                     <input class="message_input" placeholder="Digite a mensagem aqui..." />
                 </div>
-                <div class="send_message">
+                <div class="typing_indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="send_message" style="display: none;">
                     <div class="icon"></div>
                     <div class="text">Enviar</div>
                 </div>
@@ -37,7 +43,9 @@
                 </div>
             </li>
         </div>
-
+        <div class="report_template">
+            <canvas class="report" style="display: none;"></canvas>
+        </div>
         <script src="./chat.js"></script>
     </body>
 </html>

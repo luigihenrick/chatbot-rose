@@ -69,14 +69,18 @@ async function sendMessagePromisse(params) {
 
     let watsonAnswer = await watsonMessage;
 
-    if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
-        userService.addUser(params);
-    }
-
     let result = {
         text: watsonAnswer.output.text,
         context: watsonAnswer.context
     };
+
+    if (watsonAnswer.context.generateReport) {
+        result.reportData = await conversationService.getConversationData(params.context.telefone);
+    }
+
+    if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
+        userService.addUser(params);
+    }
 
     if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.PASSWORD_NODE) {
         result.isPassword = true;
