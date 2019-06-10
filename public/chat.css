@@ -235,7 +235,7 @@
     position: relative;
     padding: 0 20px;
   }
-  .bottom_wrapper .message_input_wrapper.error{
+  .bottom_wrapper .message_input_wrapper.error {
     border-color: red;
     -webkit-animation: swing 1s ease;
     animation: swing 1s ease;
@@ -274,7 +274,15 @@
     display: inline-block;
     line-height: 48px;
   }
-  
+  .bottom_wrapper .send_message.option {
+    background-color: #36a2eb;
+    border: 2px solid #36a2eb;
+  }
+  .bottom_wrapper .send_message.option:hover {
+    color: #36a2eb;
+    background-color: #fff;
+  }
+
   .message_template {
     display: none;
   }

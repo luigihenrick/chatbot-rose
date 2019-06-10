@@ -37,16 +37,6 @@ app.post('/', async (req, res) => {
     watsonService.sendMessage(params)
         .then((response) => {
             if (response != null) {
-                response.reportType = 'line';
-                response.reportData = {
-                    datasets: [{
-                        data: [ 10, 20, 30, 20, 40 ],
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        label: 'Fez Atividade'
-                    }],
-                    labels: [ '01/2019', '02/2019', '03/2019', '04/2019', '05/2019' ]
-                };
                 res.send(response);
             } else {
                 res.status(500).send({error: 'Falha ao enviar mensagem, tente novamente.'});

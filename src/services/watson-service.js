@@ -71,11 +71,38 @@ async function sendMessagePromisse(params) {
 
     let result = {
         text: watsonAnswer.output.text,
+        options: watsonAnswer.output.generic.length > 0 && watsonAnswer.output.generic.filter(o => o.options).length > 0
+            ? watsonAnswer.output.generic.filter(o => o.options)[0].options 
+            : undefined,
         context: watsonAnswer.context
     };
 
-    if (watsonAnswer.context.generateReport) {
-        result.reportData = await conversationService.getConversationData(params.context.telefone);
+    if (watsonAnswer.context.relatorioSolicitado) {
+        let data = await conversationService.getConversationData(params.context.telefone);
+        
+        if (watsonAnswer.context.relatorioSolicitado === 'humor') {
+            result.reportType = 'line';
+            result.reportData = {
+                datasets: [{
+                    data: [ 1, 2, 3, 2, 4 ],
+                    backgroundColor: 'rgb(75, 192, 192)',
+                    borderColor: 'rgb(75, 192, 192)',
+                    label: 'Humor'
+                }],
+                labels: [ '03/06/2019', '04/06/2019', '05/06/2019', '06/06/2019', '07/06/2019' ]
+            };
+        } else if (watsonAnswer.context.relatorioSolicitado === 'quantidade') {
+            result.reportType = 'bar';
+            result.reportData = {
+                datasets: [{
+                    data: [ 5, 8, 10, 9, 12 ],
+                    backgroundColor: 'rgb(54, 162, 235)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    label: 'Atividade: ' + params.context.rotina
+                }],
+                labels: [ '01/2019', '02/2019', '03/2019', '04/2019', '05/2019' ]
+            };
+        }
     }
 
     if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
@@ -94,6 +121,10 @@ async function sendMessagePromisse(params) {
     }
 
     return result;
+}
+
+function getReportObject(type, data) {
+
 }
 
 module.exports = { sendMessage };

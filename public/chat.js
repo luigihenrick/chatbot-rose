@@ -77,7 +77,8 @@
                         type: _this.type,
                         data: _this.data,
                         options: {
-                            responsive: true
+                            responsive: true,
+                            scales: {yAxes: [{ticks: { beginAtZero :true}}]}
                         }
                     });
                 }, 0);
@@ -88,6 +89,7 @@
 
     $(function () {
         var getMessageText, 
+        addResponseOptions,
         sendMessage, 
         sendMessageRequest;
         
@@ -119,7 +121,28 @@
             }
         };
         
+        addResponseOptions = function(data) {
+            var $options;
+            chatbotData.isPassword = data.isPassword;
+
+            if (data.isPassword) {
+                $('div.message_input_wrapper > input').attr("type", "password");
+            } else {
+                $('div.message_input_wrapper > input').attr("type", "");
+            }
+
+            // if (data.options) {
+            //     $('div.message_input_wrapper').css("display", "none");
+            //     $('div.message_input_wrapper').css("display", "none");
+            //     $options = $($('.options_template').clone().html());
+            //     $options.css("display", "");
+            // } else {
+
+            // }
+        }
+
         sendMessageRequest = function (chatbotData) {
+            roseTyping(true);
             $.ajax({
                 url: '/conversation/',
                 type: 'POST',
@@ -134,10 +157,11 @@
                         new Message({ text: 'Ops, nem sempre as coisas funcionam como esperado, ocorreu algum erro ao enviar sua mensagem, por favor, tente novamente.', message_side: 'left' }).draw();
                     }
                     console.debug(xhr); console.debug(error);
+                    roseTyping(false);
                 },
                 success: function (data) {
-                    chatbotData.isPassword = data.isPassword;
-
+                    addResponseOptions(data);
+                    
                     if (data.conversation !== null && data.conversation !== undefined) {
                         window.localStorage.setItem('chatbot_conversation', JSON.stringify(data.conversation));
                         chatbotData.conversation = data.conversation;
@@ -147,33 +171,22 @@
                         chatbotData.context = data.context;
                     }
                     
-                    if (data.isPassword) {
-                        $('div.message_input_wrapper > input').attr("type", "password");
-                    } else {
-                        $('div.message_input_wrapper > input').attr("type", "");
-                    }
-
-                    roseTyping(true);
-                    
-                    if (data.reportType) {
-                        new Message({ 
-                            message_side:'left',
-                            report_type: data.reportType,
-                            report_data: data.reportData
-                        }).draw(); 
-                        roseTyping(false); 
-                        return;
-                    } 
-                    
                     var timeToNext = 0;
                     data.text.forEach((t, idx, arr) => {
                         timeToNext += (1000 + t.length * 20);
                         setTimeout(() => { 
-                            new Message({ 
-                                text:t, 
-                                message_side:'left'
-                            }).draw(); 
-                            roseTyping((idx === arr.length - 1) ? false : true); 
+                            // print message with pause
+                            new Message({ text:t, message_side:'left' }).draw(); 
+                            
+                            // print report before last message
+                            if (idx === arr.length - 2 && data.reportType) {
+                                new Message({ message_side:'left', report_type: data.reportType, report_data: data.reportData }).draw();
+                            }
+
+                            // set typing false after last message
+                            if (idx === arr.length - 1) {
+                                roseTyping(false);
+                            }
                         }, timeToNext);
                     });
                 }
