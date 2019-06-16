@@ -69,6 +69,14 @@ async function sendMessagePromisse(params) {
 
     let watsonAnswer = await watsonMessage;
 
+    if (watsonAnswer.context.verificarLembretes) {
+        let data = await conversationService.getConversationData(params.context.telefone);
+        let i = 0;
+        let notes = data.filter(c => c.text_to_remember).map(c => `Nota ${++i}: ${c.text_to_remember}`);
+        let messagesAfter = watsonAnswer.output.text.splice(2);
+        watsonAnswer.output.text = watsonAnswer.output.text.concat(notes).concat(messagesAfter);
+    }
+
     let result = {
         text: watsonAnswer.output.text,
         options: watsonAnswer.output.generic.length > 0 && watsonAnswer.output.generic.filter(o => o.options).length > 0
@@ -84,23 +92,30 @@ async function sendMessagePromisse(params) {
             result.reportType = 'line';
             result.reportData = {
                 datasets: [{
-                    data: [ 1, 2, 3, 2, 4 ],
+                    data: data.filter(c => c.user_mood).map(c => c.user_mood),
                     backgroundColor: 'rgb(75, 192, 192)',
                     borderColor: 'rgb(75, 192, 192)',
                     label: 'Humor'
                 }],
-                labels: [ '03/06/2019', '04/06/2019', '05/06/2019', '06/06/2019', '07/06/2019' ]
+                labels: data.filter(c => c.user_mood).map(c => c.date.toLocaleDateString('en-GB', { year: 'numeric', month: '2-digit', day: '2-digit' }))
             };
         } else if (watsonAnswer.context.relatorioSolicitado === 'quantidade') {
+            let reportData = data.filter(c => c.user_did_routine).reduce((r, a) => {
+                let month = a.date.toISOString().replace(new RegExp('\\-\\d{2,}\\T.+'), '');
+                r[month] = r[month] || 0;
+                r[month] = r[month] + 1;
+                return r;
+            }, Object.create(null));
+
             result.reportType = 'bar';
             result.reportData = {
                 datasets: [{
-                    data: [ 5, 8, 10, 9, 12 ],
+                    data: Object.keys(reportData).map(key => reportData[key]),
                     backgroundColor: 'rgb(54, 162, 235)',
                     borderColor: 'rgb(54, 162, 235)',
                     label: 'Atividade: ' + params.context.rotina
                 }],
-                labels: [ '01/2019', '02/2019', '03/2019', '04/2019', '05/2019' ]
+                labels: Object.keys(reportData)
             };
         }
     }
