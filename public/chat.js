@@ -3,6 +3,7 @@
     var Report;
     var roseIsTyping;
     var roseTyping;
+    var resizeFunc;
     var chatbotData = {
         text: '',
         isPassword: false,
@@ -18,7 +19,13 @@
         purple: 'rgb(153, 102, 255)',
         grey: 'rgb(201, 203, 207)'
     };
-    
+
+    resizeFunc = function() {
+        $(".messages").height(document.querySelector('.chat_window').offsetHeight - document.querySelector('.top_menu').offsetHeight - document.querySelector('.bottom_wrapper').offsetHeight); 
+    };
+
+    $(window).resize(resizeFunc).resize();
+
     Message = function (arg) {
         this.text = arg.text,
         this.message_side = arg.message_side,
@@ -58,6 +65,7 @@
                 return setTimeout(function () {
                     $message.addClass('appeared');
                     if ($report) { $report.css('display', ''); }
+                    resizeFunc();
                     return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
                 }, 0);
             };
@@ -195,10 +203,7 @@
                     var timeToNext = 0;
                     data.text.forEach((t, idx, arr) => {
                         timeToNext += (1000 + t.length * 20);
-                        setTimeout(() => { 
-                            // print message with pause
-                            new Message({ text:t, message_side:'left' }).draw(); 
-                            
+                        setTimeout(() => {                             
                             // print report before last message
                             if (idx === arr.length - 2 && data.reportType) {
                                 new Message({ message_side:'left', report_type: data.reportType, report_data: data.reportData }).draw();
@@ -208,6 +213,9 @@
                             if (idx === arr.length - 1) {
                                 roseTyping(false);
                             }
+
+                            // print message with pause
+                            new Message({ text:t, message_side:'left' }).draw();
                         }, timeToNext);
                     });
                 }
