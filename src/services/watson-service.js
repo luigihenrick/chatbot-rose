@@ -105,15 +105,15 @@ async function sendMessagePromisse(params) {
         }
     }
 
-    if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
-        userService.addUser(params);
-    }
-
     if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.PASSWORD_NODE) {
         result.isPassword = true;
     }
 
     if (watsonAnswer.context.telefone) {
+        if (watsonAnswer.output.nodes_visited[watsonAnswer.output.nodes_visited.length - 1] === process.env.NEW_USER_NODE) {
+            userService.addUser(params);
+        }
+        
         let conv = await conversationService.saveConversation(watsonAnswer);
         result.conversation = conv;
     } else {

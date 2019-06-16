@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "debug": "nodemon --inspect app.js"
   },
   "author": "LuigiHenrick",
   "license": "ISC",
@@ -14,5 +15,8 @@
     "express": "^4.16.4",
     "mongoose": "^5.5.11",
     "watson-developer-cloud": "^3.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
