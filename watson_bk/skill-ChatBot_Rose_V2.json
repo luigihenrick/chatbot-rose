@@ -5,34 +5,43 @@
       "intent": "usuario_responde_que_nao_esta_bem",
       "examples": [
         {
-          "text": "to na bad"
+          "text": "Estão indo mal"
         },
         {
-          "text": "Um lixo"
+          "text": "Uma bosta"
         },
         {
-          "text": "Uma merda"
+          "text": "Terrível"
         },
         {
-          "text": "Não vai bem"
+          "text": "Horrível"
         },
         {
-          "text": "estou mal"
+          "text": "Péssimo"
         },
         {
-          "text": "Mal"
+          "text": "nao estou me sentindo tao bem"
         },
         {
-          "text": "Na bad"
+          "text": "nao me sinto muito bem"
         },
         {
-          "text": "Triste"
+          "text": "N vai bem"
         },
         {
-          "text": "Ruim"
+          "text": "N to bem"
         },
         {
-          "text": "Não estou bem"
+          "text": "Não tô bem"
+        },
+        {
+          "text": "Não tá indo bem"
+        },
+        {
+          "text": "Não está indo bem"
+        },
+        {
+          "text": "Muito mal"
         },
         {
           "text": "Muito ruim"
@@ -44,37 +53,34 @@
           "text": "Não to bem"
         },
         {
-          "text": "Não está indo bem"
+          "text": "Não estou bem"
         },
         {
-          "text": "Não tá indo bem"
+          "text": "Ruim"
         },
         {
-          "text": "Não tô bem"
+          "text": "Triste"
         },
         {
-          "text": "N to bem"
+          "text": "Na bad"
         },
         {
-          "text": "N vai bem"
+          "text": "Mal"
         },
         {
-          "text": "Muito mal"
+          "text": "estou mal"
         },
         {
-          "text": "Péssimo"
+          "text": "Não vai bem"
         },
         {
-          "text": "Horrível"
+          "text": "Uma merda"
         },
         {
-          "text": "Terrível"
+          "text": "Um lixo"
         },
         {
-          "text": "Uma bosta"
-        },
-        {
-          "text": "Estão indo mal"
+          "text": "to na bad"
         },
         {
           "text": "Nada bem"
@@ -83,10 +89,46 @@
       "description": ""
     },
     {
+      "intent": "usuario_quer_ser_lembrado",
+      "examples": [
+        {
+          "text": "Quero ser lembrado"
+        },
+        {
+          "text": "Quero ser lembrada"
+        },
+        {
+          "text": "Quero"
+        },
+        {
+          "text": "me lembre disso"
+        },
+        {
+          "text": "me lembra disso"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "Usario_nao_se_sente_motivado_atividade",
       "examples": [
         {
+          "text": "N to com vontade"
+        },
+        {
+          "text": "Não estou com vontade"
+        },
+        {
+          "text": "Não me sinto bem"
+        },
+        {
+          "text": "Não me sinto motivad"
+        },
+        {
           "text": "n me sinto bem"
+        },
+        {
+          "text": "Não tenho vontade"
         },
         {
           "text": "Não estou motivad"
@@ -105,48 +147,51 @@
         },
         {
           "text": "Não to com vontade"
-        },
-        {
-          "text": "N to com vontade"
-        },
-        {
-          "text": "Não estou com vontade"
-        },
-        {
-          "text": "Não tenho vontade"
-        },
-        {
-          "text": "Não me sinto motivad"
-        },
-        {
-          "text": "Não me sinto bem"
         }
       ],
       "description": "O usuário não se sente motivado a fazer a atividade"
     },
     {
+      "intent": "Usuario_quer_contar_sobre_seu_dia",
+      "examples": [
+        {
+          "text": "Quero falar sobre o meu dia"
+        },
+        {
+          "text": "Quero contar sobre o meu dia"
+        },
+        {
+          "text": "falar sobre meu dia"
+        },
+        {
+          "text": "meu dia"
+        }
+      ],
+      "description": ""
+    },
+    {
       "intent": "Usuario_tem_certeza",
       "examples": [
         {
-          "text": "Muita"
-        },
-        {
-          "text": "Absoluta"
-        },
-        {
-          "text": "Tenho certeza"
-        },
-        {
           "text": "Tenho"
-        },
-        {
-          "text": "Definitivamente"
         },
         {
           "text": "não tenho dúvida"
         },
         {
           "text": "Claro"
+        },
+        {
+          "text": "Muita"
+        },
+        {
+          "text": "Definitivamente"
+        },
+        {
+          "text": "Absoluta"
+        },
+        {
+          "text": "Tenho certeza"
         }
       ],
       "description": "O usuário tem certeza de sua resposta"
@@ -155,10 +200,25 @@
       "intent": "gerarRelatorio",
       "examples": [
         {
+          "text": "relatório de"
+        },
+        {
           "text": "Quero gerar um relatorio"
         },
         {
           "text": "Gerar Relatorio"
+        },
+        {
+          "text": "relatório"
+        },
+        {
+          "text": "ver o relatório"
+        },
+        {
+          "text": "quero ver o relatório"
+        },
+        {
+          "text": "quer ver meus relatórios"
         }
       ],
       "description": ""
@@ -167,7 +227,37 @@
       "intent": "General_Security_Assurance",
       "examples": [
         {
+          "text": "O meu dispositivo está protegido?"
+        },
+        {
+          "text": "Minha informação de pagamento pessoal é mantida de forma segura?"
+        },
+        {
+          "text": "Eu preciso de uma garantia."
+        },
+        {
+          "text": "Eu entrei infomação do meu cartão em seu site para pagar minha conta - você pode me certificar que esses detalhes são salvos de forma segura?"
+        },
+        {
+          "text": "Este é um site de bate-papo confiável?"
+        },
+        {
+          "text": "Esse chat é oficial?"
+        },
+        {
+          "text": "Como posso obter informações de perda?"
+        },
+        {
           "text": "Vocês contratam alguma empresa para auxiliar na proteção de dados?"
+        },
+        {
+          "text": "Você pode garantir a privacidade desta conversa?"
+        },
+        {
+          "text": "Você está a salvo de hackers/pirata informáticos?"
+        },
+        {
+          "text": "Como impedir o acesso não autorizado à minha conta?"
         },
         {
           "text": "Você me ajudaria a manter minhas informações seguras?"
@@ -182,58 +272,28 @@
           "text": "Como eu posso saber que essa conversa não é um golpe?"
         },
         {
-          "text": "Como impedir o acesso não autorizado à minha conta?"
-        },
-        {
-          "text": "Esse chat é oficial?"
-        },
-        {
-          "text": "Este é um site de bate-papo confiável?"
-        },
-        {
-          "text": "Eu entrei infomação do meu cartão em seu site para pagar minha conta - você pode me certificar que esses detalhes são salvos de forma segura?"
-        },
-        {
-          "text": "Eu preciso de uma garantia."
-        },
-        {
-          "text": "Minha informação de pagamento pessoal é mantida de forma segura?"
-        },
-        {
-          "text": "Nossa comunicação é privada?"
-        },
-        {
-          "text": "O meu dispositivo está protegido?"
-        },
-        {
-          "text": "Onde posso encontrar seu certificado de segurança?"
-        },
-        {
-          "text": "O que você faz pela segurança de seus clientes?"
-        },
-        {
-          "text": "Os dados dessa conversa são armazenados com segurança?"
-        },
-        {
-          "text": "Posso passar informações confidenciais aqui?"
-        },
-        {
-          "text": "Que medidas de segurança são usados para assegurar que esta conversa é segura?"
+          "text": "As informações do cartão de crédito são criptografadas e mantidas seguras?"
         },
         {
           "text": "Usuário quer garantia de que qualquer informação que ele forneça no bate-papo está protegida e segura."
         },
         {
-          "text": "Você está a salvo de hackers/pirata informáticos?"
+          "text": "Que medidas de segurança são usados para assegurar que esta conversa é segura?"
         },
         {
-          "text": "Você pode garantir a privacidade desta conversa?"
+          "text": "Posso passar informações confidenciais aqui?"
         },
         {
-          "text": "Como posso obter informações de perda?"
+          "text": "Os dados dessa conversa são armazenados com segurança?"
         },
         {
-          "text": "As informações do cartão de crédito são criptografadas e mantidas seguras?"
+          "text": "O que você faz pela segurança de seus clientes?"
+        },
+        {
+          "text": "Onde posso encontrar seu certificado de segurança?"
+        },
+        {
+          "text": "Nossa comunicação é privada?"
         }
       ],
       "description": "Exprima preocupações sobre a segurança do robô."
@@ -242,13 +302,13 @@
       "intent": "visualizarAtividades",
       "examples": [
         {
-          "text": "poderia me mostrar todas as atividades"
-        },
-        {
           "text": "visualizar atividades"
         },
         {
           "text": "quero ver todas as minhas atividades cadastradas"
+        },
+        {
+          "text": "poderia me mostrar todas as atividades"
         }
       ],
       "description": ""
@@ -257,22 +317,7 @@
       "intent": "Bot_Control_Standby",
       "examples": [
         {
-          "text": "Me dê um minuto, por favor."
-        },
-        {
-          "text": "Aguarde."
-        },
-        {
-          "text": "Deixe-me ver."
-        },
-        {
-          "text": "Vou me afastar do teclado e voltar em seguida."
-        },
-        {
           "text": "Vou sair e já volto."
-        },
-        {
-          "text": "Por favor espere um minuto"
         },
         {
           "text": "Já volto."
@@ -287,25 +332,16 @@
           "text": "Vou dar uma saída rápida."
         },
         {
-          "text": "Por favor, aguarde."
-        },
-        {
-          "text": "Pode me esperar, por favor?"
-        },
-        {
-          "text": "Me dê um segundo."
-        },
-        {
           "text": "Estamos quase lá."
         },
         {
-          "text": "Volto logo."
+          "text": "Saí para uma pausa."
         },
         {
           "text": "Só um minuto."
         },
         {
-          "text": "Saí para uma pausa."
+          "text": "Volto logo."
         },
         {
           "text": "Preciso de uma pausa, espere por favor."
@@ -315,6 +351,30 @@
         },
         {
           "text": "Por favor aguarde minha volta."
+        },
+        {
+          "text": "Por favor, aguarde."
+        },
+        {
+          "text": "Pode me esperar, por favor?"
+        },
+        {
+          "text": "Me dê um segundo."
+        },
+        {
+          "text": "Me dê um minuto, por favor."
+        },
+        {
+          "text": "Aguarde."
+        },
+        {
+          "text": "Deixe-me ver."
+        },
+        {
+          "text": "Vou me afastar do teclado e voltar em seguida."
+        },
+        {
+          "text": "Por favor espere um minuto"
         }
       ],
       "description": "Indique um atraso no fornecimento de dados para o robô."
@@ -324,6 +384,9 @@
       "examples": [
         {
           "text": "pensando"
+        },
+        {
+          "text": "Estou pensando"
         },
         {
           "text": "Não tenho certeza"
@@ -336,9 +399,6 @@
         },
         {
           "text": "estou em dúvida"
-        },
-        {
-          "text": "Estou pensando"
         }
       ],
       "description": "O usuário não tem  certeza da sua resposta"
@@ -359,19 +419,19 @@
       "intent": "SobreTerapiaCognitiva",
       "examples": [
         {
-          "text": "me conte sobre a terapia"
-        },
-        {
           "text": "O que é a terapia cognitiva ?"
         },
         {
-          "text": "O que seria a terapia"
+          "text": "Me fale sobre a terapia"
+        },
+        {
+          "text": "me conte sobre a terapia"
         },
         {
           "text": "me fale sobre a terapia cognitiva"
         },
         {
-          "text": "Me fale sobre a terapia"
+          "text": "O que seria a terapia"
         }
       ],
       "description": ""
@@ -379,6 +439,27 @@
     {
       "intent": "usuario_responde_que_esta_bem",
       "examples": [
+        {
+          "text": "De boa"
+        },
+        {
+          "text": "Show de bola"
+        },
+        {
+          "text": "Maravilhoso"
+        },
+        {
+          "text": "Uma maravilha"
+        },
+        {
+          "text": "Perfeito"
+        },
+        {
+          "text": "ótimo"
+        },
+        {
+          "text": "Top"
+        },
         {
           "text": "Está indo bem"
         },
@@ -407,13 +488,7 @@
           "text": "Muito bem"
         },
         {
-          "text": "Top"
-        },
-        {
-          "text": "ótimo"
-        },
-        {
-          "text": "Perfeito"
+          "text": "até que nao estou mal nao"
         },
         {
           "text": "Estou ótima"
@@ -426,18 +501,6 @@
         },
         {
           "text": "Sussa"
-        },
-        {
-          "text": "De boa"
-        },
-        {
-          "text": "Show de bola"
-        },
-        {
-          "text": "Maravilhoso"
-        },
-        {
-          "text": "Uma maravilha"
         }
       ],
       "description": ""
@@ -446,7 +509,7 @@
       "intent": "Bot_Control_Ignore_Undo",
       "examples": [
         {
-          "text": "Vamos fazê-lo novamente!"
+          "text": "Esqueça isso, vamos tentar outra coisa."
         },
         {
           "text": "Podemos fazê-lo novamente?"
@@ -459,6 +522,9 @@
         },
         {
           "text": "Vamos para o próximo passo."
+        },
+        {
+          "text": "Vamos fazê-lo novamente!"
         },
         {
           "text": "Vamos voltar para o que eu disse originalmente."
@@ -482,9 +548,6 @@
           "text": "Eu mudei de idéia."
         },
         {
-          "text": "Esqueça isso, vamos tentar outra coisa."
-        },
-        {
           "text": "Espere! Vamos voltar alguns passos atrás e recomeçar."
         },
         {
@@ -494,8 +557,44 @@
       "description": "Peça ao robô para voltar um passo atrás."
     },
     {
+      "intent": "usuario_precisa_ajuda",
+      "examples": [
+        {
+          "text": "me ajuda"
+        },
+        {
+          "text": "me ajude com o menu"
+        },
+        {
+          "text": "me ajude"
+        },
+        {
+          "text": "help"
+        },
+        {
+          "text": "não consigo saber sobre meus lembretes"
+        },
+        {
+          "text": "não consigo saber sobre meus relatórios"
+        },
+        {
+          "text": "preciso de ajuda"
+        }
+      ],
+      "description": "Usuário quer as opções de ajuda"
+    },
+    {
       "intent": "saudacao_usuario",
       "examples": [
+        {
+          "text": "Olá, Rose"
+        },
+        {
+          "text": "Oi, tudo bem?"
+        },
+        {
+          "text": "Oi, Rose"
+        },
         {
           "text": "Oi td bem"
         },
@@ -510,15 +609,6 @@
         },
         {
           "text": "Olá Rose"
-        },
-        {
-          "text": "Oi, Rose"
-        },
-        {
-          "text": "Oi, tudo bem?"
-        },
-        {
-          "text": "Olá, Rose"
         },
         {
           "text": "Oi Rose, tudo bem?"
@@ -545,25 +635,25 @@
           "text": "Ultimamente venho estando"
         },
         {
-          "text": "eu to"
-        },
-        {
-          "text": "eu tava"
-        },
-        {
-          "text": "hoje de tarde eu tava"
-        },
-        {
-          "text": "nesse dia estou"
+          "text": "Ultimamente venho"
         },
         {
           "text": "Nessa Semana estou"
         },
         {
-          "text": "Ultimamente venho"
+          "text": "nesse dia estou"
+        },
+        {
+          "text": "hoje de tarde eu tava"
+        },
+        {
+          "text": "eu to"
         },
         {
           "text": "Hoje Estou"
+        },
+        {
+          "text": "eu tava"
         },
         {
           "text": "Estou"
@@ -575,49 +665,34 @@
       "intent": "Bot_Control_Clarification",
       "examples": [
         {
+          "text": "Você pode repetir, por favor?"
+        },
+        {
           "text": "O que você me deu não é exatamente o que estou procurando."
-        },
-        {
-          "text": "Acho que eu não fui claro."
-        },
-        {
-          "text": "A sua informação não está clara."
-        },
-        {
-          "text": "Como é?"
-        },
-        {
-          "text": "Desculpe! Poderia repetir mais uma vez?"
-        },
-        {
-          "text": "Diga isso novamente, por favor. Eu não ouvi."
-        },
-        {
-          "text": "Eu não entendi."
-        },
-        {
-          "text": "Eu perdi a última parte. Poderia repetir?"
-        },
-        {
-          "text": "Eu preciso de mais informações."
         },
         {
           "text": "Me desculpe, uma vez mais."
         },
         {
-          "text": "Você não entendeu o que eu perguntei."
+          "text": "Eu preciso de mais informações."
         },
         {
-          "text": "O que você quer dizer com isso?"
+          "text": "Eu perdi a última parte. Poderia repetir?"
         },
         {
-          "text": "Pode tentar dizê-lo com mais clareza, por favor?"
+          "text": "Eu não entendi."
         },
         {
-          "text": "Preciso que você repita a informação."
+          "text": "Diga isso novamente, por favor. Eu não ouvi."
         },
         {
-          "text": "Você não entendeu o que eu disse."
+          "text": "Desculpe! Poderia repetir mais uma vez?"
+        },
+        {
+          "text": "Como é?"
+        },
+        {
+          "text": "A sua informação não está clara."
         },
         {
           "text": "Eu não entendi bem o que você me disse."
@@ -629,10 +704,25 @@
           "text": "Sobre o que você está falando?"
         },
         {
-          "text": "Você pode repetir, por favor?"
+          "text": "Acho que eu não fui claro."
         },
         {
           "text": "Você não foi claro."
+        },
+        {
+          "text": "Você não entendeu o que eu perguntei."
+        },
+        {
+          "text": "Você não entendeu o que eu disse."
+        },
+        {
+          "text": "Preciso que você repita a informação."
+        },
+        {
+          "text": "O que você quer dizer com isso?"
+        },
+        {
+          "text": "Pode tentar dizê-lo com mais clareza, por favor?"
         }
       ],
       "description": "Repita ou esclareça a última declaração."
@@ -641,16 +731,16 @@
       "intent": "cadastrarAtividade",
       "examples": [
         {
-          "text": "Quero cadastrar Atividade"
+          "text": "posso cadastrar uma atividade ?"
         },
         {
-          "text": "posso cadastrar uma atividade ?"
+          "text": "Quero cadastrar uma ativade"
         },
         {
           "text": "cadastrar Atividade"
         },
         {
-          "text": "Quero cadastrar uma ativade"
+          "text": "Quero cadastrar Atividade"
         }
       ],
       "description": ""
@@ -658,18 +748,6 @@
     {
       "intent": "General_Agent_Capabilities",
       "examples": [
-        {
-          "text": "Eu preciso de ajuda, alguém pode me ajudar?"
-        },
-        {
-          "text": "Oi Tom, quais tipos de coisas você pode me ajudar com o telefone?"
-        },
-        {
-          "text": "Oi Tom. Que tipo de coisas você pode fazer por mim?"
-        },
-        {
-          "text": "O que você pode fazer para me ajudar"
-        },
         {
           "text": "Posso verificar quais opções estão disponíveis com o agente?"
         },
@@ -686,25 +764,25 @@
           "text": "Quero saber com que você pode me ajudar./Quero saber com que coisas você pode me ajudar."
         },
         {
-          "text": "Quem pode me ajudar a realizar meu pedido."
-        },
-        {
-          "text": "Continue esperando por favor"
-        },
-        {
-          "text": "Você pode responder uma pergunta frequente sobre o agente?"
+          "text": "Tom pode listar quais áreas você pode fornecer ajuda?"
         },
         {
           "text": "Você pode resolver um caso jurídico se eu lhe der os fatos?"
         },
         {
-          "text": "Tom pode listar quais áreas você pode fornecer ajuda?"
+          "text": "Você pode responder uma pergunta frequente sobre o agente?"
         },
         {
-          "text": "O que você mais gosta de fazer?"
+          "text": "Continue esperando por favor"
+        },
+        {
+          "text": "Quem pode me ajudar a realizar meu pedido."
         },
         {
           "text": "Ajude-me a ler o medidor e registrar o uso"
+        },
+        {
+          "text": "O que você mais gosta de fazer?"
         },
         {
           "text": "Eu gostaria de saber como você pode me ajudar"
@@ -714,6 +792,18 @@
         },
         {
           "text": "Eu estou tendo alguns problemas e gostaria de alguma informação sobre como obter alguma ajuda"
+        },
+        {
+          "text": "Oi Tom, quais tipos de coisas você pode me ajudar com o telefone?"
+        },
+        {
+          "text": "Oi Tom. Que tipo de coisas você pode fazer por mim?"
+        },
+        {
+          "text": "O que você pode fazer para me ajudar"
+        },
+        {
+          "text": "Eu preciso de ajuda, alguém pode me ajudar?"
         }
       ],
       "description": "Solicite recursos de robô."
@@ -722,28 +812,28 @@
       "intent": "usuario_responde_que_nao_sabe_como_esta",
       "examples": [
         {
-          "text": "Não sei dizer"
+          "text": "N sei"
         },
         {
           "text": "Não sei muito bem"
         },
         {
-          "text": "Não sei"
-        },
-        {
-          "text": "+ ou -"
-        },
-        {
-          "text": "Nao sei"
+          "text": "Estou em dúvida"
         },
         {
           "text": "+/-"
         },
         {
-          "text": "Estou em dúvida"
+          "text": "Nao sei"
         },
         {
-          "text": "N sei"
+          "text": "+ ou -"
+        },
+        {
+          "text": "Não sei"
+        },
+        {
+          "text": "Não sei dizer"
         },
         {
           "text": "Mais ou menos"
@@ -758,10 +848,16 @@
           "text": "Quero ver tudo o que eu posso fazer"
         },
         {
+          "text": "Me demonstre o menu"
+        },
+        {
           "text": "Me mostre o menu"
         },
         {
-          "text": "Me demonstre o menu"
+          "text": "quais são as minhas opções"
+        },
+        {
+          "text": "o que posso fazer"
         }
       ],
       "description": ""
@@ -770,13 +866,40 @@
       "intent": "Bot_Control_Confirm_Presence",
       "examples": [
         {
+          "text": "Vamos quebrar o silêncio?"
+        },
+        {
+          "text": "Você foi a algum lugar?"
+        },
+        {
+          "text": "Você ouviu o que eu disse?"
+        },
+        {
+          "text": "Fale algo se você estiver aí."
+        },
+        {
+          "text": "Você precisa de mais tempo?"
+        },
+        {
+          "text": "Olá. Você está aí?"
+        },
+        {
+          "text": "Onde você está localizada? Não consigo ouvir nada."
+        },
+        {
+          "text": "Você caiu?"
+        },
+        {
+          "text": "Você está aí?"
+        },
+        {
+          "text": "Você ainda está aqui comigo?"
+        },
+        {
           "text": "Eu não estou ouvindo, pode falar mais alto?"
         },
         {
           "text": "Eu estou de volta."
-        },
-        {
-          "text": "Você foi a algum lugar?"
         },
         {
           "text": "Você ouviu o que perguntei?"
@@ -789,33 +912,6 @@
         },
         {
           "text": "Tem alguém na linha?"
-        },
-        {
-          "text": "Você ouviu o que eu disse?"
-        },
-        {
-          "text": "Olá. Você está aí?"
-        },
-        {
-          "text": "Onde você está localizada? Não consigo ouvir nada."
-        },
-        {
-          "text": "Vamos quebrar o silêncio?"
-        },
-        {
-          "text": "Você está aí?"
-        },
-        {
-          "text": "Você caiu?"
-        },
-        {
-          "text": "Você precisa de mais tempo?"
-        },
-        {
-          "text": "Você ainda está aqui comigo?"
-        },
-        {
-          "text": "Fale algo se você estiver aí."
         }
       ],
       "description": "Peça ao robô para indicar que está disponível."
@@ -824,10 +920,10 @@
       "intent": "usuario_vai_tentar_fazer_atividade",
       "examples": [
         {
-          "text": "Vou lá"
+          "text": "Vou fazer"
         },
         {
-          "text": "Mudei de ideia"
+          "text": "Vou lá"
         },
         {
           "text": "Posso tentar"
@@ -836,7 +932,7 @@
           "text": "Vou tentar"
         },
         {
-          "text": "Vou fazer"
+          "text": "Mudei de ideia"
         }
       ],
       "description": "O usuário mudou de ideia e vai tentar fazer a atividade"
@@ -848,40 +944,10 @@
           "text": "Com quem estou falando?"
         },
         {
-          "text": "Isso é um computador?"
-        },
-        {
-          "text": "Quem é você?"
-        },
-        {
-          "text": "Quem é você, realmente?"
-        },
-        {
-          "text": "Você é humano?"
-        },
-        {
-          "text": "Você pode ser honesto comigo?"
-        },
-        {
-          "text": "Você é real?"
-        },
-        {
-          "text": "Você é real, pelo menos?"
-        },
-        {
-          "text": "Você é um homem ou uma mulher?"
-        },
-        {
-          "text": "Você é um humano ou um robô?"
-        },
-        {
-          "text": "Como eu posso conversar com o Watson?"
-        },
-        {
           "text": "Como você pode provar que é humano?"
         },
         {
-          "text": "Diga-me, você é humano ou não?"
+          "text": "Como eu posso conversar com o Watson?"
         },
         {
           "text": "Estou conversando com uma pessoa ou com uma IA?"
@@ -899,7 +965,37 @@
           "text": "Você é uma pessoa real ou um robô?"
         },
         {
+          "text": "Você é um humano ou um robô?"
+        },
+        {
+          "text": "Você é um homem ou uma mulher?"
+        },
+        {
+          "text": "Você é real, pelo menos?"
+        },
+        {
+          "text": "Você é real?"
+        },
+        {
+          "text": "Você pode ser honesto comigo?"
+        },
+        {
+          "text": "Você é humano?"
+        },
+        {
+          "text": "Quem é você, realmente?"
+        },
+        {
+          "text": "Quem é você?"
+        },
+        {
+          "text": "Isso é um computador?"
+        },
+        {
           "text": "Eu estou conversando com o Watson?"
+        },
+        {
+          "text": "Diga-me, você é humano ou não?"
         }
       ],
       "description": "Pergunte se está falando com um humano ou um robô."
@@ -908,40 +1004,34 @@
       "intent": "Bot_Control_Start_Over",
       "examples": [
         {
-          "text": "Na verdade, vamos começar novamente."
-        },
-        {
-          "text": "De volta ao topo."
-        },
-        {
-          "text": "Eu preciso entender desde o começo."
-        },
-        {
           "text": "Eu preciso reiniciar."
         },
         {
-          "text": "Eu quero ver desde o início."
+          "text": "Por favor inicie do começo."
         },
         {
-          "text": "Nós precisamos voltar ao início e começar novamente."
+          "text": "Refaça-o."
+        },
+        {
+          "text": "Vamos reabrir isto novamente."
+        },
+        {
+          "text": "Tente uma vez mais."
+        },
+        {
+          "text": "Reinicie novamente desde o começo."
+        },
+        {
+          "text": "Tente novamente."
+        },
+        {
+          "text": "Vamos começar novamente."
         },
         {
           "text": "Por favor não faça nada, vamos voltar."
         },
         {
           "text": "Vamos tentar isto de novo desde o começo."
-        },
-        {
-          "text": "Tente uma vez mais."
-        },
-        {
-          "text": "Vamos reabrir isto novamente."
-        },
-        {
-          "text": "Refaça-o."
-        },
-        {
-          "text": "Por favor inicie do começo."
         },
         {
           "text": "Vamos desistir disso e voltar ao começo."
@@ -971,19 +1061,25 @@
           "text": "Eu quero voltar ao topo"
         },
         {
-          "text": "Reinicie novamente desde o começo."
-        },
-        {
-          "text": "Tente novamente."
-        },
-        {
           "text": "Faça o pedido novamente"
         },
         {
           "text": "Vá ao início."
         },
         {
-          "text": "Vamos começar novamente."
+          "text": "De volta ao topo."
+        },
+        {
+          "text": "Eu preciso entender desde o começo."
+        },
+        {
+          "text": "Eu quero ver desde o início."
+        },
+        {
+          "text": "Nós precisamos voltar ao início e começar novamente."
+        },
+        {
+          "text": "Na verdade, vamos começar novamente."
         }
       ],
       "description": "Reinicie o robô ou fluxo corrente."
@@ -992,7 +1088,19 @@
       "intent": "General_Jokes",
       "examples": [
         {
-          "text": "Estou entediado."
+          "text": "Você tem quaisquer jogos?"
+        },
+        {
+          "text": "Você pode me contar uma piada?"
+        },
+        {
+          "text": "Você pode cantar para mim?"
+        },
+        {
+          "text": "Vamos nos divertir!"
+        },
+        {
+          "text": "Você gosta de contar piadas?"
         },
         {
           "text": "Está se divertindo?"
@@ -1004,6 +1112,9 @@
           "text": "Estou entediado. Entretenha-me!"
         },
         {
+          "text": "Estou entediado."
+        },
+        {
           "text": "Eu não sou tedioso, você é."
         },
         {
@@ -1013,37 +1124,22 @@
           "text": "O que você faz para se divertir?"
         },
         {
-          "text": "Porque você é enfadonho?"
+          "text": "Você me entediou."
         },
         {
           "text": "Qual a sua piada favorita?"
         },
         {
-          "text": "Você tem quaisquer jogos?"
+          "text": "Porque você é enfadonho?"
         },
         {
-          "text": "Você pode me contar uma piada?"
-        },
-        {
-          "text": "Você pode cantar para mim?"
-        },
-        {
-          "text": "Você me entediou."
-        },
-        {
-          "text": "Você gosta de contar piadas?"
-        },
-        {
-          "text": "Vamos nos divertir!"
-        },
-        {
-          "text": "Surpreenda-me com algo hilariante."
+          "text": "Você tem senso de humor?"
         },
         {
           "text": "Você sabe piadas?"
         },
         {
-          "text": "Você tem senso de humor?"
+          "text": "Surpreenda-me com algo hilariante."
         }
       ],
       "description": "Peça uma piada."
@@ -1052,10 +1148,7 @@
       "intent": "General_About_You",
       "examples": [
         {
-          "text": "Quero entender como você trabalha."
-        },
-        {
-          "text": "Quero o documento de requisitos do sistema para esse agente."
+          "text": "Você fala Francês?"
         },
         {
           "text": "Quero configurar saudações aqui."
@@ -1070,7 +1163,19 @@
           "text": "Me diga três coisas sobre você."
         },
         {
+          "text": "Você tem um nome?"
+        },
+        {
           "text": "Há quanto tempo você tem desempenhado essa função?"
+        },
+        {
+          "text": "Como você se descreve?"
+        },
+        {
+          "text": "Este agente foi construído usando processamento de linguagem natural?"
+        },
+        {
+          "text": "Quero entender como você trabalha."
         },
         {
           "text": "Eu preciso da informação sobre o preço do Watson."
@@ -1079,19 +1184,10 @@
           "text": "Estou procurando uma solução para melhorar o meu engajamento com o cliente usando este agente virtual."
         },
         {
-          "text": "Você fala Francês?"
+          "text": "Quero o documento de requisitos do sistema para esse agente."
         },
         {
           "text": "Você sabe quem você é?"
-        },
-        {
-          "text": "Você tem um nome?"
-        },
-        {
-          "text": "Como você se descreve?"
-        },
-        {
-          "text": "Este agente foi construído usando processamento de linguagem natural?"
         }
       ],
       "description": "Solicite atributos pessoais genéricos."
@@ -1100,64 +1196,64 @@
       "intent": "General_Connect_to_Agent",
       "examples": [
         {
-          "text": "Eu vou falar com um agente/ Eu vou falar com um agente de suporte."
-        },
-        {
-          "text": "Você pode me conectar com uma pessoa real?"
-        },
-        {
-          "text": "Quero falar com alguém de outra área."
-        },
-        {
           "text": "Eu quero tentar o seu agente virtual."
         },
         {
-          "text": "Você pode por favor me transferir para alguém que possa me ajudar, eu mandei um e-mail para você e você não leu direito e simplesmente saiu."
+          "text": "Ok deixe-me tentar outra vez. Eu estou tentando falar com um ser humano para resolver diversos problemas faz tempão e dado que o meu telefone bloqueado eu preciso falar diretamente com alguém que entende a conta e pode consertar isso"
         },
         {
-          "text": "Você pode me enviar um número de telefone para falar com um representante de vendas?"
-        },
-        {
-          "text": "Preciso contatar a um atendente"
-        },
-        {
-          "text": "Posso ter informações de contato para falar com um agente ao vivo."
-        },
-        {
-          "text": "Isso é muito frustrante, eu quero falar com uma pessoa de verdade real."
-        },
-        {
-          "text": "Oi Tom. Eu queria saber se você poderia me direconionar/conectar para um agente humano para que eu possa completar meu pedido?"
-        },
-        {
-          "text": "Por favor me conectar a um agente humano que é fluente em inglês."
-        },
-        {
-          "text": "Eu quero contatar um agente/Eu quero entrar em contato com um agente"
-        },
-        {
-          "text": "Eu preciso falar com um representante. Como posso fazer isso?"
-        },
-        {
-          "text": "Bem agora eu gostaria de falar com um agente sobre algumas cobranças"
-        },
-        {
-          "text": "Pode me provar que é um representante?"
-        },
-        {
-          "text": "Por favor pode me conectar com a Vaishali K? Minha conversação foi desconectada"
-        },
-        {
-          "text": "Por favor, você pode entrar em contato comigo com um agente humano?"
-        },
-        {
-          "text": "Posso falar com um agente sobre minha conta"
+          "text": "Eu vou falar com um agente/ Eu vou falar com um agente de suporte."
         },
         {
           "text": "Existe alguém com quem eu posso realmente falar de verdade?"
         },
         {
-          "text": "Ok deixe-me tentar outra vez. Eu estou tentando falar com um ser humano para resolver diversos problemas faz tempão e dado que o meu telefone bloqueado eu preciso falar diretamente com alguém que entende a conta e pode consertar isso"
+          "text": "Posso falar com um agente sobre minha conta"
+        },
+        {
+          "text": "Por favor, você pode entrar em contato comigo com um agente humano?"
+        },
+        {
+          "text": "Por favor pode me conectar com a Vaishali K? Minha conversação foi desconectada"
+        },
+        {
+          "text": "Pode me provar que é um representante?"
+        },
+        {
+          "text": "Bem agora eu gostaria de falar com um agente sobre algumas cobranças"
+        },
+        {
+          "text": "Eu preciso falar com um representante. Como posso fazer isso?"
+        },
+        {
+          "text": "Eu quero contatar um agente/Eu quero entrar em contato com um agente"
+        },
+        {
+          "text": "Por favor me conectar a um agente humano que é fluente em inglês."
+        },
+        {
+          "text": "Oi Tom. Eu queria saber se você poderia me direconionar/conectar para um agente humano para que eu possa completar meu pedido?"
+        },
+        {
+          "text": "Isso é muito frustrante, eu quero falar com uma pessoa de verdade real."
+        },
+        {
+          "text": "Posso ter informações de contato para falar com um agente ao vivo."
+        },
+        {
+          "text": "Preciso contatar a um atendente"
+        },
+        {
+          "text": "Você pode me enviar um número de telefone para falar com um representante de vendas?"
+        },
+        {
+          "text": "Você pode por favor me transferir para alguém que possa me ajudar, eu mandei um e-mail para você e você não leu direito e simplesmente saiu."
+        },
+        {
+          "text": "Quero falar com alguém de outra área."
+        },
+        {
+          "text": "Você pode me conectar com uma pessoa real?"
         }
       ],
       "description": "Solicite um agente humano."
@@ -1165,6 +1261,12 @@
     {
       "intent": "General_Negative_Feedback",
       "examples": [
+        {
+          "text": "Você é uma piada?"
+        },
+        {
+          "text": "Por que você é retardado?"
+        },
         {
           "text": "Porra, como posso falar com uma pessoa real?"
         },
@@ -1212,12 +1314,6 @@
         },
         {
           "text": "Você está fora de si?"
-        },
-        {
-          "text": "Você é uma piada?"
-        },
-        {
-          "text": "Por que você é retardado?"
         }
       ],
       "description": "Expresse feedback desfavorável."
@@ -1226,28 +1322,49 @@
       "intent": "Bot_Control_Approve_Response",
       "examples": [
         {
-          "text": "Você me entende."
+          "text": "Essa é a resposta certa."
         },
         {
-          "text": "Genial!"
+          "text": "É disso que preciso."
+        },
+        {
+          "text": "Com certeza. Estou empolgado com isso."
+        },
+        {
+          "text": "Com certeza!"
+        },
+        {
+          "text": "Bom trabalho."
+        },
+        {
+          "text": "Afirmativo! É por isso que eu estava procurando."
+        },
+        {
+          "text": "Você me entende."
         },
         {
           "text": "Ignore o que eu falei."
         },
         {
-          "text": "Muito bem. Vamos fazê-lo."
+          "text": "É exatamente disso que preciso."
         },
         {
-          "text": "Nós precisamos exatamente disso."
+          "text": "Você leu minha mente."
         },
         {
-          "text": "Sim, é isso!"
+          "text": "Genial!"
         },
         {
           "text": "Ótimo."
         },
         {
-          "text": "Você leu minha mente."
+          "text": "Sim, é isso!"
+        },
+        {
+          "text": "Nós precisamos exatamente disso."
+        },
+        {
+          "text": "Muito bem. Vamos fazê-lo."
         },
         {
           "text": "Isso está certo."
@@ -1262,28 +1379,7 @@
           "text": "Essa é a resposta pela qual procurava."
         },
         {
-          "text": "Essa é a resposta certa."
-        },
-        {
           "text": "Essa é a resposta apropriada."
-        },
-        {
-          "text": "É disso que preciso."
-        },
-        {
-          "text": "Com certeza. Estou empolgado com isso."
-        },
-        {
-          "text": "Com certeza!"
-        },
-        {
-          "text": "É exatamente disso que preciso."
-        },
-        {
-          "text": "Bom trabalho."
-        },
-        {
-          "text": "Afirmativo! É por isso que eu estava procurando."
         }
       ],
       "description": "Confirme que a resposta satisfaz uma pergunta."
@@ -1292,19 +1388,16 @@
       "intent": "Usuario_tem_evento_impossibilita_atividade",
       "examples": [
         {
+          "text": "preciso ir"
+        },
+        {
           "text": "vou precisar"
         },
         {
+          "text": "tenho que"
+        },
+        {
           "text": "Resolver"
-        },
-        {
-          "text": "Compromisso"
-        },
-        {
-          "text": "Pendência"
-        },
-        {
-          "text": "preciso ir"
         },
         {
           "text": "Problema"
@@ -1319,7 +1412,10 @@
           "text": "preciso fazer"
         },
         {
-          "text": "tenho que"
+          "text": "Compromisso"
+        },
+        {
+          "text": "Pendência"
         }
       ],
       "description": "O usuário tem um compromisso (ou evento) que impossibilita fazer a atividade"
@@ -1328,19 +1424,19 @@
       "intent": "Bot_Control_Reject_Response",
       "examples": [
         {
-          "text": "Isso não é o que quero dizer."
-        },
-        {
           "text": "Eu não disse isso."
         },
         {
           "text": "Não é isso."
         },
         {
+          "text": "Você não faz idéia."
+        },
+        {
           "text": "Isso não estava correto. Esqueçamos."
         },
         {
-          "text": "Você não faz idéia."
+          "text": "Você está me entendendo mal."
         },
         {
           "text": "Você não entendeu o que eu pedi."
@@ -1352,19 +1448,10 @@
           "text": "Isso estava errado, tente novamente."
         },
         {
-          "text": "Você está me entendendo mal."
+          "text": "Isso não é o que quero dizer."
         },
         {
-          "text": "Eu não quero isso."
-        },
-        {
-          "text": "Eu não quis dizer isso."
-        },
-        {
-          "text": "Eu não preciso disso."
-        },
-        {
-          "text": "Eu não falei sobre isso."
+          "text": "Não estou entendendo."
         },
         {
           "text": "Eu não entendo o que você está dizendo."
@@ -1373,7 +1460,16 @@
           "text": "O que você me deu não foi exatamente o que pedi."
         },
         {
-          "text": "Não estou entendendo."
+          "text": "Eu não falei sobre isso."
+        },
+        {
+          "text": "Eu não preciso disso."
+        },
+        {
+          "text": "Eu não quis dizer isso."
+        },
+        {
+          "text": "Eu não quero isso."
         },
         {
           "text": "O que você me deu não é o que eu estava procurando."
@@ -1397,12 +1493,6 @@
       "intent": "resposta_negativa",
       "examples": [
         {
-          "text": "nem ferrando"
-        },
-        {
-          "text": "não"
-        },
-        {
           "text": "no"
         },
         {
@@ -1419,6 +1509,12 @@
         },
         {
           "text": "nop"
+        },
+        {
+          "text": "não"
+        },
+        {
+          "text": "nem ferrando"
         }
       ],
       "description": ""
@@ -1427,52 +1523,22 @@
       "intent": "Bot_Control_Change_Subject",
       "examples": [
         {
-          "text": "Quero ajuda sobre outra coisa."
-        },
-        {
           "text": "Vamos falar sobre outra coisa."
-        },
-        {
-          "text": "Vamos falar de outro assunto?"
-        },
-        {
-          "text": "Não tenho mais o que falar sobre isso."
-        },
-        {
-          "text": "Não quero falar disso."
-        },
-        {
-          "text": "Não quero falar desse assunto."
-        },
-        {
-          "text": "Não é disso que preciso, vamos mudar de assunto."
-        },
-        {
-          "text": "Esse assunto é inconveniente."
-        },
-        {
-          "text": "Esse assunto não tem nada a ver."
-        },
-        {
-          "text": "Sobre o que mais podemos falar?"
-        },
-        {
-          "text": "Quero lidar com outro problema."
-        },
-        {
-          "text": "Quero falar de outra coisa."
-        },
-        {
-          "text": "Vamos mudar de assunto."
         },
         {
           "text": "Preciso de outra coisa."
         },
         {
-          "text": "Preciso de algo totalmente diferente."
+          "text": "Vamos mudar de assunto."
         },
         {
-          "text": "Podemos falar sobre outra coisa?"
+          "text": "Quero falar de outra coisa."
+        },
+        {
+          "text": "Quero lidar com outro problema."
+        },
+        {
+          "text": "Sobre o que mais podemos falar?"
         },
         {
           "text": "Esse assunto não tem nada a ver com o que preciso."
@@ -1481,7 +1547,37 @@
           "text": "Esse assunto é irrelevante."
         },
         {
+          "text": "Quero ajuda sobre outra coisa."
+        },
+        {
           "text": "Vamos mudar de assunto?"
+        },
+        {
+          "text": "Vamos falar de outro assunto?"
+        },
+        {
+          "text": "Esse assunto não tem nada a ver."
+        },
+        {
+          "text": "Esse assunto é inconveniente."
+        },
+        {
+          "text": "Não é disso que preciso, vamos mudar de assunto."
+        },
+        {
+          "text": "Não quero falar desse assunto."
+        },
+        {
+          "text": "Não quero falar disso."
+        },
+        {
+          "text": "Não tenho mais o que falar sobre isso."
+        },
+        {
+          "text": "Podemos falar sobre outra coisa?"
+        },
+        {
+          "text": "Preciso de algo totalmente diferente."
         }
       ],
       "description": "Mude para um tópico diferente."
@@ -1489,18 +1585,6 @@
     {
       "intent": "General_Greetings",
       "examples": [
-        {
-          "text": "Bom dia, como você está?"
-        },
-        {
-          "text": "Eu gostaria de conversar com o Watson."
-        },
-        {
-          "text": "Eu tenho algumas perguntas, por favor, deixe-me falar primeiro"
-        },
-        {
-          "text": "Eu não pedi para falar com um agente. Eu estava falando olá/oi para você"
-        },
         {
           "text": "Obrigado só pensei de dar um oi como seu nome apareceu"
         },
@@ -1518,6 +1602,18 @@
         },
         {
           "text": "Boa tarde , você está ai?"
+        },
+        {
+          "text": "Bom dia, como você está?"
+        },
+        {
+          "text": "Eu gostaria de conversar com o Watson."
+        },
+        {
+          "text": "Eu não pedi para falar com um agente. Eu estava falando olá/oi para você"
+        },
+        {
+          "text": "Eu tenho algumas perguntas, por favor, deixe-me falar primeiro"
         }
       ],
       "description": "Cumprimente o robô."
@@ -1526,73 +1622,73 @@
       "intent": "General_Ending",
       "examples": [
         {
-          "text": "Falo contigo depois. Tchau"
-        },
-        {
           "text": "Você foi de pouca ajuda, por isso não quero falar com você mais, tchau"
         },
         {
-          "text": "Volto mais tarde."
-        },
-        {
-          "text": "Tudo bem, eu tenho tudo o que eu precisava"
-        },
-        {
-          "text": "Com licença, tenho que ir agora"
-        },
-        {
-          "text": "Vejo você mais tarde."
-        },
-        {
-          "text": "Quero encerrar a conversa, obrigado."
-        },
-        {
-          "text": "Ainda não terminou?"
-        },
-        {
-          "text": "Desculpe ter ocupado tanto do seu tempo. Eu sei que estamos os dois ocupados e acho que tenho que dizer tchau por ora.."
-        },
-        {
-          "text": "Estou cansado de digitar agora. Obrigado e adeus"
-        },
-        {
-          "text": "Estou indo embora."
-        },
-        {
-          "text": "Eu estou indo agora. Tenha um bom dia. Tchau"
-        },
-        {
-          "text": "Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso"
-        },
-        {
-          "text": "Me tire daqui."
-        },
-        {
-          "text": "Te desejo o melhor de sorte..Tchau"
-        },
-        {
-          "text": "Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!"
-        },
-        {
-          "text": "Obrigada, tchau!"
-        },
-        {
-          "text": "Obrigado pela sua ajuda, mas ainda estou confuso…tchau"
-        },
-        {
-          "text": "pare esta sessão agora..Tchau"
-        },
-        {
-          "text": "Ok, isso é tudo que eu preciso para agora."
-        },
-        {
-          "text": "Obrigado por responder todas as minhas perguntas. Tchau"
+          "text": "Vamos dar uma pausa e tentar novamente mais tarde..Tchau"
         },
         {
           "text": "Vou sair agora. Tchau"
         },
         {
-          "text": "Vamos dar uma pausa e tentar novamente mais tarde..Tchau"
+          "text": "Obrigado por responder todas as minhas perguntas. Tchau"
+        },
+        {
+          "text": "Ok, isso é tudo que eu preciso para agora."
+        },
+        {
+          "text": "pare esta sessão agora..Tchau"
+        },
+        {
+          "text": "Obrigado pela sua ajuda, mas ainda estou confuso…tchau"
+        },
+        {
+          "text": "Obrigada, tchau!"
+        },
+        {
+          "text": "Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!"
+        },
+        {
+          "text": "Te desejo o melhor de sorte..Tchau"
+        },
+        {
+          "text": "Me tire daqui."
+        },
+        {
+          "text": "Falo contigo depois. Tchau"
+        },
+        {
+          "text": "Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso"
+        },
+        {
+          "text": "Eu estou indo agora. Tenha um bom dia. Tchau"
+        },
+        {
+          "text": "Estou indo embora."
+        },
+        {
+          "text": "Estou cansado de digitar agora. Obrigado e adeus"
+        },
+        {
+          "text": "Desculpe ter ocupado tanto do seu tempo. Eu sei que estamos os dois ocupados e acho que tenho que dizer tchau por ora.."
+        },
+        {
+          "text": "Ainda não terminou?"
+        },
+        {
+          "text": "Quero encerrar a conversa, obrigado."
+        },
+        {
+          "text": "Vejo você mais tarde."
+        },
+        {
+          "text": "Com licença, tenho que ir agora"
+        },
+        {
+          "text": "Tudo bem, eu tenho tudo o que eu precisava"
+        },
+        {
+          "text": "Volto mais tarde."
         }
       ],
       "description": "Termine a conversa."
@@ -1600,9 +1696,6 @@
     {
       "intent": "resposta_positiva",
       "examples": [
-        {
-          "text": "otimo"
-        },
         {
           "text": "com certeza"
         },
@@ -1616,7 +1709,10 @@
           "text": "perfeito"
         },
         {
-          "text": "sim"
+          "text": "pretendo"
+        },
+        {
+          "text": "quero sim"
         },
         {
           "text": "positivo"
@@ -1625,7 +1721,13 @@
           "text": "pode"
         },
         {
+          "text": "otimo"
+        },
+        {
           "text": "yes"
+        },
+        {
+          "text": "sim"
         }
       ],
       "description": ""
@@ -1633,6 +1735,33 @@
     {
       "intent": "General_Positive_Feedback",
       "examples": [
+        {
+          "text": "Você detonou."
+        },
+        {
+          "text": "Ótimo!"
+        },
+        {
+          "text": "Você é legal."
+        },
+        {
+          "text": "Você é inteligente."
+        },
+        {
+          "text": "Isso é divertido."
+        },
+        {
+          "text": "Você é demais."
+        },
+        {
+          "text": "Você é adorável."
+        },
+        {
+          "text": "Você me deu exatamente o que eu precisava."
+        },
+        {
+          "text": "Muito obrigado."
+        },
         {
           "text": "É muito louco o que um robô pode fazer."
         },
@@ -1643,67 +1772,94 @@
           "text": "Isso é muito legal."
         },
         {
-          "text": "Genial! Isso é exatamente o que eu pensei."
-        },
-        {
-          "text": "Você é adorável."
-        },
-        {
-          "text": "Estou impressionado com você."
-        },
-        {
-          "text": "Estou pegando a manha disso."
-        },
-        {
-          "text": "Eu gostei do que você fez aí."
+          "text": "Incrível como você é bom!"
         },
         {
           "text": "Gostei muito do seu trabalho."
         },
         {
-          "text": "Incrível como você é bom!"
+          "text": "Eu gostei do que você fez aí."
         },
         {
-          "text": "Você detonou."
+          "text": "Estou pegando a manha disso."
         },
         {
-          "text": "Isso é divertido."
+          "text": "Estou impressionado com você."
         },
         {
-          "text": "Você é demais."
-        },
-        {
-          "text": "Você é inteligente."
-        },
-        {
-          "text": "Você é legal."
-        },
-        {
-          "text": "Você me deu exatamente o que eu precisava."
-        },
-        {
-          "text": "Você é o cara."
-        },
-        {
-          "text": "Muito bom, obrigado."
+          "text": "Genial! Isso é exatamente o que eu pensei."
         },
         {
           "text": "Espero trabalhar com você novamente."
         },
         {
-          "text": "Ótimo!"
+          "text": "Muito bom, obrigado."
         },
         {
-          "text": "Muito obrigado."
+          "text": "Você é o cara."
         }
       ],
       "description": "Exprima sentimento positivo ou gratidão."
+    },
+    {
+      "intent": "Usuario_quer_desabafar",
+      "examples": [
+        {
+          "text": "Quero desabafar"
+        },
+        {
+          "text": "desabafar"
+        }
+      ],
+      "description": ""
     },
     {
       "intent": "Bot_Control_Unsure",
       "examples": [
         {
           "text": "Eu não tenho idéia, na verdade."
+        },
+        {
+          "text": "Me desculpe, mas não tenho uma resposta para sua pergunta."
+        },
+        {
+          "text": "Me perdoe, mas não tenho uma resposta."
+        },
+        {
+          "text": "Não faço idéia."
+        },
+        {
+          "text": "Não posso te ajudar, desculpe."
+        },
+        {
+          "text": "Não sei a resposta para isso, me perdoe."
+        },
+        {
+          "text": "Não sei se entendi o que você deseja."
+        },
+        {
+          "text": "Não tenho a menor idéia."
+        },
+        {
+          "text": "Não tenho certeza se entendo o que você está dizendo."
+        },
+        {
+          "text": "Eu não sei o que você deseja."
+        },
+        {
+          "text": "Não tenho uma solução para isso."
+        },
+        {
+          "text": "Para se honesto, eu não tenho certeza."
+        },
+        {
+          "text": "Você me pegou."
+        },
+        {
+          "text": "O que você não me contaria?"
+        },
+        {
+          "text": "Desculpe não poder te ajudar com isso."
         },
         {
           "text": "Desculpe por não conseguir te ajudar."
@@ -1718,49 +1874,7 @@
           "text": "Eu não sei o que te deixará feliz."
         },
         {
-          "text": "Eu não sei o que você deseja."
-        },
-        {
-          "text": "Me desculpe, mas não tenho uma resposta para sua pergunta."
-        },
-        {
-          "text": "Desculpe não poder te ajudar com isso."
-        },
-        {
-          "text": "O que você não me contaria?"
-        },
-        {
-          "text": "Você me pegou."
-        },
-        {
-          "text": "Para se honesto, eu não tenho certeza."
-        },
-        {
-          "text": "Não tenho uma solução para isso."
-        },
-        {
           "text": "Não tenho idéia."
-        },
-        {
-          "text": "Não tenho certeza se entendo o que você está dizendo."
-        },
-        {
-          "text": "Não tenho a menor idéia."
-        },
-        {
-          "text": "Não sei se entendi o que você deseja."
-        },
-        {
-          "text": "Não sei a resposta para isso, me perdoe."
-        },
-        {
-          "text": "Não posso te ajudar, desculpe."
-        },
-        {
-          "text": "Não faço idéia."
-        },
-        {
-          "text": "Me perdoe, mas não tenho uma resposta."
         },
         {
           "text": "Eu não tenho idéia do que você está procurando."
@@ -1770,6 +1884,19 @@
     }
   ],
   "entities": [
+    {
+      "entity": "ContinueTalk",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "continueTalkPattern",
+          "patterns": [
+            "^\\{\\{CONTINUE_TALK\\}\\}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
     {
       "entity": "checkLogin",
       "values": [
@@ -1832,13 +1959,26 @@
       "fuzzy_match": true
     },
     {
+      "entity": "primeiro_nome",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "primeiroNome",
+          "patterns": [
+            "^(\\w{2,})"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
       "entity": "frequenciaRotina",
       "values": [
         {
           "type": "synonyms",
-          "value": "Mensalmente",
+          "value": "Pontual",
           "synonyms": [
-            "Mensalmente"
+            "Apenas uma vez"
           ]
         },
         {
@@ -1857,9 +1997,9 @@
         },
         {
           "type": "synonyms",
-          "value": "Pontual",
+          "value": "Mensalmente",
           "synonyms": [
-            "Apenas uma vez"
+            "Mensalmente"
           ]
         }
       ],
@@ -1868,6 +2008,43 @@
     {
       "entity": "estadoUser",
       "values": [
+        {
+          "type": "synonyms",
+          "value": "talvez",
+          "synonyms": [
+            "nao sei",
+            "talvez",
+            "to em duvida",
+            "nao sei dizer",
+            "nao sei como me sinto",
+            "sei la",
+            "nao faco ideia",
+            "mais ou menos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mal",
+          "synonyms": [
+            "ruim",
+            "mal",
+            "me sentindo mal",
+            "zuado",
+            "cabeça ruim",
+            "cabeça zuada",
+            "nao estou bem",
+            "estou pra baixo",
+            "estou desanimado",
+            "to na bad",
+            "to triste",
+            "to deprimido",
+            "estou triste",
+            "estou zuado",
+            "estou pior",
+            "péssimo",
+            "horrível"
+          ]
+        },
         {
           "type": "synonyms",
           "value": "Bem",
@@ -1879,24 +2056,25 @@
             "sentindo bem",
             "otimo",
             "formidável",
-            "nada mal",
             "Otima",
-            "Otimas"
+            "Otimas",
+            "estou melhor",
+            "tudo ok",
+            "estou ok",
+            "to tranquilo"
           ]
-        },
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "todoTextoDigitado",
+      "values": [
         {
-          "type": "synonyms",
-          "value": "Mal",
-          "synonyms": [
-            "ruim",
-            "nao muito bem",
-            "mal",
-            "me sentindo mal",
-            "zuado",
-            "cabeça ruim",
-            "cabeça zuada",
-            "nada de bom",
-            "nada bom"
+          "type": "patterns",
+          "value": "text",
+          "patterns": [
+            ".*"
           ]
         }
       ],
@@ -1914,6 +2092,51 @@
           "value": "nova_conversa_pattern",
           "patterns": [
             "^\\{\\{NEW_TALK\\}\\}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_relatorio",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "humor",
+          "synonyms": [
+            "humor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vezes_atividade",
+          "synonyms": [
+            "quantas vezes",
+            "número de vezes",
+            "quantidade de vezes",
+            "atividades",
+            "atividade",
+            "rotina"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "todos",
+          "synonyms": [
+            "todos",
+            "um de cada",
+            "cada um"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "como_sentiu_atividade",
+          "synonyms": [
+            "como me senti",
+            "como senti",
+            "como me sinto",
+            "me sinto",
+            "me senti"
           ]
         }
       ],
@@ -1946,19 +2169,6 @@
       "fuzzy_match": true
     },
     {
-      "entity": "reportStatistics",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "reportStatistics_pattern",
-          "synonyms": [
-            "\\{\\{REPORT_INIT\\}\\}(.*)\\{\\{REPORT_END\\}\\}"
-          ]
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
       "entity": "telefone",
       "values": [
         {
@@ -1985,42 +2195,22 @@
       "fuzzy_match": true
     },
     {
-      "entity": "dias-semana",
+      "entity": "respostaNegativa",
       "values": [
         {
           "type": "synonyms",
-          "value": "terca-feria",
+          "value": "negativa",
           "synonyms": [
-            "terca",
-            "terca-feira"
+            "não",
+            "nada"
           ]
-        },
-        {
-          "type": "synonyms",
-          "value": "domingo",
-          "synonyms": [
-            "domingo",
-            "sunday"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "segunda-feira",
-          "synonyms": [
-            "segunda",
-            "segunda-feira",
-            "seg"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "sexta-feira",
-          "synonyms": [
-            "sexta",
-            "sexta-feira",
-            "friday"
-          ]
-        },
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "dias-semana",
+      "values": [
         {
           "type": "synonyms",
           "value": "quarta-feira",
@@ -2045,6 +2235,40 @@
             "sabado",
             "sábado",
             "saturday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "terca-feria",
+          "synonyms": [
+            "terca",
+            "terca-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "segunda-feira",
+          "synonyms": [
+            "segunda",
+            "segunda-feira",
+            "seg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "domingo",
+          "synonyms": [
+            "domingo",
+            "sunday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sexta-feira",
+          "synonyms": [
+            "sexta",
+            "sexta-feira",
+            "friday"
           ]
         }
       ],
@@ -2072,6 +2296,11 @@
       "values": [
         {
           "type": "synonyms",
+          "value": "e vc",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "e você",
           "synonyms": []
         },
@@ -2087,11 +2316,6 @@
         },
         {
           "type": "synonyms",
-          "value": "e vc",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "tudo bem",
           "synonyms": []
         },
@@ -2101,6 +2325,73 @@
           "synonyms": []
         }
       ]
+    },
+    {
+      "entity": "palavrasAExcluir",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "exclusaoNomes",
+          "synonyms": [
+            "nenhum",
+            "nenhuma",
+            "eu não vou falar nada",
+            "fulano",
+            "fulana",
+            "nada",
+            "zero",
+            "não sei",
+            "ninguem",
+            "nadica",
+            "nadica de nada",
+            "sr ninguem",
+            "nao tenho nome",
+            "ninguém",
+            "senhor",
+            "senhora",
+            "garoto",
+            "menino",
+            "menina",
+            "eu",
+            "ela",
+            "tu",
+            "nos",
+            "vos",
+            "eles",
+            "muleque",
+            "meniniho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "exclusaoPalavrões",
+          "synonyms": [
+            "cuzão",
+            "cuzao",
+            "arrombado",
+            "arrombada",
+            "vai tomar no cu",
+            "filha da puta",
+            "vadia",
+            "vagabunda",
+            "vagabund",
+            "filha da mãe",
+            "caralho",
+            "porra",
+            "viado",
+            "viadaa",
+            "viada",
+            "safada",
+            "vagbunda",
+            "cuzona",
+            "buceta",
+            "puta",
+            "prostituta",
+            "vagaba"
+          ]
+        }
+      ],
+      "fuzzy_match": true
     },
     {
       "entity": "todasAtividadesCadastradas",
@@ -2133,16 +2424,8 @@
       "values": []
     },
     {
-      "entity": "forcandoLogin",
-      "values": [
-        {
-          "type": "patterns",
-          "value": "texto",
-          "patterns": [
-            "123"
-          ]
-        }
-      ],
+      "entity": "palavra_negativa",
+      "values": [],
       "fuzzy_match": true
     }
   ],
@@ -2155,6 +2438,47 @@
   },
   "description": "",
   "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Perguntando se o usuário quer ser lembrado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendo..."
+              },
+              {
+                "text": "Compreendo..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "O que você acha de eu te lembrar disso para você contar ao seu terapeuta na sua próxima sessão?"
+              },
+              {
+                "text": "Se você quiser eu posso anotar isso pra te lembrar de contar para o seu terapeuta, o que acha?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560117490586",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_6_1560118677287"
+    },
     {
       "type": "slot",
       "parent": "node_23_1559014929772",
@@ -2201,6 +2525,164 @@
       "dialog_node": "node_27_1559015358490",
       "digress_out": "allow_all",
       "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "Melhora espetacular",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sensacional!"
+              },
+              {
+                "text": "Incrível!"
+              },
+              {
+                "text": "Excelente!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Você teve uma enorme melhora!"
+              },
+              {
+                "text": "Você se sentiu muito melhor!"
+              },
+              {
+                "text": "Fez bem demais pra você!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Estou muito feliz em saber isso"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_19_1557795261632",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "$diferencaHumorAtividade > 2",
+      "dialog_node": "node_2_1560486487049",
+      "previous_sibling": "node_1_1560486484450"
+    },
+    {
+      "type": "standard",
+      "title": "Grande melhora",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que ótimo!"
+              },
+              {
+                "text": "Que maravilha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Você teve uma grande melhora!"
+              },
+              {
+                "text": "Você teve uma bela melhora!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Gostei de ler isso!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_19_1557795261632",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "$diferencaHumorAtividade:2",
+      "dialog_node": "node_1_1560486484450",
+      "previous_sibling": "node_3_1560486783350"
+    },
+    {
+      "type": "standard",
+      "title": "Melhora",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom!"
+              },
+              {
+                "text": "Muito bom!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Vejo que fez bem pra você"
+              },
+              {
+                "text": "Vejo que te fez bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Ótima notícia!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_19_1557795261632",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "$diferencaHumorAtividade: 0",
+      "dialog_node": "node_3_1560486783350"
     },
     {
       "type": "frame",
@@ -2351,6 +2833,11 @@
     },
     {
       "type": "slot",
+      "parent": "node_14_1560131022950",
+      "dialog_node": "slot_15_1560132610046"
+    },
+    {
+      "type": "slot",
       "output": {},
       "parent": "node_34_1559015698964",
       "metadata": {},
@@ -2422,6 +2909,40 @@
       "metadata": {},
       "conditions": "#resposta_negativa",
       "dialog_node": "node_11_1556977967124",
+      "previous_sibling": "node_2_1559790590635"
+    },
+    {
+      "type": "standard",
+      "title": "O usuário não sabe",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo..."
+              },
+              {
+                "text": "Entendo..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Vejo que está em dúvida, será que não vale a pena pensarmos mais uma vez?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1555822518782",
+      "metadata": {},
+      "conditions": "@estadoUser:talvez || #usuario_nao_tem_certeza",
+      "dialog_node": "node_2_1559790590635",
       "previous_sibling": "node_1_1555892958494"
     },
     {
@@ -2460,42 +2981,19 @@
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           }
         ]
       },
       "parent": "node_6_1555822518782",
       "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
       "conditions": "#resposta_positiva || #Usuario_tem_certeza",
       "dialog_node": "node_1_1555892958494"
-    },
-    {
-      "type": "standard",
-      "title": "Perguntando se o usuário ainda pretede fazer a atividade",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Você ainda pretende fazer isso hoje?"
-              },
-              {
-                "text": "Você ainda planeja fazer a atividade de $rotina?"
-              },
-              {
-                "text": "Você acha que ainda vai fazer sua atividade hoje?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_38_1555807696515",
-      "metadata": {},
-      "conditions": "#resposta_negativa",
-      "dialog_node": "node_6_1555822518782",
-      "previous_sibling": "node_5_1555822465291"
     },
     {
       "type": "standard",
@@ -2521,24 +3019,43 @@
               },
               {
                 "text": "Ótimo!"
+              },
+              {
+                "text": "Que legal!"
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
-          },
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_38_1555807696515",
+      "context": {
+        "rotinaRealizada": true
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#resposta_positiva",
+      "dialog_node": "node_5_1555822465291",
+      "previous_sibling": "node_6_1555822518782"
+    },
+    {
+      "type": "standard",
+      "title": "Perguntando se o usuário ainda pretede fazer a atividade",
+      "output": {
+        "generic": [
           {
             "values": [
               {
-                "text": "Como você se sentiu fazendo sua atividade?"
+                "text": "Você ainda pretende fazer isso hoje?"
               },
               {
-                "text": "O que você sentiu ao fazer a sua atividade?"
+                "text": "Você ainda planeja fazer a atividade de $rotina?"
               },
               {
-                "text": "Qual foi a sensação de realizar esta atividade hoje?"
-              },
-              {
-                "text": "Como você acha que se saiu com isso?"
+                "text": "Você acha que ainda vai fazer sua atividade hoje?"
               }
             ],
             "response_type": "text",
@@ -2547,9 +3064,12 @@
         ]
       },
       "parent": "node_38_1555807696515",
+      "context": {
+        "rotinaRealizada": false
+      },
       "metadata": {},
-      "conditions": "#resposta_positiva",
-      "dialog_node": "node_5_1555822465291"
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_6_1555822518782"
     },
     {
       "type": "slot",
@@ -2560,61 +3080,44 @@
       "dialog_node": "slot_9_1559512321702"
     },
     {
-      "type": "frame",
-      "title": "Bem",
+      "type": "standard",
+      "title": "Mapeando Humor depois da atividade",
       "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Que bom saber!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
+        "generic": []
       },
       "parent": "node_9_1557794970402",
-      "metadata": {
-        "fallback": "leave"
+      "context": {
+        "humorDepoisAtividade": "@sys-number"
       },
+      "metadata": {},
       "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_18_1557795233209"
+        "behavior": "skip_user_input"
       },
-      "conditions": "@sys-number > 3.5",
-      "dialog_node": "node_14_1557794970404",
-      "previous_sibling": "node_10_1557794970404"
+      "conditions": "@sys-number",
+      "dialog_node": "node_13_1560130665794"
     },
     {
-      "type": "frame",
-      "title": "Mal",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Hum... Entendo."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_9_1557794970402",
-      "metadata": {
-        "fallback": "leave"
-      },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_18_1557795233209"
-      },
-      "conditions": "@sys-number < 3.5",
-      "dialog_node": "node_10_1557794970404"
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1560132600938",
+      "event_name": "focus",
+      "dialog_node": "handler_11_1560132600938",
+      "previous_sibling": "handler_10_1560132600938"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1560132600938",
+      "event_name": "input",
+      "dialog_node": "handler_10_1560132600938"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_43_1555808299299",
+      "metadata": {},
+      "variable": "$primeiro_nome",
+      "dialog_node": "slot_7_1560111971238",
+      "previous_sibling": "slot_1_1555808813980"
     },
     {
       "type": "slot",
@@ -2644,63 +3147,26 @@
       "dialog_node": "handler_43_1559015698982"
     },
     {
-      "type": "frame",
-      "title": "Bem",
+      "type": "standard",
+      "title": "Mapeando estado antes da atividade",
       "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Que bom saber!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
+        "generic": []
       },
       "parent": "node_17_1556981454336",
-      "metadata": {
-        "fallback": "leave"
+      "context": {
+        "humorAntesAtividade": "@sys-number"
       },
+      "metadata": {},
       "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_9_1557794970402"
+        "behavior": "skip_user_input"
       },
-      "conditions": "@sys-number > 3.5",
-      "dialog_node": "node_5_1557794864492",
-      "previous_sibling": "node_1_1557794660837"
+      "conditions": "@sys-number",
+      "dialog_node": "node_25_1560131922588"
     },
     {
-      "type": "frame",
-      "title": "Mal",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Hum... Entendo."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_17_1556981454336",
-      "metadata": {
-        "fallback": "leave"
-      },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_9_1557794970402"
-      },
-      "conditions": "@sys-number < 3.5",
-      "dialog_node": "node_1_1557794660837",
-      "digress_out": "allow_all",
-      "digress_out_slots": "not_allowed"
+      "type": "slot",
+      "parent": "node_21_1560131847873",
+      "dialog_node": "slot_9_1560132600938"
     },
     {
       "type": "event_handler",
@@ -2722,7 +3188,48 @@
       "parent": "node_7_1555793953771",
       "metadata": {},
       "variable": "$telefone",
-      "dialog_node": "slot_22_1555800601118"
+      "dialog_node": "slot_22_1555800601118",
+      "previous_sibling": "node_1_1559006524924"
+    },
+    {
+      "type": "frame",
+      "title": "Perguntar Senha de Cadastro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendido! "
+              },
+              {
+                "text": "Agora voce precisa me informar uma senha de acesso. "
+              },
+              {
+                "text": "Essa senha de acesso será requisitada toda vez que voce entrar para conversar comigo."
+              },
+              {
+                "text": "É uma forma de deixarmos nossas conversas mais seguras :)"
+              },
+              {
+                "text": "Poderia me informar a senha de acesso, por favor ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1555793953771",
+      "context": {
+        "rotina": "@atividade.literal"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "@atividade && !@palavrasAExcluir",
+      "dialog_node": "node_1_1559006524924",
+      "digress_out": "allow_all",
+      "digress_out_slots": "not_allowed"
     },
     {
       "type": "event_handler",
@@ -2762,24 +3269,6 @@
       "metadata": {},
       "variable": "$horaNovaRotina",
       "dialog_node": "slot_39_1559015698982"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_2_1557794809928",
-      "event_name": "focus",
-      "dialog_node": "handler_4_1557794809928",
-      "previous_sibling": "handler_3_1557794809928"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_2_1557794809928",
-      "context": {
-        "ValorSeSentindoAntes": "@sys-number"
-      },
-      "conditions": "@sys-number",
-      "event_name": "input",
-      "dialog_node": "handler_3_1557794809928"
     },
     {
       "type": "standard",
@@ -2845,33 +3334,6 @@
     },
     {
       "type": "standard",
-      "title": "Rose não entendeu",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Me desculpe, não consegui entender."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_12_1556978027801",
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_12_1556978027801"
-      },
-      "conditions": "anything_else",
-      "dialog_node": "node_21_1556982449939",
-      "previous_sibling": "node_16_1556980650724"
-    },
-    {
-      "type": "standard",
       "title": "O usuário vai tentar fazer a atividade",
       "output": {
         "generic": [
@@ -2918,6 +3380,11 @@
       },
       "parent": "node_12_1556978027801",
       "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
       "conditions": "#usuario_vai_tentar_fazer_atividade",
       "dialog_node": "node_15_1556978895501",
       "previous_sibling": "node_2_1555893485486"
@@ -2930,17 +3397,40 @@
           {
             "values": [
               {
-                "text": "Vejo que está em dúvida, será que não vale a pena pensarmos mais uma vez?"
+                "text": "É coompreensivel sua dúvida..."
+              },
+              {
+                "text": "Entendo sua duvida"
+              },
+              {
+                "text": "Tudo bem"
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Bom, reavalie sobre isso. Isso seria muito bom pra voce!"
+              },
+              {
+                "text": "Caso mude de ideia, gostaria de saber sobre sua atividade!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
           }
         ]
       },
       "parent": "node_12_1556978027801",
       "metadata": {},
-      "conditions": "#usuario_nao_tem_certeza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "#usuario_nao_tem_certeza || @estadoUser:talvez",
       "dialog_node": "node_16_1556980650724",
       "previous_sibling": "node_15_1556978895501"
     },
@@ -2998,8 +3488,121 @@
       },
       "parent": "node_12_1556978027801",
       "metadata": {},
-      "conditions": "#Usuario_tem_certeza",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "#Usuario_tem_certeza || #resposta_positiva",
       "dialog_node": "node_2_1555893485486"
+    },
+    {
+      "type": "standard",
+      "title": "Demonstrar menu de funcionalidades",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Veja só, isto é tudo o que eu consigo fazer:"
+              },
+              {
+                "text": "Olha só, essas são as informações que eu consigo trazer pra você:"
+              },
+              {
+                "text": "Vou te mostrar, estas são as suas opções:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Se você quiser eu posso te mostrar relatórios sobre o andamento da sua atividade, te contar um pouco mais sobre o que é a terapia cognitiva, te lembrar de assuntos que você queira contra para o seu terapeuta na próxima sessão ou então ser um ouvido amigo para saber mais sobre o seu dia"
+              },
+              {
+                "text": "Ah, e já que eu pergunto tanto sobre você posso te contar um pouco mais sobre mim se você quiser"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "E se você estiver com dificuldades para tentar saber alguma dessas informações digite algo como \"me ajude\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Agora, voltando para onde estávamos"
+              },
+              {
+                "text": "Agora, voltando para o que estávamos conversando..."
+              },
+              {
+                "text": "Muito bem, agora voltando para onde estávamos..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_2_1560109634408",
+      "metadata": {},
+      "conditions": "#demonstrarMenu",
+      "dialog_node": "node_11_1559008062835",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1560108827910"
+    },
+    {
+      "type": "standard",
+      "title": "Me ajude",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Se você quiser saber sobre relatórios me fale algo parecido com \"me mostre os meus relatórios\""
+              },
+              {
+                "text": "Agora, se dúvida for sobre os lembretes digite algo parecido com \"quais são os meus lembretes\" ou até mesmo \"quero ver meus lembretes\""
+              },
+              {
+                "text": "E por fim, se o assunto é terapia cognitiva é só falar \"o que é terapia cognitiva\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Voltando para onde estavamos..."
+              },
+              {
+                "text": "Muito bem, voltando para o assunto"
+              },
+              {
+                "text": "Maravilha, voltando para o que estávamos conversando..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_2_1560109634408",
+      "metadata": {},
+      "conditions": "#usuario_precisa_ajuda",
+      "dialog_node": "node_1_1560108827910",
+      "digress_out": "allow_all"
     },
     {
       "type": "event_handler",
@@ -3025,10 +3628,410 @@
       "dialog_node": "handler_10_1559512321702"
     },
     {
-      "type": "slot",
-      "parent": "node_6_1559506064390",
-      "variable": "$reportStatistics",
-      "dialog_node": "slot_1_1559506864374"
+      "type": "standard",
+      "title": "Palavões",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poderia não utilizar esse tipo de palavra? "
+              },
+              {
+                "text": "Não gostei do que você disse..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Estou aqui pra te ajudar e isso definitivamente não nos fará progredir :/"
+              },
+              {
+                "text": "Esse tipo de palavra só fará com que progredimos menos, vamos ajudar um ao outro!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Bom, voltando..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560109721356",
+      "metadata": {},
+      "conditions": "@palavrasAExcluir:exclusaoPalavrões",
+      "dialog_node": "node_1_1559877170670",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1559878367743"
+    },
+    {
+      "type": "standard",
+      "title": "Quem é a Rose",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Meu nome é Rose"
+              },
+              {
+                "text": "Eu sou a Rose"
+              },
+              {
+                "text": "Eu me chamo Rose"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Sou um chatbot que age em conjunto com sua terapia para ter um melhor aproveitamento das suas sessões!"
+              },
+              {
+                "text": "Fui criada na Fatec São Paulo em 2019 por Luigi, Samir e Pedro"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Agora, voltando para onde estávamos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560109721356",
+      "metadata": {},
+      "conditions": "#General_About_You || #General_Human_or_Bot",
+      "dialog_node": "node_5_1557013916686",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1559877170670"
+    },
+    {
+      "type": "standard",
+      "title": "(Outros Assuntos) O que é a terapia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A Terapia Cognitiva Comportamental é uma abordagem terapêutica estruturada, diretiva, com metas claras e definidas pelo psicólogo e paciente"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "É focada no momento presente e utilizada para tratar desde problemas emocionais diversos (Transtornos Psicológicos), como comportamentos disfuncionais (TOC), dificuldades relacionais e aprendizagem de novas habilidades."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Seu objetivo principal é modificar os pensamentos e os sistemas de significados dos pacientes (Crenças Centrais), buscando uma alteração emocional e comportamental consolidada e permanente. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Mas voltando ao que interessa, que é você..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560109721356",
+      "metadata": {},
+      "conditions": "#SobreTerapiaCognitiva",
+      "dialog_node": "node_1_1557792349532",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_5_1557013916686"
+    },
+    {
+      "type": "standard",
+      "title": "Sem sentido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpa, voce não pode utilizar essa resposta :/"
+              },
+              {
+                "text": "Essa resposta não faz sentido para esse contexto :/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1560109721356",
+      "metadata": {},
+      "conditions": "@palavrasAExcluir && !@palavrasAExcluir:exclusaoPalavrões",
+      "dialog_node": "node_2_1559878367743",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário não quer ser lembrado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Eu sei que não posso te dar as melhores respostas, mas de uma coisa eu tenho certeza"
+              },
+              {
+                "text": "Se você está aqui comigo conversando, quer dizer que você está tentando melhorar os seus dias e evoluir no seu tratamento!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Eu não tenho dúvidas de que as coisas vão melhorar pra você"
+              },
+              {
+                "text": "Eu tenho fé de que as coisas vão melhorar pra você"
+              },
+              {
+                "text": "Pode não parecer agora, mas as coisas vão melhorar pra você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Mesmo eu sendo apenas uma robô sei que pode ser um processo demorado e difícil, por isso é preciso paciência!"
+              },
+              {
+                "text": "Agora, vamos continuar..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560700679886",
+      "metadata": {},
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_3_1560700679892",
+      "previous_sibling": "node_2_1560700679892"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário quer ser lembrado",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560700679886",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1560118135482"
+      },
+      "conditions": "#resposta_positiva",
+      "dialog_node": "node_2_1560700679892"
+    },
+    {
+      "type": "standard",
+      "title": "Perguntando se o usuário quer ser lembrado - copy1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendo..."
+              },
+              {
+                "text": "Compreendo..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "O que você acha de eu te lembrar disso para você contar ao seu terapeuta na sua próxima sessão?"
+              },
+              {
+                "text": "Se você quiser eu posso anotar isso pra te lembrar de contar para o seu terapeuta, o que acha?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560117634298",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_1_1560700679886"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário não quer contar mais sobre",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, fica pra outra hora"
+              },
+              {
+                "text": "Tudo bem, se quiser me contar outra hora é só me chamar"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560132240989",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_7_1560484007004",
+      "previous_sibling": "node_6_1560484003187"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário quer contar mais sobre",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, porquê você acha que não está sendo legal?"
+              },
+              {
+                "text": "Muito bem, o que você acha que está fazendo ser difícil pra você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560132240989",
+      "metadata": {},
+      "conditions": "#resposta_positiva",
+      "dialog_node": "node_6_1560484003187"
+    },
+    {
+      "type": "frame",
+      "title": "Médio",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_13_1560130665794",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1557795233209"
+      },
+      "conditions": "@sys-number:3",
+      "dialog_node": "node_14_1560131022950",
+      "previous_sibling": "node_14_1557794970404"
+    },
+    {
+      "type": "frame",
+      "title": "Bem",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_13_1560130665794",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1557795233209"
+      },
+      "conditions": "@sys-number > 3",
+      "dialog_node": "node_14_1557794970404",
+      "previous_sibling": "node_10_1557794970404"
+    },
+    {
+      "type": "frame",
+      "title": "Mal",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_13_1560130665794",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1557795233209"
+      },
+      "conditions": "@sys-number < 3",
+      "dialog_node": "node_10_1557794970404"
     },
     {
       "type": "standard",
@@ -3038,35 +4041,21 @@
           {
             "values": [
               {
-                "text": "Ótimo! Vamos começar a conversar!"
+                "text": "Ótimo, vamos começar!"
               },
               {
-                "text": "Lembrando que a qualquer momento voce pode utilizar a frase \"Me mostre o menu\" para eu te demonstrar tudo o que voce pode fazer!"
+                "text": "Lembrando que a qualquer momento você pode me pedir pra mostrar o menu de opções"
               }
             ],
             "response_type": "text",
             "selection_policy": "multiline"
-          },
-          {
-            "values": [
-              {
-                "text": "Mas continuando..."
-              },
-              {
-                "text": "Mas voltando..."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
           }
         ]
       },
       "parent": "node_14_1555796092069",
       "metadata": {},
       "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_12_1559009208005"
+        "behavior": "skip_user_input"
       },
       "dialog_node": "node_26_1555805149187",
       "digress_out": "allow_all",
@@ -3112,7 +4101,30 @@
         "dialog_node": "node_43_1555808299299"
       },
       "conditions": "@usuario_logado",
-      "dialog_node": "node_15_1555796141917"
+      "dialog_node": "node_15_1555796141917",
+      "previous_sibling": "node_4_1559788576764"
+    },
+    {
+      "type": "standard",
+      "title": "Forcar conversa",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1555796092069",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_26_1555805149187"
+      },
+      "conditions": "false",
+      "dialog_node": "node_4_1559788576764"
     },
     {
       "type": "event_handler",
@@ -3207,27 +4219,183 @@
       "dialog_node": "handler_28_1559513798426"
     },
     {
-      "type": "event_handler",
+      "type": "standard",
+      "title": "Usuário não quer ser lembrado",
       "output": {
-        "text": "Não compreendi, poderia reformular ?"
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Eu sei que não posso te dar as melhores respostas, mas de uma coisa eu tenho certeza"
+              },
+              {
+                "text": "Se você está aqui comigo conversando, quer dizer que você está tentando melhorar os seus dias e evoluir no seu tratamento!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Eu não tenho dúvidas de que as coisas vão melhorar pra você"
+              },
+              {
+                "text": "Eu tenho fé de que as coisas vão melhorar pra você"
+              },
+              {
+                "text": "Pode não parecer agora, mas as coisas vão melhorar pra você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Mesmo eu sendo apenas uma robô sei que pode ser um processo demorado e difícil, por isso é preciso paciência!"
+              },
+              {
+                "text": "Agora, vamos continuar..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
       },
-      "parent": "slot_11_1555897995618",
+      "parent": "node_6_1560118677287",
       "metadata": {},
-      "event_name": "focus",
-      "dialog_node": "handler_13_1555897995618",
-      "previous_sibling": "handler_12_1555897995618"
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_12_1560119363054",
+      "previous_sibling": "node_10_1560119256302"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário quer ser lembrado",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560118677287",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1560118135482"
+      },
+      "conditions": "#resposta_positiva",
+      "dialog_node": "node_10_1560119256302"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560115586999",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1560113352133"
+      },
+      "conditions": "@tipo_relatorio:vezes_atividade",
+      "dialog_node": "node_4_1560115587000",
+      "previous_sibling": "node_3_1560115587000"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560115586999",
+      "metadata": {},
+      "conditions": "@tipo_relatorio",
+      "dialog_node": "node_5_1560115587000",
+      "previous_sibling": "node_4_1560115587000"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560115586999",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1560113333872"
+      },
+      "conditions": "@tipo_relatorio:como_sentiu_atividade",
+      "dialog_node": "node_3_1560115587000",
+      "previous_sibling": "node_2_1560115587000"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560115586999",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1560113302301"
+      },
+      "conditions": "@tipo_relatorio:humor",
+      "dialog_node": "node_2_1560115587000"
     },
     {
       "type": "event_handler",
       "output": {},
-      "parent": "slot_11_1555897995618",
-      "context": {
-        "estadoUsuario": "@estadoUser"
-      },
-      "metadata": {},
-      "conditions": "@estadoUser",
+      "parent": "slot_15_1560132610046",
+      "event_name": "focus",
+      "dialog_node": "handler_17_1560132610046",
+      "previous_sibling": "handler_16_1560132610046"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_15_1560132610046",
       "event_name": "input",
-      "dialog_node": "handler_12_1555897995618"
+      "dialog_node": "handler_16_1560132610046"
     },
     {
       "type": "frame",
@@ -3332,26 +4500,7 @@
       "parent": "node_26_1555805149187",
       "metadata": {},
       "dialog_node": "node_38_1555807696515",
-      "previous_sibling": "node_4_1555897935842"
-    },
-    {
-      "type": "frame",
-      "title": "Avaliando resposta do usuário sobre seu dia",
-      "output": {
-        "generic": []
-      },
-      "parent": "node_26_1555805149187",
-      "metadata": {
-        "fallback": "leave"
-      },
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "#EstadoDoUsuario || @estadoUser",
-      "dialog_node": "node_4_1555897935842",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_12_1559009208005",
-      "digress_out_slots": "allow_returning"
+      "previous_sibling": "node_12_1559009208005"
     },
     {
       "type": "standard",
@@ -3370,21 +4519,63 @@
                 "text": "Como você está?"
               },
               {
-                "text": "Como está se sentindo ?"
+                "text": "Como está se sentindo?"
               }
             ],
             "response_type": "text",
             "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Horrível",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ruim",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "Regular",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "Bem",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "Excelente",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
           }
         ]
       },
       "parent": "node_26_1555805149187",
       "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "user_input",
-        "dialog_node": "node_4_1555897935842"
-      },
+      "conditions": "true",
       "dialog_node": "node_12_1559009208005"
     },
     {
@@ -3436,9 +4627,6 @@
               },
               {
                 "text": "Jamais compartilharei nada do que conversamos, então pode me contar segredos ou falar qualquer coisa que passa em seu coração. <3"
-              },
-              {
-                "text": "Agora sim, vamos começar!"
               }
             ],
             "response_type": "text",
@@ -3584,12 +4772,66 @@
       "dialog_node": "handler_40_1559015698982"
     },
     {
-      "type": "slot",
+      "type": "event_handler",
       "output": {},
-      "parent": "node_14_1557794970404",
+      "parent": "slot_7_1560488870831",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1560488870831",
+      "previous_sibling": "handler_8_1560488870831"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1560488870831",
+      "event_name": "input",
+      "dialog_node": "handler_8_1560488870831"
+    },
+    {
+      "type": "standard",
+      "title": "O usuário não que fazer",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1559790590635",
       "metadata": {},
-      "variable": "$ValorSeSentindoDepois",
-      "dialog_node": "slot_15_1557794970404"
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_12_1556978027801"
+      },
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_3_1559793533592",
+      "previous_sibling": "node_2_1559793409119"
+    },
+    {
+      "type": "standard",
+      "title": "O usuário ainda pretende fazer a atividade hoje",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom que mudou de ideia!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_2_1559790590635",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1555892958494"
+      },
+      "conditions": "#resposta_positiva || #Usuario_tem_certeza",
+      "dialog_node": "node_2_1559793409119"
+    },
+    {
+      "type": "slot",
+      "parent": "node_14_1557794970404",
+      "dialog_node": "slot_12_1560132607578"
     },
     {
       "type": "event_handler",
@@ -3676,6 +4918,146 @@
       "dialog_node": "handler_18_1559013565143"
     },
     {
+      "type": "standard",
+      "title": "Usuário quer desabafar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fico feliz que você confie em mim pra isso"
+              },
+              {
+                "text": "Estou aqui para te ajudar"
+              },
+              {
+                "text": "Estou aqui para te ouvir"
+              },
+              {
+                "text": "Estou aqui com você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Me conte o que se passa na sua cabeça"
+              },
+              {
+                "text": "Me conta o que você tá pensando"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1560110045851",
+      "metadata": {},
+      "conditions": "#Usuario_quer_desabafar",
+      "dialog_node": "node_2_1560117634298",
+      "previous_sibling": "node_1_1560117490586"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário quer contar sobre seu dia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Gosto de ouvir sobre o seu dia"
+              },
+              {
+                "text": "Gosto de saber como foi o seu dia"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Me conte o que aconteceu até agora"
+              },
+              {
+                "text": "Me conte como está sendo o dia de hoje"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1560110045851",
+      "metadata": {},
+      "conditions": "#Usuario_quer_contar_sobre_seu_dia",
+      "dialog_node": "node_1_1560117490586",
+      "previous_sibling": "node_4_1559794047756"
+    },
+    {
+      "type": "standard",
+      "title": "(Conversa) Manter a Conversa Contínua",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O que quer fazer agora?"
+              },
+              {
+                "text": "O que vamos fazer agora?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Se você quiser pode me um pouco sobre o seu dia ou então me fazer alguma pergunta sobre algo que queira saber sobre as nossas conversas"
+              },
+              {
+                "text": "Eu posso te passar informações sobre como está sendo a sua atividade ou então a gente pode conversar sobre o seu dia"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Lembrando que a qualquer momento você pode me pedir pra mostrar o menu de opções"
+              },
+              {
+                "text": "E lembre-se que você você sempre pode me pedir que eu te mostro o menu de opções"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560110045851",
+      "metadata": {},
+      "conditions": "@ContinueTalk",
+      "dialog_node": "node_4_1559794047756",
+      "previous_sibling": "node_14_1555796092069"
+    },
+    {
+      "type": "standard",
+      "title": "(Conversa) Conversa Padrão",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1560110045851",
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "node_14_1555796092069"
+    },
+    {
       "type": "frame",
       "title": "Mapear telefone",
       "output": {
@@ -3705,13 +5087,19 @@
           {
             "values": [
               {
-                "text": "Olá $nome. Que bom que você voltou! "
+                "text": "Olá $primeiro_nome, que bom que você voltou! "
               },
               {
-                "text": "Olá $nome. Faz tempo que não te vejo por aqui... "
+                "text": "Olá $primeiro_nome, é bom te ver novamente!"
               },
               {
-                "text": "Olá $nome. É bom te ver novamente!"
+                "text": "Oi $primeiro_nome, é bom te ver por aqui de novo!"
+              },
+              {
+                "text": "Oi $primeiro_nome, fico feliz que veio falar comigo de novo!"
+              },
+              {
+                "text": "Olá $primeiro_nome, que bom te ver por aqui!"
               }
             ],
             "response_type": "text",
@@ -3738,11 +5126,17 @@
           {
             "values": [
               {
-                "text": "Poderia me confirmar sua senha de acesso para podermos conversar ?"
+                "text": "Pode me confirmar sua senha de acesso para podermos conversar?"
+              },
+              {
+                "text": "Pode me dizer a sua senha para podermos conversar?"
+              },
+              {
+                "text": "Pode me dizer a sua senha antes de começarmos?"
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           }
         ]
       },
@@ -3782,7 +5176,8 @@
       },
       "parent": "node_15_1555796141917",
       "context": {
-        "nome": "@nome.literal"
+        "nome": "@nome.literal",
+        "primeiro_nome": "@primeiro_nome.literal"
       },
       "metadata": {
         "fallback": "leave"
@@ -3798,54 +5193,394 @@
       "digress_out_slots": "not_allowed"
     },
     {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_11_1557794970404",
-      "metadata": {},
-      "event_name": "focus",
-      "dialog_node": "handler_13_1557794970404",
-      "previous_sibling": "handler_12_1557794970404"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_11_1557794970404",
-      "context": {
-        "ValorSeSentindoDepois": "@sys-number"
-      },
-      "metadata": {},
-      "conditions": "@sys-number",
-      "event_name": "input",
-      "dialog_node": "handler_12_1557794970404"
-    },
-    {
       "type": "standard",
-      "title": "Monstrar Relatório",
+      "title": "Relatório de vezes que o usuário fez a atividade",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Segue abaixo o relatório requisitado:"
+                "text": "É pra já!"
               },
               {
-                "text": "$reportStatistics"
+                "text": "Muito bem!"
+              },
+              {
+                "text": "Tudo bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Este é o relatório de quantas vezes você fez a atividade de <? context.rotina.toLowerCase() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560109984062",
+      "context": {
+        "relatorioSolicitado": "quantidade"
+      },
+      "metadata": {},
+      "conditions": "#gerarRelatorio && @tipo_relatorio:vezes_atividade",
+      "dialog_node": "node_5_1560113352133",
+      "previous_sibling": "node_4_1560113333872"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário quer ser lembrado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, deixei anotado no meu caderninho"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Tenho certeza de que seu terapeuta vai conseguir te ajudar com isso!"
+              },
+              {
+                "text": "Eu realmente acredito que seu terapeuta vai saber te ajudar com isso!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Agora, continuando..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560109984062",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "dialog_node": "node_4_1560118135482",
+      "previous_sibling": "node_5_1559506026492"
+    },
+    {
+      "type": "standard",
+      "title": "Relatórios",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, estas são as suas opções de relatórios:"
+              },
+              {
+                "text": "Ótimo, estas são as suas opções de relatórios:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Relatório sobre o seu humor nos dias que conversamos"
+              },
+              {
+                "text": "Quantas vezes você já fez a atividade de <? context.rotina.toLowerCase() ?>"
+              },
+              {
+                "text": "Relatório sobre como você se sentiu nas vezes que fez a atividade até agora"
+              },
+              {
+                "text": "Ou então se quiser posso te passar todos de uma só vez"
               }
             ],
             "response_type": "text",
             "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Qual você deseja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
           }
         ]
       },
-      "parent": "node_5_1559506026492",
+      "parent": "node_2_1560109984062",
       "metadata": {},
-      "conditions": "true",
-      "dialog_node": "node_4_1559506916128",
-      "previous_sibling": "node_6_1559506064390"
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1560115730163"
+      },
+      "conditions": "#gerarRelatorio",
+      "dialog_node": "node_5_1559506026492",
+      "previous_sibling": "node_1_1560113293597"
     },
     {
-      "type": "frame",
-      "title": "Mapear Relatório",
+      "type": "standard",
+      "title": "Todos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É pra já!"
+              },
+              {
+                "text": "Tudo bem!"
+              },
+              {
+                "text": "Muito bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "A seguir todos os seus relatórios"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560109984062",
+      "metadata": {},
+      "conditions": "#gerarRelatorio && @tipo_relatorio:todos",
+      "dialog_node": "node_1_1560113293597",
+      "previous_sibling": "node_5_1560113352133"
+    },
+    {
+      "type": "standard",
+      "title": "Relatório de como o usuário se sentiu na atividade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É pra já!"
+              },
+              {
+                "text": "Muito bem!"
+              },
+              {
+                "text": "Tudo bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Este é o relatório de como você se sentiu fazendo a sua atividade de <? context.rotina.toLowerCase() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560109984062",
+      "context": {
+        "relatorioSolicitado": "humorAtividade"
+      },
+      "metadata": {},
+      "conditions": "#gerarRelatorio && @tipo_relatorio:como_sentiu_atividade",
+      "dialog_node": "node_4_1560113333872",
+      "previous_sibling": "node_2_1560113302301"
+    },
+    {
+      "type": "standard",
+      "title": "Relatório de humor",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem!"
+              },
+              {
+                "text": "É pra já!"
+              },
+              {
+                "text": "Tudo bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Este é o relatório do seu humor nas nossas conversas"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560109984062",
+      "context": {
+        "relatorioSolicitado": "humor"
+      },
+      "metadata": {},
+      "conditions": "#gerarRelatorio && @tipo_relatorio:humor",
+      "dialog_node": "node_2_1560113302301"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me desculpa, não consegui entender qual relatório você me pediu"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Estas são as suas opções de relatórios:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Relatório sobre o seu humor nos dias que conversamos"
+              },
+              {
+                "text": "Quantas vezes você já fez a atividade de <? context.rotina.toLowerCase() ?>"
+              },
+              {
+                "text": "Relatório sobre como você se sentiu nas vezes que fez a atividade até agora"
+              },
+              {
+                "text": "Ou então se quiser posso te passar todos de uma só vez"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Qual você deseja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560115730163",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1560115730163"
+      },
+      "conditions": "!@tipo_relatorio",
+      "dialog_node": "node_1_1560115586999",
+      "previous_sibling": "node_3_1560115341890"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560115730163",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1560113352133"
+      },
+      "conditions": "@tipo_relatorio:vezes_atividade",
+      "dialog_node": "node_3_1560115341890",
+      "previous_sibling": "node_2_1560115319498"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560115730163",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1560113333872"
+      },
+      "conditions": "@tipo_relatorio:como_sentiu_atividade",
+      "dialog_node": "node_2_1560115319498",
+      "previous_sibling": "node_1_1560115263238"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560115730163",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1560113302301"
+      },
+      "conditions": "@tipo_relatorio:humor",
+      "dialog_node": "node_1_1560115263238"
+    },
+    {
+      "type": "standard",
       "output": {
         "generic": [
           {
@@ -3856,146 +5591,12 @@
         ]
       },
       "parent": "node_5_1559506026492",
-      "context": {
-        "reportStatistics": "@reportStatistics.literal"
-      },
-      "metadata": {
-        "fallback": "leave"
-      },
+      "metadata": {},
       "next_step": {
-        "behavior": "jump_to",
-        "selector": "condition",
-        "dialog_node": "node_4_1559506916128"
+        "behavior": "skip_user_input"
       },
-      "conditions": "@reportStatistics",
-      "dialog_node": "node_6_1559506064390",
-      "digress_out": "allow_all",
-      "digress_out_slots": "not_allowed"
-    },
-    {
-      "type": "frame",
-      "title": "Perguntar Senha de Cadastro",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Entendido! "
-              },
-              {
-                "text": "Agora voce precisa me informar uma senha de acesso. "
-              },
-              {
-                "text": "Essa senha de acesso será requisitada toda vez que voce entrar para conversar comigo."
-              },
-              {
-                "text": "É uma forma de deixarmos nossas conversas mais seguras :)"
-              },
-              {
-                "text": "Poderia me informar a senha de acesso, por favor ?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "parent": "node_2_1557791125712",
-      "context": {
-        "rotina": "@atividade.literal"
-      },
-      "metadata": {
-        "fallback": "leave"
-      },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "user_input",
-        "dialog_node": "node_3_1556976004996"
-      },
-      "conditions": "@atividade && anything_else",
-      "dialog_node": "node_1_1559006524924",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_7_1555793953771",
-      "digress_out_slots": "not_allowed"
-    },
-    {
-      "type": "frame",
-      "title": "Perguntar atividade",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Maravilha, já tenho o que precisamos para começarmos!"
-              },
-              {
-                "text": "Apenas Confirmando..."
-              },
-              {
-                "text": "Seu nome é \"$nome\", seu celular é \"$telefone\". sua primeira atividade cadastrada é \"$rotina\" e sua senha de acesso é \"$senhaAcesso\"."
-              },
-              {
-                "text": "Tudo certo ?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "parent": "node_2_1557791125712",
-      "context": {
-        "senhaAcesso": "@senhas.literal"
-      },
-      "metadata": {
-        "fallback": "leave"
-      },
-      "conditions": "@senhas && anything_else",
-      "dialog_node": "node_3_1556976004996",
-      "previous_sibling": "node_1_1559006524924"
-    },
-    {
-      "type": "frame",
-      "title": "Pergunta celular",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Ótimo!"
-              },
-              {
-                "text": "Agora iremos cadastrar uma primeira atividade que voce se propôs a realizar com seu terapeuta."
-              },
-              {
-                "text": "A idéia é conversarmos sobre ela mais pra frente."
-              },
-              {
-                "text": "Poderia me informar a atividade, por favor ?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "parent": "node_2_1557791125712",
-      "context": {
-        "telefone": "@telefone.literal"
-      },
-      "metadata": {
-        "fallback": "leave"
-      },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "user_input",
-        "dialog_node": "node_1_1559006524924"
-      },
-      "conditions": "@telefone && anything_else",
-      "dialog_node": "node_7_1555793953771",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_12_1555800450124",
-      "digress_out_slots": "not_allowed"
+      "conditions": "true",
+      "dialog_node": "node_6_1560115730163"
     },
     {
       "type": "frame",
@@ -4020,30 +5621,29 @@
       "metadata": {
         "fallback": "leave"
       },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "user_input",
-        "dialog_node": "node_7_1555793953771"
-      },
-      "conditions": "@nome && anything_else",
+      "conditions": "@nome && !@palavrasAExcluir",
       "dialog_node": "node_12_1555800450124",
       "digress_out": "allow_all",
-      "digress_out_slots": "not_allowed"
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_12_1560132607578",
+      "event_name": "focus",
+      "dialog_node": "handler_14_1560132607578",
+      "previous_sibling": "handler_13_1560132607578"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_12_1560132607578",
+      "event_name": "input",
+      "dialog_node": "handler_13_1560132607578"
     },
     {
       "type": "standard",
       "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Otimo! Então vamos lá!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
+        "generic": []
       },
       "parent": "node_3_1556976004996",
       "metadata": {},
@@ -4091,6 +5691,76 @@
       "dialog_node": "node_1_1557790906902"
     },
     {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560484003187",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1560118677287"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1560484763306"
+    },
+    {
+      "type": "standard",
+      "title": "(Funcionalidade) Visualizar Atividades Cadastradas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, segue abaixo todas as atividades Cadastradas:"
+              },
+              {
+                "text": "$todasAtividadesCadastradas"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1560109938074",
+      "metadata": {},
+      "dialog_node": "node_1_1559505059319",
+      "previous_sibling": "node_1_1559011613276"
+    },
+    {
+      "type": "standard",
+      "title": "(Funcionalidade) Cadastrar Atividade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Claro, podemos cadastrar sim uma nova atividade."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1560109938074",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1559012451001"
+      },
+      "dialog_node": "node_1_1559011613276"
+    },
+    {
       "type": "event_handler",
       "output": {
         "text": "Me desculpe, não consegui entender. Qual é a atividade?"
@@ -4114,25 +5784,251 @@
       "dialog_node": "handler_9_1559007032571"
     },
     {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_15_1557794970404",
+      "type": "standard",
+      "title": "Usuário respondeu que não está bem 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa vida..."
+              },
+              {
+                "text": ":("
+              },
+              {
+                "text": "Que pena"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Sei que as coisas podem estar difíceis, mas estou aqui para te ajudar"
+              },
+              {
+                "text": "É natural que possamos nos sentir para baixo, mas nem tudo está perdido"
+              },
+              {
+                "text": "Sei que não sou a melhor pessoa do mundo, mas saiba que estou aqui com você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560475619708",
       "metadata": {},
-      "event_name": "focus",
-      "dialog_node": "handler_17_1557794970404",
-      "previous_sibling": "handler_16_1557794970404"
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@estadoUser:Bem && @estadoUser:Mal",
+      "dialog_node": "node_1_1560476497506",
+      "previous_sibling": "node_8_1560475619708"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário respondeu que não está bem 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa vida..."
+              },
+              {
+                "text": ":("
+              },
+              {
+                "text": "Que pena"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Sei que as coisas podem estar difíceis, mas estou aqui para te ajudar"
+              },
+              {
+                "text": "É natural que possamos nos sentir para baixo, mas nem tudo está perdido"
+              },
+              {
+                "text": "Sei que não sou a melhor pessoa do mundo, mas saiba que estou aqui com você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560475619708",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@estadoUser:Bem && @respostaNegativa:negativa",
+      "dialog_node": "node_2_1560476541089",
+      "previous_sibling": "node_1_1560476497506"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário respondeu que está bem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que ótimo!"
+              },
+              {
+                "text": "Que maravilha!"
+              },
+              {
+                "text": "Muito bem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fico feliz em ler isso"
+              },
+              {
+                "text": "Fico contente de saber isso"
+              },
+              {
+                "text": "Fiquei feliz de saber isso"
+              },
+              {
+                "text": "É muito bom saber disso"
+              },
+              {
+                "text": "Estou muito contente que você está se sentindo bem"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560475619708",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@estadoUser:Bem && !@respostaNegativa:negativa",
+      "dialog_node": "node_10_1560475619708",
+      "previous_sibling": "node_2_1560476541089"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário respondeu que está medio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hm... Entendo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Pelo menos não está mal, não é mesmo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1560475619708",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@estadoUser:talvez",
+      "dialog_node": "node_12_1560475619708",
+      "previous_sibling": "node_10_1560475619708"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário respondeu que não está bem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa vida..."
+              },
+              {
+                "text": ":("
+              },
+              {
+                "text": "Que pena"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Sei que as coisas podem estar difíceis, mas estou aqui para te ajudar"
+              },
+              {
+                "text": "É natural que possamos nos sentir para baixo, mas nem tudo está perdido"
+              },
+              {
+                "text": "Sei que não sou a melhor pessoa do mundo, mas saiba que estou aqui com você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1560475619708",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@estadoUser:Mal && !@respostaNegativa:negativa",
+      "dialog_node": "node_8_1560475619708"
     },
     {
       "type": "event_handler",
       "output": {},
-      "parent": "slot_15_1557794970404",
-      "context": {
-        "ValorSeSentindoDepois": "@sys-number"
-      },
-      "metadata": {},
-      "conditions": "@sys-number",
+      "parent": "slot_3_1560132591970",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1560132591970",
+      "previous_sibling": "handler_4_1560132591970"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_3_1560132591970",
       "event_name": "input",
-      "dialog_node": "handler_16_1557794970404"
+      "dialog_node": "handler_4_1560132591970"
     },
     {
       "type": "event_handler",
@@ -4154,6 +6050,64 @@
       "conditions": "@sys-time",
       "event_name": "input",
       "dialog_node": "handler_32_1559015448587"
+    },
+    {
+      "type": "frame",
+      "title": "Bem",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_25_1560131922588",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1557794970402"
+      },
+      "conditions": "@sys-number > 3.5",
+      "dialog_node": "node_5_1557794864492",
+      "previous_sibling": "node_1_1557794660837"
+    },
+    {
+      "type": "frame",
+      "title": "Médio",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_25_1560131922588",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1557794970402"
+      },
+      "conditions": "@sys-number:3",
+      "dialog_node": "node_21_1560131847873",
+      "previous_sibling": "node_5_1557794864492"
+    },
+    {
+      "type": "frame",
+      "title": "Mal",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_25_1560131922588",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1557794970402"
+      },
+      "conditions": "@sys-number < 3.5",
+      "dialog_node": "node_1_1557794660837",
+      "digress_out": "allow_all",
+      "digress_out_slots": "not_allowed"
     },
     {
       "type": "event_handler",
@@ -4197,6 +6151,20 @@
       "conditions": "@sys-date",
       "event_name": "input",
       "dialog_node": "handler_29_1559015414984"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1560483701234",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1560483701234",
+      "previous_sibling": "handler_2_1560483701234"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1560483701234",
+      "event_name": "input",
+      "dialog_node": "handler_2_1560483701234"
     },
     {
       "type": "standard",
@@ -4260,7 +6228,7 @@
           {
             "values": [
               {
-                "text": "Certo..."
+                "text": "Teste: $teste"
               }
             ],
             "response_type": "text",
@@ -4269,20 +6237,41 @@
         ]
       },
       "parent": "node_5_1555822465291",
-      "metadata": {},
+      "context": {
+        "diferencaHumorAtividade": "<? $humorDepoisAtividade - $humorAntesAtividade ?>"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
       "next_step": {
         "behavior": "skip_user_input"
       },
       "dialog_node": "node_18_1557795233209",
+      "digress_out": "allow_all",
       "previous_sibling": "node_9_1557794970402"
     },
     {
       "type": "standard",
-      "title": "Perguntando o que o usuário sentiu Depois",
+      "title": "Perguntando o que o usuário sentiu depois",
       "output": {
         "generic": [
           {
-            "title": "Como voce se sente depois de realizar a atividade ?",
+            "values": [
+              {
+                "text": "E agora, como está se sentindo?"
+              },
+              {
+                "text": "E como você ficou se sentindo depois?"
+              },
+              {
+                "text": "E agora? Como se sente?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "title": "",
             "options": [
               {
                 "label": "Horrível",
@@ -4301,7 +6290,7 @@
                 }
               },
               {
-                "label": "Médio",
+                "label": "Regular",
                 "value": {
                   "input": {
                     "text": "3"
@@ -4309,7 +6298,7 @@
                 }
               },
               {
-                "label": "Bom",
+                "label": "Bem",
                 "value": {
                   "input": {
                     "text": "4"
@@ -4332,6 +6321,7 @@
       },
       "parent": "node_5_1555822465291",
       "metadata": {},
+      "conditions": "true",
       "dialog_node": "node_9_1557794970402",
       "previous_sibling": "node_17_1556981454336"
     },
@@ -4348,6 +6338,21 @@
             ],
             "response_type": "text",
             "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Porquê você se sentiu desse jeito?"
+              },
+              {
+                "text": "O que está fazendo você pensar que não foi bom pra você?"
+              },
+              {
+                "text": "O que você acha que te fez sentir isso?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
           }
         ]
       },
@@ -4355,20 +6360,35 @@
       "metadata": {},
       "next_step": {
         "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_17_1556981454336"
+        "selector": "user_input",
+        "dialog_node": "node_3_1560117953393"
       },
-      "conditions": "@estadoUser:Mal",
+      "conditions": "false",
       "dialog_node": "node_4_1555894265197",
       "previous_sibling": "node_3_1555894169527"
     },
     {
       "type": "standard",
-      "title": "Perguntando o que o usuário sentiu Antes",
+      "title": "Perguntando como o usuário se sentia antes",
       "output": {
         "generic": [
           {
-            "title": "Como voce se sentia antes de realizar a atividade ?",
+            "values": [
+              {
+                "text": "Me conta, como você se sentia antes de fazer a atividade?"
+              },
+              {
+                "text": "Diz pra mim, como você estava se sentindo antes de fazer a atividade?"
+              },
+              {
+                "text": "Me diga, como você se sentia antes de fazer a atividade?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "title": "",
             "options": [
               {
                 "label": "Horrível",
@@ -4387,7 +6407,7 @@
                 }
               },
               {
-                "label": "Médio",
+                "label": "Regular",
                 "value": {
                   "input": {
                     "text": "3"
@@ -4395,7 +6415,7 @@
                 }
               },
               {
-                "label": "Bom",
+                "label": "Bem",
                 "value": {
                   "input": {
                     "text": "4"
@@ -4418,6 +6438,7 @@
       },
       "parent": "node_5_1555822465291",
       "metadata": {},
+      "conditions": "true",
       "dialog_node": "node_17_1556981454336",
       "previous_sibling": "node_4_1555894265197"
     },
@@ -4451,9 +6472,9 @@
       "next_step": {
         "behavior": "jump_to",
         "selector": "body",
-        "dialog_node": "node_17_1556981454336"
+        "dialog_node": "node_4_1559794047756"
       },
-      "conditions": "@estadoUser:Bem",
+      "conditions": "false",
       "dialog_node": "node_3_1555894169527"
     },
     {
@@ -4472,26 +6493,6 @@
       "metadata": {},
       "variable": "$dataNovaRotina",
       "dialog_node": "slot_28_1559015414984"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": "{{ENTITY_NOT_VALID}}"
-      },
-      "parent": "slot_1_1559506864374",
-      "event_name": "focus",
-      "dialog_node": "handler_3_1559506864374",
-      "previous_sibling": "handler_2_1559506864374"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_1_1559506864374",
-      "context": {
-        "reportStatistics": "@reportStatistics"
-      },
-      "conditions": "@reportStatistics",
-      "event_name": "input",
-      "dialog_node": "handler_2_1559506864374"
     },
     {
       "type": "event_handler",
@@ -4515,6 +6516,50 @@
       "conditions": "@telefone",
       "event_name": "input",
       "dialog_node": "handler_23_1555800601118"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1560132596958",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1560132596958",
+      "previous_sibling": "handler_7_1560132596958"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_6_1560132596958",
+      "event_name": "input",
+      "dialog_node": "handler_7_1560132596958"
+    },
+    {
+      "type": "standard",
+      "title": "Motivo para não ter sido bom",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Como eu ainda não sou tão boa quanto um terapeuta acho melhor você contar isso a ele, você quer que eu te lembre disso no próximo dia que você tiver uma sessão?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1555894265197",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_3_1560117953393"
     },
     {
       "type": "frame",
@@ -4642,6 +6687,24 @@
       "conditions": "@senhas",
       "event_name": "input",
       "dialog_node": "handler_5_1556976004998"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1560111971238",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1560111971238",
+      "previous_sibling": "handler_8_1560111971238"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1560111971238",
+      "context": {
+        "primeiro_nome": "@primeiro_nome"
+      },
+      "conditions": "@primeiro_nome",
+      "event_name": "input",
+      "dialog_node": "handler_8_1560111971238"
     },
     {
       "type": "event_handler",
@@ -4818,11 +6881,8 @@
     },
     {
       "type": "slot",
-      "output": {},
       "parent": "node_1_1557794660837",
-      "metadata": {},
-      "variable": "$ValorSeSentindoAntes",
-      "dialog_node": "slot_2_1557794809928"
+      "dialog_node": "slot_3_1560132591970"
     },
     {
       "type": "event_handler",
@@ -4853,7 +6913,144 @@
           {
             "values": [
               {
-                "text": "Bom, notamos uma queda :("
+                "text": "Poxa vida..."
+              },
+              {
+                "text": ":("
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Vejo que houve uma piora, quer falar sobre isso?"
+              },
+              {
+                "text": "Percebi que não te fez muito bem, quer me contar sobre isso?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_18_1557795233209",
+      "metadata": {},
+      "conditions": "$humorAntesAtividade > $humorDepoisAtividade",
+      "dialog_node": "node_20_1557795883568",
+      "previous_sibling": "node_19_1557795261632"
+    },
+    {
+      "type": "standard",
+      "title": "Manteve a mesma coisa (regular)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendo"
+              },
+              {
+                "text": "Entendi"
+              },
+              {
+                "text": "Certo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Você está tentando e isso é muito bom, está indo bem!"
+              },
+              {
+                "text": "As coisas não estão piorando e isso é bom, continue tentando!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_18_1557795233209",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "$diferencaHumorAtividade:0 && $humorDepoisAtividade: 0",
+      "dialog_node": "node_4_1560483864167",
+      "previous_sibling": "node_1_1560132240989"
+    },
+    {
+      "type": "standard",
+      "title": "Manteve a mesma coisa (ruim)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vejo que não está sendo fácil pra você"
+              },
+              {
+                "text": "Percebo que não está sendo fácil pra você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Você quer me contar mais sobre isso?"
+              },
+              {
+                "text": "Quer me dizer um pouco mais sobre isso?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_18_1557795233209",
+      "metadata": {},
+      "conditions": "$diferencaHumorAtividade:0 && $humorDepoisAtividade < 3",
+      "dialog_node": "node_1_1560132240989",
+      "previous_sibling": "slot_7_1560488870831"
+    },
+    {
+      "type": "standard",
+      "title": "Manteve a mesma coisa (bom)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Incrível!"
+              },
+              {
+                "text": "Que ótimo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Fico feliz que você está gostando da atividade que escolheu!"
+              },
+              {
+                "text": "É muito bom saber que está sendo algo bom pra você!"
+              },
+              {
+                "text": "Gostei muito de saber que está se sentindo bem com a sua atividade!"
               }
             ],
             "response_type": "text",
@@ -4863,9 +7060,20 @@
       },
       "parent": "node_18_1557795233209",
       "metadata": {},
-      "conditions": "$ValorSeSentindoDepois < $ValorSeSentindoAntes",
-      "dialog_node": "node_20_1557795883568",
-      "previous_sibling": "node_19_1557795261632"
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "$humorAntesAtividade = $humorDepoisAtividade && $humorAntesAtividade > 3",
+      "dialog_node": "node_5_1560483866521",
+      "previous_sibling": "node_4_1560483864167"
+    },
+    {
+      "type": "slot",
+      "parent": "node_18_1557795233209",
+      "dialog_node": "slot_7_1560488870831",
+      "previous_sibling": "node_20_1557795883568"
     },
     {
       "type": "standard",
@@ -4873,11 +7081,7 @@
       "output": {
         "generic": [
           {
-            "values": [
-              {
-                "text": "Bom, notamos uma melhora então!"
-              }
-            ],
+            "values": [],
             "response_type": "text",
             "selection_policy": "sequential"
           }
@@ -4885,8 +7089,40 @@
       },
       "parent": "node_18_1557795233209",
       "metadata": {},
-      "conditions": "$ValorSeSentindoDepois > $ValorSeSentindoAntes",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$diferencaHumorAtividade > 0",
       "dialog_node": "node_19_1557795261632"
+    },
+    {
+      "type": "standard",
+      "title": "Motivo de estar sendo ruim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Momentos como este são naturais"
+              },
+              {
+                "text": "É natural que isso aconteça as vezes"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_9_1560484375188",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1560118677287"
+      },
+      "conditions": "true",
+      "dialog_node": "node_10_1560484375191"
     },
     {
       "type": "standard",
@@ -4981,7 +7217,7 @@
           {
             "values": [
               {
-                "text": "Desculpe, não consegui identificar essa senha. "
+                "text": "Me desculpe, não consegui identificar essa senha."
               }
             ],
             "response_type": "text",
@@ -5006,11 +7242,7 @@
       "output": {
         "generic": [
           {
-            "values": [
-              {
-                "text": "Ok, tudo certo. Podemos continuar!"
-              }
-            ],
+            "values": [],
             "response_type": "text",
             "selection_policy": "multiline"
           }
@@ -5023,7 +7255,7 @@
         "selector": "body",
         "dialog_node": "node_26_1555805149187"
       },
-      "conditions": "@checkLogin:success || @forcandoLogin:texto",
+      "conditions": "@checkLogin:success",
       "dialog_node": "node_1_1558909793275"
     },
     {
@@ -5033,22 +7265,16 @@
         "generic": []
       },
       "parent": "node_4_1555897935842",
+      "context": {
+        "humorNaConversa": "@sys-number"
+      },
       "metadata": {},
       "next_step": {
         "behavior": "skip_user_input"
       },
-      "conditions": "@estadoUser",
+      "conditions": "@sys-number",
       "dialog_node": "node_19_1555898615266",
       "previous_sibling": "node_1_1555897180946"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_4_1555897935842",
-      "metadata": {},
-      "variable": "$estadoUsuario",
-      "dialog_node": "slot_11_1555897995618",
-      "previous_sibling": "node_19_1555898615266"
     },
     {
       "type": "standard",
@@ -5077,103 +7303,13 @@
         "dialog_node": "node_19_1555898615266"
       },
       "conditions": "@usuario_pergunta_se_tudo_bem",
-      "dialog_node": "node_1_1555897180946"
+      "dialog_node": "node_1_1555897180946",
+      "previous_sibling": "slot_10_1560130145334"
     },
     {
-      "type": "standard",
-      "title": "Usuário respondeu que não sabe como está",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Hmm... Vejo que está pensante"
-              },
-              {
-                "text": "Estou vendo que está pensando um pouco"
-              },
-              {
-                "text": "Imagino que algo esteja passando pela sua cabeça"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "Vamos ver se consigo te ajudar"
-              },
-              {
-                "text": "Espero conseguir te ajudar hoje"
-              },
-              {
-                "text": "Espero conseguir fazer o seu dia melhor"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_19_1555898615266",
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_38_1555807696515"
-      },
-      "conditions": "$usuario_responde_que_nao_sabe_como_esta",
-      "dialog_node": "node_6_1555895045169",
-      "previous_sibling": "node_7_1555895048137"
-    },
-    {
-      "type": "standard",
-      "title": "Usuário respondeu que não está bem",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Poxa vida..."
-              },
-              {
-                "text": ":("
-              },
-              {
-                "text": "Que pena"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "Sei que as coisas podem estar difíceis, mas estou aqui para te ajudar"
-              },
-              {
-                "text": "É natural que possamos nos sentir para baixo, mas nem tudo está perdido"
-              },
-              {
-                "text": "Sei que não sou a melhor pessoa do mundo, mas saiba que estou aqui com você"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_19_1555898615266",
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_38_1555807696515"
-      },
-      "conditions": "@estadoUser:Mal",
-      "dialog_node": "node_7_1555895048137",
-      "previous_sibling": "node_5_1555894997370"
+      "type": "slot",
+      "parent": "node_4_1555897935842",
+      "dialog_node": "slot_10_1560130145334"
     },
     {
       "type": "standard",
@@ -5193,7 +7329,7 @@
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           },
           {
             "values": [
@@ -5214,7 +7350,7 @@
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           }
         ]
       },
@@ -5225,8 +7361,115 @@
         "selector": "body",
         "dialog_node": "node_38_1555807696515"
       },
-      "conditions": "@estadoUser:Bem",
-      "dialog_node": "node_5_1555894997370"
+      "conditions": "@sys-number>3",
+      "dialog_node": "node_5_1555894997370",
+      "previous_sibling": "node_7_1555895048137"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário respondeu que está medio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi"
+              },
+              {
+                "text": "Certo"
+              },
+              {
+                "text": "Hum"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Pelo menos não está mal, não é mesmo?"
+              },
+              {
+                "text": "Sei como se sente, nem sempre vamos nos sentir como se estivéssemos em mar de rosas"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_19_1555898615266",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@sys-number:3",
+      "dialog_node": "node_6_1555895045169",
+      "previous_sibling": "node_5_1555894997370"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário respondeu que não está bem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa vida..."
+              },
+              {
+                "text": ":("
+              },
+              {
+                "text": "Que pena"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Sei que as coisas podem estar difíceis, mas estou aqui para te ajudar"
+              },
+              {
+                "text": "É natural que possamos nos sentir para baixo, mas nem tudo está perdido"
+              },
+              {
+                "text": "Sei que não sou a melhor pessoa do mundo, mas saiba que estou aqui com você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_19_1555898615266",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1555807696515"
+      },
+      "conditions": "@sys-number<3",
+      "dialog_node": "node_7_1555895048137"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1560130145334",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1560130145334",
+      "previous_sibling": "handler_11_1560130145334"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_10_1560130145334",
+      "event_name": "input",
+      "dialog_node": "handler_11_1560130145334"
     },
     {
       "type": "slot",
@@ -5234,7 +7477,43 @@
       "parent": "node_1_1559006524924",
       "metadata": {},
       "variable": "$rotina",
-      "dialog_node": "slot_8_1559007032570"
+      "dialog_node": "slot_8_1559007032570",
+      "previous_sibling": "node_3_1556976004996"
+    },
+    {
+      "type": "frame",
+      "title": "Confirmando Infos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Maravilha, já tenho o que precisamos para começarmos!"
+              },
+              {
+                "text": "Apenas Confirmando..."
+              },
+              {
+                "text": "Seu nome é \"$nome\", seu celular é \"$telefone\". sua primeira atividade cadastrada é \"$rotina\" e sua senha de acesso é \"$senhaAcesso\"."
+              },
+              {
+                "text": "Tudo certo ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1559006524924",
+      "context": {
+        "senhaAcesso": "@senhas.literal"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "@senhas && !@palavrasAExcluir",
+      "dialog_node": "node_3_1556976004996"
     },
     {
       "type": "standard",
@@ -5293,36 +7572,13 @@
         "selector": "user_input",
         "dialog_node": "node_43_1555808299299"
       },
-      "conditions": "@checkLogin:checkCelphoneSuccess || @forcandoLogin:texto",
+      "conditions": "@checkLogin:checkCelphoneSuccess",
       "dialog_node": "node_3_1558918568633"
     },
     {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_6_1557794864498",
-      "event_name": "focus",
-      "dialog_node": "handler_8_1557794864498",
-      "previous_sibling": "handler_7_1557794864498"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_6_1557794864498",
-      "context": {
-        "ValorSeSentindoAntes": "@sys-number"
-      },
-      "metadata": {},
-      "conditions": "@sys-number",
-      "event_name": "input",
-      "dialog_node": "handler_7_1557794864498"
-    },
-    {
       "type": "slot",
-      "output": {},
       "parent": "node_5_1557794864492",
-      "metadata": {},
-      "variable": "$ValorSeSentindoAntes",
-      "dialog_node": "slot_6_1557794864498"
+      "dialog_node": "slot_6_1560132596958"
     },
     {
       "type": "slot",
@@ -5330,7 +7586,108 @@
       "parent": "node_12_1555800450124",
       "metadata": {},
       "variable": "$nome",
-      "dialog_node": "slot_6_1559093143721"
+      "dialog_node": "slot_6_1559093143721",
+      "previous_sibling": "node_7_1555793953771"
+    },
+    {
+      "type": "frame",
+      "title": "Pergunta celular",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo!"
+              },
+              {
+                "text": "Agora iremos cadastrar uma primeira atividade que voce se propôs a realizar com seu terapeuta."
+              },
+              {
+                "text": "A idéia é conversarmos sobre ela mais pra frente."
+              },
+              {
+                "text": "Poderia me informar a atividade, por favor ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_12_1555800450124",
+      "context": {
+        "telefone": "@telefone.literal"
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "@telefone && !@palavrasAExcluir",
+      "dialog_node": "node_7_1555793953771",
+      "digress_out": "allow_all",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Reagindo à resposta do usuário sobre seu dia",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_12_1559009208005",
+      "metadata": {},
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@estadoUser",
+      "dialog_node": "node_6_1560475619708",
+      "previous_sibling": "node_5_1560475619708"
+    },
+    {
+      "type": "standard",
+      "title": "Rose responde como está",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estou bem, obrigada por perguntar!"
+              },
+              {
+                "text": "Estou bem, agradeço pela preocupação!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_12_1559009208005",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1560475619708"
+      },
+      "conditions": "@usuario_pergunta_se_tudo_bem",
+      "dialog_node": "node_5_1560475619708",
+      "previous_sibling": "node_4_1555897935842"
+    },
+    {
+      "type": "frame",
+      "title": "Avaliando resposta do usuário sobre seu dia - antigo",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_12_1559009208005",
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@sys-number",
+      "dialog_node": "node_4_1555897935842",
+      "digress_out": "allow_all",
+      "digress_out_slots": "allow_returning"
     },
     {
       "type": "event_handler",
@@ -5359,6 +7716,27 @@
       "dialog_node": "slot_2_1555809478889"
     },
     {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1560118998319",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1560121320543"
+    },
+    {
       "type": "event_handler",
       "output": {
         "text": "Não consegui entender, qual sua rotina?"
@@ -5382,48 +7760,37 @@
       "dialog_node": "handler_6_1556491775170"
     },
     {
-      "type": "slot",
-      "output": {},
-      "parent": "node_10_1557794970404",
-      "metadata": {},
-      "variable": "$ValorSeSentindoDepois",
-      "dialog_node": "slot_11_1557794970404"
-    },
-    {
       "type": "standard",
-      "title": "(Funcionalidade) Baixar relatório",
+      "title": "Usuário quer ser lembrado",
       "output": {
         "generic": [
           {
-            "values": [
-              {
-                "text": "Entendido, estou preparando seu relaório, só um segundo..."
-              }
-            ],
+            "values": [],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
+      "parent": "node_3_1560117953393",
       "metadata": {},
       "next_step": {
         "behavior": "jump_to",
-        "selector": "user_input",
-        "dialog_node": "node_6_1559506064390"
+        "selector": "body",
+        "dialog_node": "node_4_1560118135482"
       },
-      "conditions": "#gerarRelatorio",
-      "dialog_node": "node_5_1559506026492",
-      "previous_sibling": "node_1_1559505059319"
+      "conditions": "#resposta_positiva || #usuario_quer_ser_lembrado",
+      "dialog_node": "node_8_1560118998319",
+      "previous_sibling": "node_5_1560118218995"
     },
     {
       "type": "standard",
-      "title": "(Outros Assuntos) Robo ou Humano",
+      "title": "Usuário não quer ser lembrado",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Eu sou a Rose! Um Chat Bot que age em conjunto com sua terapia para ter um melhor aproveitamento das suas sessões!"
+                "text": "Tudo bem"
               }
             ],
             "response_type": "text",
@@ -5432,7 +7799,37 @@
           {
             "values": [
               {
-                "text": "Mas voltando ao que interessa, que é você..."
+                "text": "Eu sei que não posso te dar as melhores respostas, mas de uma coisa eu tenho certeza"
+              },
+              {
+                "text": "Se você está aqui comigo conversando, quer dizer que você está tentando melhorar os seus dias e evoluir no seu tratamento!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Eu não tenho dúvidas de que as coisas vão melhorar pra você"
+              },
+              {
+                "text": "Eu tenho fé de que as coisas vão melhorar pra você"
+              },
+              {
+                "text": "Pode não parecer agora, mas as coisas vão melhorar pra você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Mesmo eu sendo apenas uma robô sei que pode ser um processo demorado e difícil, por isso é preciso paciência!"
+              },
+              {
+                "text": "Agora, vamos continuar..."
               }
             ],
             "response_type": "text",
@@ -5440,44 +7837,112 @@
           }
         ]
       },
+      "parent": "node_3_1560117953393",
       "metadata": {},
-      "conditions": "#General_About_You || #General_Human_or_Bot",
-      "digress_in": "returns",
-      "dialog_node": "node_5_1557013916686",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_14_1555796092069"
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_5_1560118218995"
     },
     {
       "type": "standard",
-      "title": "(Monstrar Menu) Demonstrar menu de funcionalidades",
+      "title": "Usuário não quer contar mais sobre a piora",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Isso é tudo o que voce fazer:"
+                "text": "Tudo bem, fica pra outra hora"
               },
               {
-                "text": "- Digite \"cadastrar atividade\" para cadastrar uma nova atividade\n\n- Digite \"visualizar atividades\" para que eu te mostre todas as atividades que voce cadastrou até agora!"
-              },
-              {
-                "text": "- Digite \"gerar relatorio\" para que eu gere um relatório para voce!"
-              },
-              {
-                "text": "Voltando para nossa conversa..."
+                "text": "Tudo bem, se quiser me contar outra hora é só me chamar"
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Mas lembre-se, momentos como este são naturais"
+              },
+              {
+                "text": "Mas não se cobre, é natural que isso aconteça as vezes"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
           }
         ]
       },
+      "parent": "node_20_1557795883568",
       "metadata": {},
-      "conditions": "#demonstrarMenu",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1559794047756"
+      },
+      "conditions": "#resposta_negativa",
+      "dialog_node": "node_11_1560484486084",
+      "previous_sibling": "node_9_1560484375188"
+    },
+    {
+      "type": "standard",
+      "title": "Usuário quer contar mais sobre a piora",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, porquê você acha que não está sendo legal?"
+              },
+              {
+                "text": "Muito bem, o que você acha que está fazendo ser difícil pra você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_20_1557795883568",
+      "metadata": {},
+      "conditions": "#resposta_positiva",
+      "dialog_node": "node_9_1560484375188"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1557794970404",
+      "dialog_node": "slot_1_1560483701234"
+    },
+    {
+      "type": "folder",
+      "title": "Funcionalidade desativadas",
+      "metadata": {},
+      "dialog_node": "node_1_1560109938074",
+      "previous_sibling": "node_2_1560109634408"
+    },
+    {
+      "type": "folder",
+      "title": "Funcionalidades",
+      "metadata": {},
       "digress_in": "returns",
-      "dialog_node": "node_11_1559008062835",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_1_1557792349532"
+      "dialog_node": "node_2_1560109984062",
+      "previous_sibling": "node_3_1560109721356"
+    },
+    {
+      "type": "folder",
+      "title": "Outros assuntos",
+      "metadata": {},
+      "digress_in": "returns",
+      "dialog_node": "node_3_1560109721356",
+      "previous_sibling": "node_3_1560110045851"
+    },
+    {
+      "type": "folder",
+      "title": "Opções do usuário",
+      "metadata": {},
+      "digress_in": "returns",
+      "dialog_node": "node_2_1560109634408",
+      "previous_sibling": "node_2_1560109984062"
     },
     {
       "type": "standard",
@@ -5487,13 +7952,13 @@
           {
             "values": [
               {
-                "text": "Ops, não reconheci sua resposta."
-              },
-              {
-                "text": "Não entendi sua resposta, poderia reformular ?"
+                "text": "Desculpa $primeiro_nome, não consegui entender."
               },
               {
                 "text": "Desculpa, não compreendi."
+              },
+              {
+                "text": "Me desculpa, não consegui entender o que você disse"
               }
             ],
             "response_type": "text",
@@ -5510,118 +7975,14 @@
       "digress_in": "returns",
       "dialog_node": "Em outros casos",
       "digress_out": "allow_all",
-      "previous_sibling": "node_5_1559506026492"
+      "previous_sibling": "node_1_1560109938074"
     },
     {
-      "type": "standard",
-      "title": "(Outros Assuntos) O que é a terapia",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "A Terapia Cognitiva Comportamental é uma abordagem terapêutica estruturada, diretiva, com metas claras e definidas pelo psicólogo e paciente"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "É focada no momento presente e utilizada para tratar desde problemas emocionais diversos (Transtornos Psicológicos), como comportamentos disfuncionais (TOC), dificuldades relacionais e aprendizagem de novas habilidades."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "Seu objetivo principal é modificar os pensamentos e os sistemas de significados dos pacientes (Crenças Centrais), buscando uma alteração emocional e comportamental consolidada e permanente. "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "Mas voltando ao que interessa, que é você..."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
+      "type": "folder",
+      "title": "Conversa",
       "metadata": {},
-      "conditions": "#SobreTerapiaCognitiva",
       "digress_in": "returns",
-      "dialog_node": "node_1_1557792349532",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_5_1557013916686"
-    },
-    {
-      "type": "standard",
-      "title": "(Funcionalidade) Visualizar Atividades Cadastradas",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Ok, segue abaixo todas as atividades Cadastradas:"
-              },
-              {
-                "text": "$todasAtividadesCadastradas"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "metadata": {},
-      "conditions": "#visualizarAtividades",
-      "dialog_node": "node_1_1559505059319",
-      "previous_sibling": "node_1_1559011613276"
-    },
-    {
-      "type": "standard",
-      "title": "(Funcionalidade) Cadastrar Atividade",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Claro, podemos cadastrar sim uma nova atividade."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          }
-        ]
-      },
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_2_1559012451001"
-      },
-      "conditions": "#cadastrarAtividade",
-      "dialog_node": "node_1_1559011613276",
-      "previous_sibling": "node_11_1559008062835"
-    },
-    {
-      "type": "standard",
-      "title": "Modelo Padrão",
-      "output": {
-        "generic": []
-      },
-      "metadata": {},
-      "conditions": "welcome",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_14_1555796092069"
+      "dialog_node": "node_3_1560110045851"
     }
   ],
   "workspace_id": "81f659dc-340c-4ae2-ba81-55b8eb9392e9",
