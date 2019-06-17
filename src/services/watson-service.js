@@ -97,12 +97,12 @@ async function sendMessagePromisse(params) {
             result.reportType = 'line';
             result.reportData = {
                 datasets: [{
-                    data: data.filter(c => c.user_mood).map(c => c.user_mood),
+                    data: data.filter(c => c.user_mood).map(c => c.user_mood).slice(0, 15),
                     backgroundColor: 'rgb(75, 192, 192)',
                     borderColor: 'rgb(75, 192, 192)',
                     label: 'Humor'
                 }],
-                labels: data.filter(c => c.user_mood).map(c => c.date.toLocaleDateString('en-GB', { year: 'numeric', month: '2-digit', day: '2-digit' }))
+                labels: data.filter(c => c.user_mood).map(c => c.date.toLocaleDateString('en-GB', { year: 'numeric', month: '2-digit', day: '2-digit' })).slice(0, 15)
             };
         } else if (watsonAnswer.context.relatorioSolicitado === 'quantidade') {
             let reportData = data.filter(c => c.user_did_routine).reduce((r, a) => {
