@@ -21,7 +21,8 @@
     };
 
     resizeFunc = function() {
-        $(".messages").height(document.querySelector('.chat_window').offsetHeight - document.querySelector('.top_menu').offsetHeight - document.querySelector('.bottom_wrapper').offsetHeight); 
+        var height = document.querySelector('.chat_window').offsetHeight - document.querySelector('.top_menu').offsetHeight - document.querySelector('.bottom_wrapper').offsetHeight; 
+        document.querySelector('.messages').setAttribute('style','height:'+height+'px');
     };
 
     $(window).resize(resizeFunc).resize();
