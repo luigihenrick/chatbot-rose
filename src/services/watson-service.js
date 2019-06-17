@@ -10,6 +10,11 @@ const watsonAssistant = new assistantV1({
 });
 
 async function sendMessage(params) {
+    if (params.context.relatorioSolicitado || params.context.verificarLembretes) {
+        params.context.relatorioSolicitado = undefined;
+        params.context.verificarLembretes = undefined;
+    } 
+    
     if (params.input.text === '{{LOGGED_USER}}') {
         return await mapUserEntities(params);
     } else if (params.input.text === '{{NEW_TALK}}') {
