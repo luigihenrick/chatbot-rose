@@ -122,6 +122,30 @@ async function sendMessagePromisse(params) {
                 }],
                 labels: Object.keys(reportData)
             };
+        } else if (watsonAnswer.context.relatorioSolicitado === 'humorAtividade') {
+            let reportRoutine = data.filter(c => c.user_did_routine).reduce((r, a) => {
+                let month = a.date.toISOString().replace(new RegExp('\\-\\d{2,}\\T.+'), '');
+                r[month] = r[month] || [];
+                r[month].push(a);
+                return r;
+            }, Object.create(null));
+
+            result.reportType = 'line';
+            result.reportData = {
+                datasets: [{
+                    data: Object.keys(reportRoutine).map(key => reportRoutine[key][0].user_mood),
+                    backgroundColor: 'rgb(255, 205, 86, .3)',
+                    borderWidth: 1,
+                    label: 'Humor'
+                },
+                {
+                    data: Object.keys(reportRoutine).map(key => reportRoutine[key].length),
+                    backgroundColor: 'rgb(54, 162, 235, .3)',
+                    borderWidth: 1,
+                    label: 'Fez Atividade'
+                }],
+                labels: Object.keys(reportRoutine)
+            };
         }
     }
 
@@ -141,10 +165,6 @@ async function sendMessagePromisse(params) {
     }
 
     return result;
-}
-
-function getReportObject(type, data) {
-
 }
 
 module.exports = { sendMessage };
