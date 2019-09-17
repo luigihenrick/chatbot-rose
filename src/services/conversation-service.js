@@ -6,7 +6,11 @@ async function saveConversation(params) {
     let model = await ConversationModel.findOne({ conversation_id: params.context.conversation_id });
 
     if (user && model) {
-        model.user_mood = params.context.estadoUsuario;
+        model.user_mood = params.context.humorNaConversa;
+        model.user_did_routine = params.context.rotinaRealizada;
+        model.mood_before_routine = params.context.humorAntesAtividade;
+        model.mood_after_routine = params.context.humorDepoisAtividade;
+        model.text_to_remember = params.context.gravarRelembrarNaTerapia ? params.context.textoRelembrarNaTerapia : '';
         model.last_node_visited = params.output.nodes_visited[params.output.nodes_visited.length - 1];
 
         await ConversationModel.updateOne({ conversation_id: params.context.conversation_id }, model);
@@ -14,7 +18,7 @@ async function saveConversation(params) {
         model = new ConversationModel();
 
         model.user_id = user._id;
-        model.user_mood = params.context.estadoUsuario;
+        model.user_mood = params.context.humorNaConversa;
         model.conversation_id = params.context.conversation_id;
         model.last_node_visited = params.output.nodes_visited[params.output.nodes_visited.length - 1];
 
@@ -22,6 +26,11 @@ async function saveConversation(params) {
     }
 
     return model;
+}
+
+async function getConversationData(phonenumber) {
+    const user = await UserModel.findOne({ phonenumber: phonenumber.replace(new RegExp(phoneReplaceRegex, 'g'), '') });
+    return await ConversationModel.find({ user_id: user._id });
 }
 
 function getConversationModel(params) {
@@ -39,4 +48,4 @@ function getConversationModel(params) {
     return model;
 }
 
-module.exports = { saveConversation, getConversationModel }
+module.exports = { saveConversation, getConversationModel, getConversationData }

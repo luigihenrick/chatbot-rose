@@ -74,11 +74,22 @@
       }
   }
 
+  @keyframes blink {
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes bulge {
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
   .chat_window {
     position: absolute;
-    width: 90%;
+    width: 95%;
     /* max-width: 800px; */
-    height: 90%;
+    height: 95%;
     border-radius: 10px;
     background-color: #fff;
     left: 50%;
@@ -127,7 +138,8 @@
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 79%;
+    /* height: 79%; */
+    height: calc(100vh - 190px);
     overflow: scroll;
   }
   .messages .message {
@@ -224,7 +236,7 @@
     position: relative;
     padding: 0 20px;
   }
-  .bottom_wrapper .message_input_wrapper.error{
+  .bottom_wrapper .message_input_wrapper.error {
     border-color: red;
     -webkit-animation: swing 1s ease;
     animation: swing 1s ease;
@@ -263,8 +275,64 @@
     display: inline-block;
     line-height: 48px;
   }
-  
+  .bottom_wrapper .send_message.option {
+    background-color: #36a2eb;
+    border: 2px solid #36a2eb;
+    margin: 0px 5px 5px 5px;
+    float: inherit;
+  }
+  .bottom_wrapper .send_message.option:hover {
+    color: #36a2eb;
+    background-color: #fff;
+  }
+
   .message_template {
     display: none;
+  }
+  
+  .typing_indicator {
+    background-color: #e6e7ed;
+    will-change: transform;
+    width: auto;
+    border-radius: 50px;
+    padding: 20px;
+    display: inline-block;
+    margin-left: calc(50% - 30px);
+    animation: 2s bulge infinite ease-out;
+  }
+  .typing_indicator::before, .typing_indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #e6e7ed;
+  }
+  .typing_indicator::after {
+    height: 10px;
+    width: 10px;
+    left: -10px;
+    bottom: -10px;
+  }
+  .typing_indicator span {
+    height: 10px;
+    width: 10px;
+    float: left;
+    margin: 0 1px;
+    background-color: #9e9ea1;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  .typing_indicator span:nth-of-type(1) {
+    animation: 1s blink infinite 0.3333s;
+  }
+  .typing_indicator span:nth-of-type(2) {
+    animation: 1s blink infinite 0.6666s;
+  }
+  .typing_indicator span:nth-of-type(3) {
+    animation: 1s blink infinite 0.9999s;
   }
   
